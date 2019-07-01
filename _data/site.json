@@ -1,0 +1,32 @@
+{
+  "title": "Cassey Lottman Writes",
+  "url": "https://cassey.dev/",
+  "description": "Cassey is a Community Health Engineer at [Glitch](https://glitch.com), keeping it the friendly place to create the app of your dreams. She [ran for City Council](http://casseyforcouncil.com) in Lincoln, Nebraska in 2019 and, according to Councilman Bennie Shobe, \"is not going to go away.\"",
+  "feed": {
+    "subtitle": "One person is typing.",
+    "filename": "feed.xml",
+    "path": "/feed/feed.xml",
+    "url": "https://cassey.dev/feed/feed.xml",
+    "id": "https://cassey.dev/"
+  },
+  "author": {
+    "name": "Cassey Lottman",
+    "site": "https://cassey.dev",
+    "github_username": "clottman",
+    "glitch_username": "Cassey",
+    "twitters": [
+      {
+        "username": "CasseyLottman",
+        "display": "Personal Twitter"
+      },
+      {
+        "username": "CasseyLNK",
+        "display": "Campaign Twitter"
+      }
+    ]
+  },
+  "favicon": "https://cdn.glitch.com/238f8585-6bd5-40c4-a0ff-2b87d4acea6c%2Ftil-16.png?v=1561397433743",
+  "social_image": "https://cdn.glitch.com/238f8585-6bd5-40c4-a0ff-2b87d4acea6c%2Fknowledge-256.png?v=1561398158147",
+  "social_image_height": 256,
+  "social_image_width": 256
+}

@@ -1,0 +1,33 @@
+@import '_helpers.scss';
+
+.center-child {
+	@extend .flex-center;
+
+	a {
+		@extend .flex-center;
+	}
+}
+
+.image-and-label {
+	@extend .flex-center;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.two-image-grid {
+	display: grid;
+  	grid-template-columns: 50% 50%;
+  	grid-auto-flow: column;
+}
+
+.post {
+	max-width: 800px;
+}
+
+.username {
+	padding-left: 10px;
+}
+
+.pagination .previous {
+	margin-right: 15px;
+}
