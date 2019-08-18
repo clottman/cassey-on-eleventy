@@ -27,7 +27,7 @@
     ]
   },
   "favicon": "https://cdn.glitch.com/3cd90178-c382-4fa7-9b2a-70f4e28f2830%2Fcat.png?1551390727074",
-  "social_image": "/img/cassey.jpg",
+  "social_image": "https://www.cassey.dev/img/cassey.jpg",
   "social_image_height": 256,
   "social_image_width": 256
 }
