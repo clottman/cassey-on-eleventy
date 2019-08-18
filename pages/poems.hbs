@@ -1,0 +1,30 @@
+---
+layout: layouts/post.njk
+title: Poems I Love
+navtitle: Favorite Poems
+navorder: 100
+templateClass: tmpl-post
+---
+
+<p>I've recently discovered a love of poetry. There is so much richness to discover! The poems I read now are nothing like what I read in school; these poems speak to me, speak to my own experience as a woman or the experiences of marginalized groups, speak to relationships both tender and terrible. </p>
+
+<p>I've discovered new-to-me poems through a poetry class I'm taking at the South of Downtown Art Hub, through <a href="slowdownshow.org">The Slowdown Show</a>, a five minute poem-a-day podcast released every weekday, through buying books of poems, and browsing slam poetry on YouTube.</p>
+
+<p>Here are a few of my favorite poems, in no particular order.</p>
+
+<ul>
+    {{#each poems}}
+        <li class='poem-entry'>
+            <p>
+                {{#if this.video}}
+                    <span aria-label="Video Link">📺 </span>
+                {{/if}}
+                <a href="{{this.url}}"><b>{{this.name}}</b> by {{this.author}}</a></p>
+            <p>
+                {{#if this.slowdownUrl}}
+                    <a href="{{this.slowdownUrl}}">Listen on the Slowdown Show</a>
+                {{/if}}
+            </p>
+        </li>
+    {{/each}}
+</ul>
