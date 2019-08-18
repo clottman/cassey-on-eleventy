@@ -6,8 +6,8 @@
     <title>{{ renderData.title or title or metadata.title }}</title>
     <meta property="og:title" content="{{ renderData.title or title or metadata.title }}">
 
-    <meta property="description" content="{{ renderData.description or description or metadata.description }}">
-    <meta property="og:description" content="{{ renderData.description or description or metadata.description }}">
+    <meta property="description" content="{{ renderData.description or description or metadata.social_description }}">
+    <meta property="og:description" content="{{ renderData.description or description or metadata.social_description }}">
     <link rel="stylesheet" href="{{ '/css/index.css' | url }}">
     <link rel="stylesheet" href="{{ '/css/main.css' | url }}">
     <link rel="stylesheet" href="{{ '/css/prism-base16-monokai.dark.css' | url }}">
