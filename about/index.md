@@ -1,9 +1,8 @@
 ---
 layout: layouts/post.njk
 title: About Me
-tags:
-  - nav
 navtitle: About
+navorder: 2
 templateClass: tmpl-post
 ---
 

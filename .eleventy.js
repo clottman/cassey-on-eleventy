@@ -63,6 +63,17 @@ module.exports = function(eleventyConfig) {
     MarkdownIt(options).use(markdownItAnchor, opts)
   );
 
+  eleventyConfig.addCollection("sortedNav", collection =>
+    collection
+      .getAllSorted()
+      .filter(item => item.data.navtitle)
+      .sort(function(a, b) {
+        if (a.data.navorder < b.data.navorder) return -1;
+        else if (a.data.navorder > b.data.navorder) return 1;
+        else return 0;
+      })
+  );
+
   /*
   eleventyConfig.setBrowserSyncConfig({
     callbacks: {
