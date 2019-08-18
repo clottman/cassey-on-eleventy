@@ -1,0 +1,37 @@
+---
+layout: post
+title: 'Two Months of Mobile UX: Just Don''t.'
+date: 2016-06-28 11:15:30.000000000 -04:00
+categories: []
+tags: ['posts']
+status: private
+type: post
+published: false
+meta:
+  _rest_api_published: '1'
+  _rest_api_client_id: "-1"
+  _publicize_job_id: '24268159319'
+author:
+  display_name: Cassey
+---
+<p>I've been on the road for about a month and a half now traveling Europe. My 15 inch Macbook is many things, but light is not one of them. It remained at home and I'm on the road with an Android phone and an older model iPad. Traveling this way has helped me see with maddening clarity the failures of modern web design. Though my problems include hardware issues and frequently terrible WiFi connections, I rage at the bad mobile design practices that I've encountered because I know they are preventable.</p>
+<p>First some notes on hardware. My iPad is old enough that when typing a long paragraph, I can stop tapping and continue to watch the letters appear one by one. My phone is a Galaxy S4, with limited memory, battery life, and speed. The hardware I have now will likely be replaced before my next big trip. However, for now it's what I've got.</p>
+<p>Time and time again I've found that hostel, airport, and train WiFi leaves much to be desired. It's slow, the connection is spotty, and the passwords are handwritten strings like g5631kS5I. (Can you tell the difference between a European's S and 5, or 1, I, or l? Me either. These passwords drastically sacrifice usability for security.)</p>
+<p>Connection and hardware problems on their own would be annoying, but these problems also exacerbate web design flaws. Mobile designers and developers, take note! Here are some of the most common problems I've encountered:</p>
+<h3>Feature Incompleteness</h3>
+<p>Many companies force their users to use an app or a special, mobile-only version of their site when they're on a small screen. This could help increase security or give designers more control over the UI, but it can leave users out cold. I'd rather have to zoom and scroll to be able to digitally send a check to a friend who paid for a room, than to simply tell them, "Sorry, I'll get to that in the next few weeks. ¯\_(ツ)_/¯ Mobile is hard." (My struggles with digital wallets is another story entirely.)</p>
+<h3>Excessive Page Load Times</h3>
+<p>I'm looking at you, AirBnB. I want to be able to start typing my destination and desired dates right away on AirBnB.com. Instead, I wait up to a minute or more for the page to load over the slow connection, with the text input field frequently jumping around as more content loads. Don't even think about trying to start typing before all the behind-the-scenes work is done-it just makes it worse. A quick check shows AirBnB makes 88 requests on page load, bringing in 344 KB of data. When logged in my Facebook timeline only requires 313 KB. Don't try to tell me that autocompleting a location name and displaying some (should-be) static content really requires more JS than everything I can do from Facebook. I'm not the first one who noticed this- Rahul Gupta of Omaha Code School suggested <a href="https://medium.com/@wob/the-sad-state-of-web-development-1603a861d29f">this</a> as further reading on what could be going on.</p>
+<h3>Accidental Taps Destroy Progress</h3>
+<p>In order to challenge a credit card charge, there are many pages of radio buttons to select and explanations to type. Under ideal circumstances, this shouldn't take more than five minutes. On my iPad, I spent hours trying before giving up and waiting another week until I could use a friend's laptop. In the meantime, I had a double charge of several hundred dollars that I really wanted reversed. Every time I would get reasonably far in the process, I would inevitably bump the wrong spot on the screen or lose my connection and return to the start, losing all my hard work. Long processes like this or pages with heavy user input should always have an "Are you sure?" button on navigating away with unsaved work, or better yet, save drafts.</p>
+<h3>App Download Requests</h3>
+
+<div class="flex-center">
+	<a href="https://imgflip.com/i/16kaiv"><img title="made at imgflip.com" src="/img/16kaiv.jpg.png{{site.image_postfix}}" /></a>
+</div>
+
+<p>No, AirBnB. (And Hostelworld, and Hotels.com, and airlines, and TripAdvisor, and any other site that's basically not a social network or for finances.) I'm not going to download your app. Half the space on my phone is filled with Samsung bloatware, so I'm sorry, but there is no room for you. Please stop asking.</p>
+<h3>No Support for Chrome on iOS</h3>
+<p>I admittedly don't use my iPad much while at home, so had never been forced to use Safari in lieu of Chrome before. It happened two or three times on this trip. In at least one of the cases it was due to a Facebook OAuth issue - still, not a good enough excuse when I can quickly find a <a href="http://stackoverflow.com/questions/16843116/facebook-oauth-unsupported-in-chrome-on-ios" target="_blank">workaround on Stack Overflow</a>. More thorough browser testing could help here.</p>
+<p>&nbsp;</p>
+<p>Hopefully hearing some of my struggles to be a fully-connected nerd while on the road will help you design a better mobile experiences for your users. You can even <a href="http://helpdeskgeek.com/networking/simulate-slow-internet-connection-testing/" target="_blank">simulate slow connections</a> from your desk, so there's really no excuse for the state of the mobile web to be as bad as it is. As for me, I'm ready to trade in my tablet for a netbook for travel. Many users really do prefer mobile devices, though. Don't make them suffer for it!</p>
