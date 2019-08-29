@@ -28,6 +28,12 @@ module.exports = [
       "https://www.slowdownshow.org/episode/2019/07/10/163-a-small-needful-fact"
   },
   {
+    name: "Small Kindnesses",
+    author: "Danusha Laméris",
+    url:
+      "https://voxpopulisphere.com/2019/08/11/danusha-lameris-small-kindnesses/"
+  },
+  {
     name: "Using a Hula Hoop Can Get You Abducted by Aliens",
     author: "Matthea Harvey",
     url:
