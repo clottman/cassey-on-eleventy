@@ -2,7 +2,7 @@
 layout: post
 title: "2019: A year of many apps"
 date: 2020-01-02
-tags: [posts, reflection]
+tags: [posts, reflection, glitch]
 excerpt: "Cool Apps I Made & Projects I Worked On"
 ---
 
