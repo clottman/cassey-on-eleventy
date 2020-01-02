@@ -23,11 +23,7 @@ body {
 p:last-child {
   margin-bottom: 0;
 }
-p,
-.tmpl-post li,
-img {
-  max-width: 37.5em; /* 600px /16 */
-}
+
 p,
 .tmpl-post li {
   line-height: 1.45;
@@ -219,4 +215,9 @@ a[href].direct-link:focus:visited,
 :hover > a[href].direct-link,
 :hover > a[href].direct-link:visited {
   color: #aaa;
+}
+
+.center-block {
+  margin: auto auto;
+  display: block;
 }
