@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ renderData.title or title or metadata.title }}</title>
-    <meta property="og:title" content="{{ renderData.title or title or metadata.title }}">
+    <title>{{ title }}</title>
+    <meta property="og:title" content="{{ title }}">
 
-    <meta property="description" content="{{ renderData.description or description or metadata.social_description }}">
+    <meta property="description" content="{{ social_description or description }}">
     <link rel="stylesheet" href="{{ '/css/index.css' | url }}">
     <link rel="stylesheet" href="{{ '/css/main.css' | url }}">
     <link rel="stylesheet" href="{{ '/css/prism-base16-monokai.dark.css' | url }}">
@@ -14,12 +14,12 @@
     <link rel="shortcut icon" href="{{ metadata.favicon }}" type="image/x-icon">
     <link rel="icon" href="{{ metadata.favicon }}" type="image/x-icon">
     
-    <meta property="twitter:image" content="{{metadata.social_image}}">
+    <meta property="twitter:image" content="{{social_image or metadata.social_image}}">
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="og:image:width" content="{{metadata.social_image_width}}">
-    <meta property="og:image:height" content="{{metadata.social_image_height}}">
-    <meta property="og:image" content="{{metadata.social_image}}">
-    <meta property="twitter:image:alt" content="{{ metadata.social_alt or 'Learning is fun!'}}>
+    <meta property="og:image:width" content="{{social_image_width or metadata.social_image_width}}">
+    <meta property="og:image:height" content="{{social_image_height or metadata.social_image_height}}">
+    <meta property="og:image" content="{{ social_image or metadata.social_image}}">
+    <meta property="twitter:image:alt" content="{{ social_image_alt or 'Learning is fun!' }}">
   </head>
   <body>
     <header class='site-header'>
