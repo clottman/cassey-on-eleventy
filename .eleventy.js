@@ -6,7 +6,7 @@ const path = require("path");
 const getTagList = require("./_11ty/getTagList");
 const MarkdownIt = require("markdown-it");
 
-module.exports = function(eleventyConfig) {
+module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
   eleventyConfig.setDataDeepMerge(true);
@@ -67,7 +67,7 @@ module.exports = function(eleventyConfig) {
     collection
       .getAllSorted()
       .filter(item => item.data.navtitle)
-      .sort(function(a, b) {
+      .sort(function (a, b) {
         if (a.data.navorder < b.data.navorder) return -1;
         else if (a.data.navorder > b.data.navorder) return 1;
         else return 0;
