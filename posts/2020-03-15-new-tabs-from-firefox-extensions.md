@@ -22,6 +22,8 @@ If I changed my tab-opening code to use the APIs that exist especially for brows
 
 `chrome.tabs.create({ url: 'https://example.com' });`
 
+You can see [the full source code for my extension on Glitch](https://glitch.com/edit/#!/pinboard-extension?path=extension/background.js:1:0).
+
 Thanks to these friends in [a Mozilla forum question in 2018](https://discourse.mozilla.org/t/avoid-popup-blocker/31549) for pointing me in the right direction!
 
 ## Addendum
