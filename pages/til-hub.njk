@@ -3,27 +3,16 @@ layout: layouts/home.njk
 title: TIL Feed
 navtitle: Today I Learned
 navorder: 100
-pagination:
-    data: til.posts
-    size: 20
-    alias: tilposts
+permalink: '/til/'
 ---
 
 
-<h1>20 Things I Recently Learned</h1>
+<h2>Things I Recently Learned</h2>
+<p>
+  These are short posts I wrote about things I was learning about software development, written as I learned them. They also live <a href="https://til-blog.glitch.me">on Glitch</a>, where you'll find a slightly better browsing experience - the tags will actually take you to tag pages. Head there if, for example, you want to see <a href="https://cassey-til.glitch.me/tags/accessibility/">everything I've written about learning about accessibility</a>. 
+</p>
 
-{% set postslist = tilposts %}
-{% include "postslist.njk" %}
-
-<nav aria-labelledby="my-pagination">
-  <h2 id="my-pagination">Today I Learned pages</h2>
-  <ol>
-    <li>{% if page.url != pagination.href.first %}<a href="{{ pagination.href.first }}">First</a>{% else %}First{% endif %}</li>
-    <li>{% if pagination.href.previous %}<a href="{{ pagination.href.previous }}">Previous</a>{% else %}Previous{% endif %}</li>
-{%- for pageEntry in pagination.pages %}
-    <li><a href="{{ pagination.hrefs[ loop.index0 ] }}"{% if page.url == pagination.hrefs[ loop.index0 ] %} aria-current="page"{% endif %}>Page {{ loop.index }}</a></li>
-{%- endfor %}
-    <li>{% if pagination.href.next %}<a href="{{ pagination.href.next }}">Next</a>{% else %}Next{% endif %}</li>
-    <li>{% if page.url != pagination.href.last %}<a href="{{ pagination.href.last }}">Last</a>{% else %}Last{% endif %}</li>
-  </ol>
-</nav>
+<p>I was inspired to start this project by <a href="https://github.com/jbranchaud/til">Josh Branchaud</a>. </p> 
+<br />
+{% set postslist = til.posts %}
+{% include "til-postslist.njk" %}

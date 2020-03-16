@@ -2,14 +2,13 @@
 layout: layouts/base.njk
 ---
 
-
 <article class="post">
   <header class="post-header">
     <h1 class="post-title">{{ title }}</h1>
-    <h2 class="post-date">{{ date | readableDate }}</h2>
+    {% if date %}<h2 class="post-date">{{ date | readableDate }}</h2>{% endif %}
   </header>
   <div class="post-content">
   {{ content | safe }}
   </div>
 </article>
-<p><a href="{{ '/' | url }}">← Home</a></p>
+<p><a href="{{ '/' | url }}"><span aria-hidden="true">← </span>Home</a></p>
