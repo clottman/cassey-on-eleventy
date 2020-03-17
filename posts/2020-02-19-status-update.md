@@ -2,7 +2,7 @@
 layout: post
 title: "Status Update: a poem"
 date: 2020-02-19
-tags: [posts, poem]
+tags: [posts, poetry]
 social_image: "https://cassey.dev/img/great-gma.jpg"
 social_image_alt: "Cassey, in a wedding dress, embraces a well-dressed elderly woman"
 social_description: "I have, as the prophets say, some personal news."
