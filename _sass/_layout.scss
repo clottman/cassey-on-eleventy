@@ -1,3 +1,19 @@
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-content {
+  flex-grow: 1;
+
+  display: flex;
+  flex-direction: row;
+  
+  justify-content: flex-start; /* align items in Main Axis */
+  align-items: stretch; /* align items in Cross Axis */
+  align-content: stretch; /* Extra space in Cross Axis */
+}
 /**
  * Site header
  */
@@ -189,16 +205,6 @@
       font-size: 18px;
     }
   }
-}
-
-.content-wrapper {
-  /* 
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -moz-box;
-	display: -ms-flexbox;
-    display: flex;
-  */
 }
 
 #sidebar {
