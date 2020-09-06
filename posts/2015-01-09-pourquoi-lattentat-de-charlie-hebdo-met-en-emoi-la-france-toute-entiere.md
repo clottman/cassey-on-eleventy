@@ -19,7 +19,7 @@ author:
 Le 7 janvier, le siège de Charlie Hebdo, un journal satirique français, a subi un attentat commis par trois personnes. Douze personnes sont mortes, dont deux policiers. La réponse en France : le choc et une sensation de perte. La plupart de mes amis Facebook français ont écrit un message qui exprime leur douleur, ou ont changé leur photo de profil en une image noire avec les mots ‘Je suis Charlie.’ Il y avait des grands rassemblements à Paris, mais aussi dans d'autres villes partout en France, comme à Chambéry, dont 3,000 des 57,000 habitants se sont rassemblés afin de partager leur douleur.
 
 <div class="image-and-label">
-  <a href="/2015-01-09-chambery-plus-grande.jpg{{site.image_postfix}}"><img src="/img/2015-01-09-chambery-plus-grande.jpg{{site.image_postfix}}" alt="3000 people gathered in Chambéry" width="300" height="200" /></a>3,000 rassemblés à Chambéry, France
+  <a href="/2015-01-09-chambery-plus-grande.jpg"><img src="/img/2015-01-09-chambery-plus-grande.jpg" alt="3000 people gathered in Chambéry" width="300" height="200" /></a>3,000 rassemblés à Chambéry, France
 </div>
 
 
@@ -31,10 +31,10 @@ Avec douze morts, l’attentat Charlie Hebdo est <a href="http://www.liberation.
 
 <div class="two-image-grid">
   <div class="flex-center">
-    <a href="http://www.liberation.fr/politiques/2015/01/07/l-attentat-le-plus-meurtrier-a-paris_1175401"><img class="center-block" src="/img/2015-01-09-liberation-attentats.png{{site.image_postfix }}" alt="Mass shootings since 1982 in France" width="183" height="300" /></a>
+    <a href="http://www.liberation.fr/politiques/2015/01/07/l-attentat-le-plus-meurtrier-a-paris_1175401"><img class="center-block" src="/img/2015-01-09-liberation-attentats.png" alt="Mass shootings since 1982 in France" width="183" height="300" /></a>
   </div>
   <div class="image-and-label">
-    <a href="http://www.thedailybeast.com/articles/2012/07/24/interactive-map-the-us-shooting-epidemic.html"><img class="center-block" src="/img/2015-01-09-us-map.png{{ site.image_postfix }}" alt="Shooting deaths in the US since 2005" width="454" height="207" /></a>  
+    <a href="http://www.thedailybeast.com/articles/2012/07/24/interactive-map-the-us-shooting-epidemic.html"><img class="center-block" src="/img/2015-01-09-us-map.png" alt="Shooting deaths in the US since 2005" width="454" height="207" /></a>  
     <p>Les attentats meurtriers aux USA depuis 2005</p>
   </div>
 </div>
@@ -58,7 +58,7 @@ On ne parle pas en France d’un ‘melting pot’ comme aux États-Unis - le ph
 En France, <a href="http://www.economist.com/node/17632947" target="_blank">la satire</a> est une façon de vivre pour les médias. Les américains peuvent regarder les émissions satiriques très tard le soir, comme celles de Jimmy Fallon ou Stephen Colbert, mais les français peuvent les regarder plus tôt avec émissions comme Le Petit Journal sur Canal+. Charlie Hebdo est très connu pour sa satire. Un attentat sur celle-ci apparait presque comme un attentat sur l’institution de la satire elle-même. 
 
 <div class="flex-center">
-  <a href="/img/2015-01-09-je-suis-charlie.jpg{{ site.image_postfix }}"><img class="center-block" src="/img/2015-01-09-je-suis-charlie.jpg{{ site.image_postfix }}" alt="Je suis Charlie" width="300" height="200" /></a>
+  <a href="/img/2015-01-09-je-suis-charlie.jpg"><img class="center-block" src="/img/2015-01-09-je-suis-charlie.jpg" alt="Je suis Charlie" width="300" height="200" /></a>
 </div>
 
 Ce n’est pas facile de dire quelles conséquences sociales l’attentat chez Charlie Hebdo peut provoquer. De toute façon, Patrick Pelloux, un contributeur au journal, <a href="http://www.bbc.com/news/entertainment-arts-30724863" target="_blank">a promis</a> qu’il y aurait un numéro la semaine prochaine. Le journal sollicite des fonds et le soutien d’autres journaux afin d’imprimer un million d’exemplaires, beaucoup plus que les soixante-mille d’ordinaire imprimés. Les lecteurs et <a href="http://www.vox.com/2015/1/7/7508387/cartoonists-respond-charlie-hebdo" target="_blank">dessinateurs</a> du monde entier espèrent prouver que le stylo est bien plus fort que la violence, et que le premier ne va pas se faire réduire au silence par ce dernier.
