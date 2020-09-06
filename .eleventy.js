@@ -18,6 +18,11 @@ module.exports = function (eleventyConfig) {
     return md.render(value);
   });
 
+  eleventyConfig.addFilter("stripPs", value => {
+    const firstPass = value.replace("<p>", "");
+    return firstPass.replace("</p>", "");
+  })
+
   eleventyConfig.addFilter("readableDate", dateObj => {
     const dateFormat = "dd LLL yyyy";
     const dateToUse = dateObj instanceof Date ? dateObj : new Date(dateObj);
