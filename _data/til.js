@@ -2,7 +2,7 @@ var axios = require("axios");
 var toJSON = require("xml2js").parseString;
 
 var url = "https://cassey-til.glitch.me/feed/feed.xml";
-
+/*
 module.exports = () => {
     return new Promise((resolve, reject) => {
         axios
@@ -34,3 +34,4 @@ module.exports = () => {
             });
     });
 };
+*/

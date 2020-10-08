@@ -79,6 +79,10 @@ module.exports = function (eleventyConfig) {
       })
   );
 
+  eleventyConfig.addCollection("til", function(collectionApi) {
+    return collectionApi.getFilteredByGlob("til/*.*");
+  });
+
   /*
   eleventyConfig.setBrowserSyncConfig({
     callbacks: {

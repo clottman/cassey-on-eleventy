@@ -1,0 +1,21 @@
+---
+pagination:
+  data: collections.til
+  size: 1
+  alias: tag
+  filter:
+    - all
+    - nav
+    - post
+    - posts
+layout: layouts/home.njk
+renderData:
+  title: Tagged “{{ tag }}”
+permalink: /til-tags/{{ tag }}/
+---
+<h1>Tagged “{{ tag }}”</h1>
+
+{% set postslist = collections.til[ tag ] %}
+{% include "postslist.njk" %}
+
+<p>See <a href="{{ '/til-tags/' | url }}">all tags</a>.</p>
