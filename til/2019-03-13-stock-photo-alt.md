@@ -1,5 +1,5 @@
 ---
-til-tags: ['post', 'accessibility', 'html']
+til-tags: ['accessibility', 'html']
 title: Alt Text on Stock Photos
 date: 2019-03-13
 ---

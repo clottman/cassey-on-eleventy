@@ -1,5 +1,5 @@
 ---
-til-tags: ['post', 'html']
+til-tags: ['html']
 title: Valid Children of `<html>`
 date: 2019-03-26
 ---

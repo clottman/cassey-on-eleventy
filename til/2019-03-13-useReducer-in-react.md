@@ -1,5 +1,5 @@
 ---
-til-tags: ['post', 'react']
+til-tags: ['react']
 title: When to use useReducer in React
 date: 2019-03-13
 ---

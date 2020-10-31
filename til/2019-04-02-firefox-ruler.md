@@ -1,5 +1,5 @@
 ---
-til-tags: ['post', 'tools']
+til-tags: ['tools']
 title: Firefox Page Ruler
 date: 2019-04-02
 ---

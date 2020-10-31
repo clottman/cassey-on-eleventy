@@ -1,5 +1,5 @@
 ---
-til-tags: ['post', 'tools']
+til-tags: ['tools']
 title: Parcel Doesn't Support CSS Modules Without Config
 date: 2019-01-25
 ---

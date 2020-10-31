@@ -1,5 +1,5 @@
 ---
-til-tags: ['post', 'react']
+til-tags: ['react']
 title: React Component Design Patterns
 date: 2019-03-19
 ---

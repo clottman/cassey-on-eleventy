@@ -1,5 +1,5 @@
 ---
-til-tags: ['post', 'tools']
+til-tags: ['tools']
 title: Manuscript filtering
 date: 2019-02-13
 ---

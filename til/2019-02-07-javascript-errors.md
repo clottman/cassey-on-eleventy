@@ -1,5 +1,5 @@
 ---
-til-tags: ['post', 'tools', 'javascript']
+til-tags: ['tools', 'javascript']
 title: How Error Handling Works in Browsers
 date: 2019-02-07
 ---

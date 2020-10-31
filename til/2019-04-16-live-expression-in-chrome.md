@@ -1,5 +1,5 @@
 ---
-til-tags: ['post', 'accessibility', 'tools']
+til-tags: ['accessibility', 'tools']
 title: Using Live Expressions in Chrome to Track the Focused Element
 date: 2019-04-16
 ---

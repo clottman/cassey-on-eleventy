@@ -1,5 +1,5 @@
 ---
-til-tags: ['post', 'csharp']
+til-tags: ['csharp']
 title: Converting to target netstandard14 in addtion to netFramework461
 date: 2017-08-09
 ---

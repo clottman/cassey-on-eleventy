@@ -1,5 +1,5 @@
 ---
-til-tags: ['post', 'xamarin']
+til-tags: ['xamarin']
 title: Xamarin Android RelativeLayout Designer
 date: 2017-07-22
 ---

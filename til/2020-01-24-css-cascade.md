@@ -1,5 +1,5 @@
 ---
-til-tags: ['post', 'css']
+til-tags: ['css']
 title: 'Deep-diving the CSS Cascade'
 date: 2020-01-24
 ---

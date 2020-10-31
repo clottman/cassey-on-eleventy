@@ -1,5 +1,5 @@
 ---
-til-tags: ['post', 'react' ]
+til-tags: ['react' ]
 title: Class vs Function Components
 date: 2019-03-05
 ---

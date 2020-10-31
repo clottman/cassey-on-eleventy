@@ -1,5 +1,5 @@
 ---
-til-tags: ["post", "javascript"]
+til-tags: ["javascript"]
 title: "Watching 'What the heck is the event loop, anyways?'"
 description: "Now I know!"
 date: 2020-04-21

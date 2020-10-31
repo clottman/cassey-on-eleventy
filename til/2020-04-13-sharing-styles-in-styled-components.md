@@ -1,5 +1,5 @@
 ---
-til-tags: ["post", "styled-components", "react"]
+til-tags: ["styled-components", "react"]
 title: "Sharing Styles in Styled Components"
 description: "Using string interpolation"
 date: 2020-04-13

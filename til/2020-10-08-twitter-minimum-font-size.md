@@ -1,5 +1,5 @@
 ---
-til-tags: ["post", "accessibility", "minimum-font-size"]
+til-tags: ["accessibility", "minimum-font-size"]
 title: "Why do some tweets not respect my minimum font size?"
 description: "What language is 'lol'?"
 date: 2020-10-08

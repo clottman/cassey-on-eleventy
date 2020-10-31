@@ -1,5 +1,5 @@
 ---
-til-tags: ['post', 'testing', 'tools']
+til-tags: ['testing', 'tools']
 title: Is this feature toggle on?
 date: 2019-04-16
 ---

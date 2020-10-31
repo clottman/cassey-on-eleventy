@@ -1,5 +1,5 @@
 ---
-til-tags: ['post', 'react']
+til-tags: ['react']
 title: React as a UI Runtime
 date: 2019-02-03
 ---

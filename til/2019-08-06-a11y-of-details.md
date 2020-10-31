@@ -1,5 +1,5 @@
 ---
-til-tags: ['post', 'accessibility', 'html']
+til-tags: ['accessibility', 'html']
 title: 'Does <details> work with Assistive Technology?'
 description: "a11ysupport.io found out!" 
 date: 2019-08-06

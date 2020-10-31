@@ -1,5 +1,5 @@
 ---
-til-tags: ['post', 'xamarin']
+til-tags: ['xamarin']
 title: Custom ContentView Renderer in Xamarin Forms iOS
 date: 2017-08-10
 ---

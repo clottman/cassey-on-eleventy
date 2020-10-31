@@ -1,5 +1,5 @@
 ---
-til-tags: ['post', 'accessibility']
+til-tags: ['accessibility']
 title: 'Voiceover with Safari & List Semantics'
 description: "They might not work. Here's why." 
 date: 2019-08-20

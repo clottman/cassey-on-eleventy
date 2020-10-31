@@ -1,5 +1,5 @@
 ---
-til-tags: ['post', 'css', 'accessibility']
+til-tags: ['css', 'accessibility']
 title: 'My first look at Bulma for CSS'
 description: "If you care about accessibility, you might want to look elsewhere." 
 date: 2019-07-22

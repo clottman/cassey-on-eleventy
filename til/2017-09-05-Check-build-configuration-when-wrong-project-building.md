@@ -1,5 +1,5 @@
 ---
-til-tags: ['post', 'xamarin']
+til-tags: ['xamarin']
 title: Check Build Configuration When the Wrong Project is Building in Visual Studio
 date: 2017-09-05
 ---
