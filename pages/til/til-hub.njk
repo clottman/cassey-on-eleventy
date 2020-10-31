@@ -14,3 +14,6 @@ permalink: '/til-hub/'
 
 <p>I was inspired to start this project by <a href="https://github.com/jbranchaud/til">Josh Branchaud</a>. </p> 
 <br />
+
+{% set postslist = collections.til | head(-20) %}
+{% include "postslist.njk" %}
