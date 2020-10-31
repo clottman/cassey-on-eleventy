@@ -9,11 +9,12 @@ permalink: '/til/'
 
 <h2>Things I Recently Learned</h2>
 <p>
-  These are short posts I wrote about things I was learning about software development, written as I learned them. They also live <a href="https://cassey-til.glitch.me">on Glitch</a>, where you'll find a slightly better browsing experience - the tags will actually take you to tag pages. Head there if, for example, you want to see <a href="https://cassey-til.glitch.me/tags/accessibility/">everything I've written about learning about accessibility</a>. 
+  These are short posts I wrote about things I was learning about software development, written as I learned them. These posts tend to be short, and not overly edited.</p>
+
+  <p>I write them because they make it easier to share what I've learned with others, on the chance that someone else doesn't know the thing yet, either, and also because writing things down helps cement what I've learned in my mind. When that cementing doesn't hold, sometimes I find myself wanting to look back at something I wrote about previously, so this is also in some ways a repository of notes-to-self about making software.
 </p>
 
 <p>I was inspired to start this project by <a href="https://github.com/jbranchaud/til">Josh Branchaud</a>. </p> 
-<br />
 
 {% set postslist = collections.til | head(-20) %}
 {% include "postslist.njk" %}
