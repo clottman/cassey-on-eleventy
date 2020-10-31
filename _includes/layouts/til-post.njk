@@ -4,11 +4,11 @@ layout: layouts/base.njk
 
 <article class="post">
   <header class="post-header">
-    <h1 class="post-title">{{ til.title }}</h1>
-    <h2 class="post-date">{{ til.date | readableDate }}</h2>
+    <h1 class="post-title">{{ title }}</h1>
+    <h2 class="post-date">{{ date | readableDate }}</h2>
   </header>
   <div class="post-content">
-  {{ til.content | safe }}
+  {{ content | safe }}
   </div>
 </article>
 

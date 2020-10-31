@@ -9,6 +9,13 @@
       <a href="{{ tagUrl | url }}" class="tag">{{ tag }}</a>
       {%- endif -%}
     {% endfor %}
+
+    {% for tag in post.data['til-tags'] %}
+      {% if collections.tilTags.indexOf(tag) != -1 %}
+        {% set tagUrl %}/til/tags/{{ tag }}/{% endset %}
+        <a href="{{ tagUrl | url }}" class="tag">{{ tag }}</a>
+      {% endif %}
+    {% endfor %}
   </li>
 {% endfor %}
 </ul>

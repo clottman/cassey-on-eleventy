@@ -136,12 +136,8 @@ module.exports = function (eleventyConfig) {
       collection.getFilteredByGlob(tilGlob),
       "til-tags"
     );
-    console.log(allTilTags);
 
-    let tilTags = allTilTags.map((tilTag) => ({
-      title: tilTag,
-      slug: strToSlug(tilTag),
-    }));
+    let tilTags = allTilTags.map((tilTag) => strToSlug(tilTag));
     console.log(tilTags);
 
     return tilTags;
