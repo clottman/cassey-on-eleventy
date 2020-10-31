@@ -138,8 +138,6 @@ module.exports = function (eleventyConfig) {
     );
 
     let tilTags = allTilTags.map((tilTag) => strToSlug(tilTag));
-    console.log(tilTags);
-
     return tilTags;
   });
 

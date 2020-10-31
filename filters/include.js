@@ -20,6 +20,5 @@ module.exports = function (arr, path, value) {
     pathValue = lodash.deburr(pathValue).toLowerCase();
     return pathValue.includes(value);
   });
- // console.log(filtered);
   return filtered;
 };
