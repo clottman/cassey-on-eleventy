@@ -1,5 +1,5 @@
 ---
-tags: ['post', 'work']
+til-tags: ['post', 'work']
 title: Navigating Anger & Sadness in the Workplace
 date: 2019-05-21
 ---

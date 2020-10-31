@@ -1,5 +1,5 @@
 ---
-tags: ['post', 'talks', 'refactoring']
+til-tags: ['post', 'talks', 'refactoring']
 title: 'Therapeutic Refactoring by Katrina Owen'
 description: "Notes from watching a conference talk" 
 date: 2019-07-30

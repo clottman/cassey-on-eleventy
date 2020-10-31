@@ -1,5 +1,5 @@
 ---
-tags: ['post', 'react', 'styled-components']
+til-tags: ['post', 'react', 'styled-components']
 title: 'Learning about styled components'
 date: 2019-09-25
 ---

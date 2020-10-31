@@ -1,5 +1,5 @@
 ---
-tags: ['post', 'csharp', 'xamarin']
+til-tags: ['post', 'csharp', 'xamarin']
 title: Xamarin Netstandard Blog Draft
 date: 2017-08-09
 ---

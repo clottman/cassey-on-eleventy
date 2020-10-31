@@ -1,5 +1,5 @@
 ---
-tags: ['post', 'html']
+til-tags: ['post', 'html']
 title: Itemscope Attribute in HTML
 date: 2019-03-26
 ---

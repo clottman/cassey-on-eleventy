@@ -1,5 +1,5 @@
 ---
-tags: ['post', 'css', 'accessibility']
+til-tags: ['post', 'css', 'accessibility']
 title: More People Set Custom Font Sizes than Use Internet Explorer
 description: If you're setting font sizes in pixels, you're overriding that preference.
 date: 2019-06-30

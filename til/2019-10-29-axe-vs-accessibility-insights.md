@@ -1,5 +1,5 @@
 ---
-tags: ['post', 'accessibility']
+til-tags: ['post', 'accessibility']
 title: 'Accessibility Insights runs a subset of rules from Axe'
 date: 2019-10-29
 ---

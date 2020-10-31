@@ -1,5 +1,5 @@
 ---
-tags: ["post", "devtools", "git"]
+til-tags: ["post", "devtools", "git"]
 title: "Delete all local branches that have been deleted from a remote"
 description: "git remote prune origin"
 date: 2020-03-26

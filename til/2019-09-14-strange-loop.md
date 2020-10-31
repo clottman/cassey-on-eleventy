@@ -1,5 +1,5 @@
 ---
-tags: ['post', 'conferences', 'accessibility']
+til-tags: ['post', 'conferences', 'accessibility']
 title: 'Learnings from Strange Loop'
 date: 2019-09-17
 ---

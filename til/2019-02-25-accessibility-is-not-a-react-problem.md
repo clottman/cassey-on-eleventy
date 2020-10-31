@@ -1,5 +1,5 @@
 ---
-tags: ['post', 'accessibility' ]
+til-tags: ['post', 'accessibility' ]
 title: Accessibility is not a React Problem
 date: 2019-02-25
 ---

@@ -1,5 +1,5 @@
 ---
-tags: ['post', 'xamarin']
+til-tags: ['post', 'xamarin']
 title: Xamarin Forms Reading
 date: 2017-08-11
 ---

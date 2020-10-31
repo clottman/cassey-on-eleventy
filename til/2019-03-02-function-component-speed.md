@@ -1,5 +1,5 @@
 ---
-tags: ['post', 'react' ]
+til-tags: ['post', 'react' ]
 title: Speed in Function Components
 date: 2019-03-02
 ---

@@ -1,5 +1,5 @@
 ---
-tags: ['post', 'css']
+til-tags: ['post', 'css']
 title: 'I read: "Meet Border-box, my best friend."'
 date: 2019-09-04
 ---

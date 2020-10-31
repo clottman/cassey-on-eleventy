@@ -1,5 +1,5 @@
 ---
-tags: ['post', 'typescript']
+til-tags: ['post', 'typescript']
 title: Converting a Javascript Project to Typescript for Beginners
 date: 2018-01-05
 ---

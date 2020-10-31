@@ -1,5 +1,5 @@
 ---
-tags: ['post', 'health', 'design', 'talks']
+til-tags: ['post', 'health', 'design', 'talks']
 title: 'Designing Against Domestic Violence'
 description: "A talk at GETConf in Omaha by Eva PenzeyMoog" 
 date: 2019-08-13

@@ -1,5 +1,5 @@
 ---
-tags: ['post', 'xamarin']
+til-tags: ['post', 'xamarin']
 title: Xamarin Android RelativeLayout Designer
 date: 2017-07-22
 ---
@@ -14,4 +14,4 @@ I googled around for a solution, and found bug reports from a Xamarin/Xamarin St
 
 Eventually I figured out that since I was using a Relative Layout on this screen, I can only drop controls onto a border of another control. If I drag the control to the bottom of an existing control in my layout, it works. 
 
-My debugging process was opening up a new single-page app template solution for Xamarin Android, and changing the Main.axml to use a Relative Layout. From there I tested what happened when I had no controls, or just one at the top. With no controls in the relative layout, a control could be dragged anywhere onto it. Once there was a control in the Relative Layout, additional controls had to be placed explictly relative to an existing control. It makes sense once you understand what it's doing! 
+My debugging process was opening up a new single-page app template solution for Xamarin Android, and changing the Main.axml to use a Relative Layout. From there I tested what happened when I had no controls, or just one at the top. With no controls in the relative layout, a control could be dragged anywhere onto it. Once there was a control in the Relative Layout, additional controls had to be placed explictly relative to an existing control. It makes sense once you understand what it's doing! x
