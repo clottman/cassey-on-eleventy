@@ -5,7 +5,7 @@
     <time class="postlist-date" datetime="{{ post.data.date | htmlDateString }}">{{ post.data.date | readableDate }}</time>
     {% for tag in post.data.tags %}
       {%- if collections.tagList.indexOf(tag) != -1 -%}
-      {% set tagUrl %}/tags/{{ tag }}/{% endset %}
+      {% set tagUrl %}/blog/tags/{{ tag }}/{% endset %}
       <a href="{{ tagUrl | url }}" class="tag">{{ tag }}</a>
       {%- endif -%}
     {% endfor %}

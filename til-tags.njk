@@ -1,21 +1,29 @@
 ---
 pagination:
-  data: collections.til
+  data: collections.tilTags
   size: 1
-  alias: tag
-  filter:
-    - all
-    - nav
-    - post
-    - posts
-layout: layouts/home.njk
+  alias: category
+layout: layouts/til-post.njk
 renderData:
-  title: Tagged “{{ tag }}”
-permalink: /til-tags/{{ tag }}/
+  title: Tagged “{{ category }}”
+permalink: /til-tags/{{ category.slug }}/
 ---
-<h1>Tagged “{{ tag }}”</h1>
+<h1>Tagged “{{ category }}”</h1>
 
-{% set postslist = collections.til[ tag ] %}
+{% set postslist = collections.til | include("data.til-tags", category.title) %}
 {% include "postslist.njk" %}
+
+
+<h3>Categories</h3>
+{% for tag in collections.tilTags %}
+  {% if loop.first %}<ul><li><a href="/blog/">All</a></li>{% endif %}
+
+  <li>
+    <a href="/blog/category/{{ tag.slug }}">{{ tag.title }}</a>
+  </li>
+
+  {% if loop.last %}</ul>{% endif %}
+{% endfor %}
+
 
 <p>See <a href="{{ '/til-tags/' | url }}">all tags</a>.</p>
