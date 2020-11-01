@@ -1,6 +1,4 @@
 :root {
-  --red: #c5004a;
-  --darkred: #7f0036;
   --lightgray: #e0e0e0;
   --gray: #c0c0c0;
   --darkgray: #333;
@@ -137,21 +135,12 @@ code {
 }
 a[href].tag,
 a[href].tag:visited {
-  background-color: rgb(255, 184, 0);
+  background-color: var(--yellow);
   color: var(--navy);
 }
 .tagslist {
   margin-bottom: .8em;
   padding: 6px 8px;
-}
-
-/* Warning */
-.warning {
-  background-color: #ffc;
-  padding: 1em 0.625em; /* 16px 10px /16 */
-}
-.warning ol:only-child {
-  margin: 0;
 }
 
 /* Direct Links / Markdown Headers */
@@ -163,13 +152,13 @@ a[href].tag:visited {
 }
 a[href].direct-link,
 a[href].direct-link:visited {
-  color: transparent;
+  color: var(--lightgray);
 }
 a[href].direct-link:focus,
 a[href].direct-link:focus:visited,
 :hover > a[href].direct-link,
 :hover > a[href].direct-link:visited {
-  color: #aaa;
+  color: var(--gray);
 }
 
 .center-block {
