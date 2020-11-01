@@ -11,8 +11,7 @@
   box-sizing: border-box;
 }
 
-p,
-.tmpl-post li {
+p {
   line-height: 1.45;
 }
 a[href] {
