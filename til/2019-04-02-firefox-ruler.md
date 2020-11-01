@@ -1,5 +1,5 @@
 ---
-til-tags: ['tools']
+til-tags: ['devtools']
 title: Firefox Page Ruler
 date: 2019-04-02
 ---

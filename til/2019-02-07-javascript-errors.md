@@ -1,5 +1,5 @@
 ---
-til-tags: ['tools', 'javascript']
+til-tags: ['devtools', 'javascript']
 title: How Error Handling Works in Browsers
 date: 2019-02-07
 ---

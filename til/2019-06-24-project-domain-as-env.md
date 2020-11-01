@@ -1,5 +1,5 @@
 ---
-til-tags: ['glitch', 'tools']
+til-tags: ['glitch', 'devtools']
 title: Getting your Glitch Project Domain in Your Code
 description: Or, the magic of built-in env variables
 date: 2019-06-24
