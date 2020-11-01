@@ -4,7 +4,7 @@ body {
   flex-direction: column;
 }
 
-.page-content {
+main {
   flex-grow: 1;
 
   display: flex;
@@ -13,6 +13,8 @@ body {
   justify-content: flex-start; /* align items in Main Axis */
   align-items: stretch; /* align items in Cross Axis */
   align-content: stretch; /* Extra space in Cross Axis */
+
+  padding: $spacing-unit 0;
 }
 /**
  * Site header
@@ -130,9 +132,6 @@ body {
 /**
  * Page content
  */
-.page-content {
-  padding: $spacing-unit 0;
-}
 
 .page-heading {
   font-size: 20px;
