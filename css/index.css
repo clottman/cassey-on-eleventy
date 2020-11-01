@@ -174,7 +174,6 @@ pre {
 /* Tags */
 .tag {
   display: inline-block;
-  vertical-align: text-top;
   text-transform: uppercase;
   font-size: 0.625em; /* 10px /16 */
   padding: 2px 4px;
