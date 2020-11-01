@@ -9,32 +9,29 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/11ty/eleventy-base-blog.git"
+    "url": "git://github.com/clottman/cassey-on-eleventy.git"
   },
   "author": {
     "name": "Cassey Lottman",
     "url": "https://cassey.dev/"
   },
-  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/11ty/eleventy-base-blog/issues"
+    "url": "https://github.com/clottman/cassey-on-eleventy/issues"
   },
-  "homepage": "https://github.com/11ty/eleventy-base-blog#readme",
   "dependencies": {
-    "axios": "^0.19.2",
     "gulp": "^4.0.2",
     "gulp-sass": "^4.0.2",
     "lodash": "^4.17.20",
-    "nunjucks": "^3.1.6",
-    "slugify": "^1.4.5",
+    "nunjucks": "^3.2.2",
+    "slugify": "^1.4.6",
     "xml2js": "^0.4.23"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^0.10.0",
-    "@11ty/eleventy-plugin-rss": "^1.0.3",
+    "@11ty/eleventy": "^0.11.1",
+    "@11ty/eleventy-plugin-rss": "^1.0.9",
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.4",
-    "luxon": "^1.0.0",
-    "markdown-it": "^8.4.1",
-    "markdown-it-anchor": "^5.2.5"
+    "luxon": "^1.25.0",
+    "markdown-it": "^12.0.2",
+    "markdown-it-anchor": "^6.0.0"
   }
 }
