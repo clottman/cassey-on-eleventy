@@ -174,9 +174,7 @@ pre {
 /* Tags */
 .tag {
   display: inline-block;
-  vertical-align: text-top;
   text-transform: uppercase;
-  font-size: 0.625em; /* 10px /16 */
   padding: 2px 4px;
   margin-left: 0.8em; /* 8px /10 */
   background-color: var(--yellow);
@@ -188,6 +186,10 @@ a[href].tag,
 a[href].tag:visited {
   background-color: rgb(255, 184, 0);
   color: var(--navy);
+}
+.tagslist {
+  margin-bottom: .8em;
+  padding: 6px 8px;
 }
 
 /* Warning */

@@ -19,7 +19,6 @@ Here you'll find a few links to stuff I've worked on.
 - [Writings on dev.to](https://dev.to/casseylottman)
     - Be sure to check out my write-up on [My Web Creations from 2019](https://dev.to/casseylottman/my-web-creations-from-2019-21m3)
 - [Today I Learned - casual, short posts on things I've learned as I learn them](/til)
-  - [view my TILs with full tag support on Glitch](https://cassey-til.glitch.me)
 
 ## Talks
 

@@ -1,0 +1,16 @@
+---
+pagination:
+  data: collections.tilTags
+  size: 1
+  alias: category
+layout: layouts/base.njk
+renderData:
+  title: Tagged “{{ category }}”
+permalink: /til/tags/{{ category }}/
+---
+<h1>Tagged “{{ category }}”</h1>
+
+{% set postslist = collections.til | include("data.til-tags", category) %}
+{% include "postslist.njk" %}
+
+<p>See <a href="{{ '/til/tags/' | url }}">all tags</a>.</p>
