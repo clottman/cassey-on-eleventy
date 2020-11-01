@@ -1,5 +1,5 @@
 ---
-til-tags: ['glitch' ]
+til-tags: ['glitch']
 title: The Glitch Logo Changes Color
 date: 2019-03-08
 ---

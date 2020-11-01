@@ -1,5 +1,5 @@
 ---
-til-tags: ['react' ]
+til-tags: ['react']
 title: useEffect in React
 date: 2019-03-11
 ---

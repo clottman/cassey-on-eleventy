@@ -1,5 +1,5 @@
 ---
-til-tags: ['politics' ]
+til-tags: ['politics']
 title: Shadow Power
 date: 2019-03-07
 ---

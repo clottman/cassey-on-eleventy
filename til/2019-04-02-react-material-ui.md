@@ -1,5 +1,5 @@
 ---
-til-tags: ['react' ]
+til-tags: ['react']
 title: React Material UI Thoughts
 date: 2019-04-02
 ---

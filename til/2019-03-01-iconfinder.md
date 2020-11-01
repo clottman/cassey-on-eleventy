@@ -1,5 +1,5 @@
 ---
-til-tags: ['tools' ]
+til-tags: ['tools']
 title: Iconfinder
 date: 2019-03-01
 ---
