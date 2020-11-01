@@ -155,25 +155,21 @@ blockquote {
 /**
  * Code formatting
  */
-pre,
-code {
-  border: 1px solid $grey-color-light;
-  border-radius: 3px;
-}
-
-code {
-  padding: 1px 5px;
-}
 
 pre, pre[class*="language-"] {
   padding: 8px 12px;
   overflow-x: auto;
+  max-width:100%;
 
   > code {
     border: 0;
     padding-right: 0;
     padding-left: 0;
   }
+}
+// if it's inline, not a code block
+:not(pre) > code {
+  font-size: 16px;
 }
 
 /**
