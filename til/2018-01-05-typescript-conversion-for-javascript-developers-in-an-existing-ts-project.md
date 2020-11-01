@@ -34,7 +34,7 @@ You can also have `class`, `interface`, `enum`, which work the way you'd expect.
 5. What do you expect data to be in the constructor? Create an interface for it and then decorate the `data` parameter with the type by making it look like this: `constructor(data: IData)` 
 6. Wherever you define an anonymous function, switch it to the arrow syntax. This syntax is nice because it captures `this` - in typescript you don't have to basically ever do `var self = this;`, it is smart enough to treat `this` like you'd expect it to work in a sane language. (`this` in a class refers to the instance of the class)
  
-```
+``` javascript
 // Switch this: 
 function (x) { 
   x = x + 1;

@@ -20,7 +20,7 @@ A quick excerpt from my testing stack dependencies:
 
 Now some code: 
 
-```
+``` javascript
 // the real IntersectionObserverComponent
 const IntersectionObserverComponent = (props) {
   const observer = new IntersectionObserver();
@@ -31,7 +31,7 @@ export default IntersectionObserverComponent;
 ```
 
 
-```
+``` javascript
 // App.js
 import IntersectionObserverComponent from './intersection-observer-component';
 
@@ -42,7 +42,7 @@ const App = () => {
 }
 ```
 
-```
+``` javascript
 // in the test file, we mock IntersectionObserverComponent imports using sinon
 import * as IntersectionObserverComponent from 'Components/intersection-observer-component';
 import 'sinon'; 
@@ -84,14 +84,14 @@ Well, as my coworker Osmose explained to me, the way we configured the `returns`
 
 What we need to do instead is change our Sinon stubbing code to this: 
 
-```git
+``` diff
 -    intersectionObserverComponentStub.returns(FakeIntersectionObserverComponent);
 +    intersectionObserverComponentStub.callsFake((props) => new FakeIntersectionObserverComponent(props));
 ```
 (- means get rid of the line like this, + means add a line like this in its place)
 
 As Osmose explains, the `returns` way of doing the stub means the stub basically acts like this: 
-```
+``` javascript
 function visibilityContainerStub(props) {
   return FakeVisibilityContainer;
 }

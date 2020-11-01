@@ -14,7 +14,7 @@ Following this tutorial: https://oren.codes/2017/04/23/using-xamarin-forms-with-
 
 5. Replace the csproj of the PCL with this: 
 
-```
+``` xml
 	<Project Sdk="Microsoft.NET.Sdk">
 
 	  <PropertyGroup>
