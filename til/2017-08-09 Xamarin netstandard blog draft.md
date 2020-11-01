@@ -27,7 +27,7 @@ The initial steps I followed from [Using Xamarin Forms with .NET Standard VS 201
 
 5. Replace the csproj of the PCL with this: 
 
-```
+``` xml
 	<Project Sdk="Microsoft.NET.Sdk">
 
 	  <PropertyGroup>
@@ -51,7 +51,7 @@ The initial steps I followed from [Using Xamarin Forms with .NET Standard VS 201
 
 7. Add the Xamarin.Forms Nuget package to the shared project that now targets netstandard1.4. Using PackageReference format, a line like this will get added to your csproj: 
 
-```
+``` xml
   <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="2.3.4.247" />
   </ItemGroup>
@@ -106,7 +106,7 @@ In the solution containing some shared projects and our Xamarin Android/Xamarin 
 > The project 'Mobile.Core' cannot be referenced. The referenced project is targeted to a different framework family (.NETFramework)	Source project: iOSClient			
 
 Mobile.Core, which iOSClient claims it cannot reference, has this in its csproj:
-```     
+``` xml
 <TargetFrameworks>net461;netstandard1.4</TargetFrameworks>
 <PackageTargetFallback>xamarinios10;</PackageTargetFallback>
 ```

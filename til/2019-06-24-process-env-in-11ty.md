@@ -10,7 +10,7 @@ In Eleventy (the static site builder used to create this site), you can [access 
 ## How to set up the variables for use in templates 
 The Eleventy docs provide a code snippet to use: 
 
-```
+``` javascript
 module.exports = {
   myVariable: process.env.MY_VARIABLE
 };

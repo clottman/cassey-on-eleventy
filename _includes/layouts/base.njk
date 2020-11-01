@@ -7,9 +7,9 @@
     <meta property="og:title" content="{{ title or metadata.title }}">
     <meta property="description" content="{{ social_description or description or metadata.social_description }}">
     <meta property="og:description" content="{{ social_description or description or metadata.social_description }}">
+    <link rel="stylesheet" href="{{ '/css/prism-base16-monokai.dark.css' | url }}">
     <link rel="stylesheet" href="{{ '/css/index.css' | url }}">
     <link rel="stylesheet" href="{{ '/css/main.css' | url }}">
-    <link rel="stylesheet" href="{{ '/css/prism-base16-monokai.dark.css' | url }}">
     <link rel="alternate" href="{{ metadata.metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
     <link rel="shortcut icon" href="{{ favicon or metadata.favicon }}" type="image/x-icon">
     <link rel="icon" href="{{ favicon or metadata.favicon }}" type="image/x-icon">
