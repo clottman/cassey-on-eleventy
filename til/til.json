@@ -1,3 +1,9 @@
 {
-    "layout": "layouts/til-post.njk"
+    "layout": "layouts/til-post.njk",
+    "description": "The more you know!",
+    "social_image": "https://cdn.glitch.com/238f8585-6bd5-40c4-a0ff-2b87d4acea6c%2Fknowledge-256.png?v=1561398158147",
+    "social_image_height": 256,
+    "social_image_width": 256,
+    "social_image_alt": "a stack of books with an apple on top",
+    "favicon": "https://cdn.glitch.com/238f8585-6bd5-40c4-a0ff-2b87d4acea6c%2Ftil-16.png?v=1561397433743"
 }
