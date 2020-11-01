@@ -1,5 +1,5 @@
 ---
-til-tags: ['work', 'remote']
+til-tags: ['workplace', 'remote']
 title: Why do remote meetings suck?
 date: 2019-04-23
 ---
