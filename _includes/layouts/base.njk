@@ -3,24 +3,23 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ title }}</title>
-    <meta property="og:title" content="{{ title }}">
-
-    <meta property="description" content="{{ social_description or description }}">
-    <meta property="og:description" content="{{ social_description or description }}">
+    <title>{{ title or metadata.title }}</title>
+    <meta property="og:title" content="{{ title or metadata.title }}">
+    <meta property="description" content="{{ social_description or description or metadata.social_description }}">
+    <meta property="og:description" content="{{ social_description or description or metadata.social_description }}">
     <link rel="stylesheet" href="{{ '/css/index.css' | url }}">
     <link rel="stylesheet" href="{{ '/css/main.css' | url }}">
     <link rel="stylesheet" href="{{ '/css/prism-base16-monokai.dark.css' | url }}">
-    <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
-    <link rel="shortcut icon" href="{{ metadata.favicon }}" type="image/x-icon">
-    <link rel="icon" href="{{ metadata.favicon }}" type="image/x-icon">
+    <link rel="alternate" href="{{ metadata.metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
+    <link rel="shortcut icon" href="{{ favicon or metadata.favicon }}" type="image/x-icon">
+    <link rel="icon" href="{{ favicon or metadata.favicon }}" type="image/x-icon">
     
-    <meta property="twitter:image" content="{{social_image or metadata.social_image}}">
+    <meta property="twitter:image" content="{{ social_image or metadata.social_image}}">
     <meta property="twitter:card" content="summary">
-    <meta property="og:image:width" content="{{social_image_width or metadata.social_image_width}}">
+    <meta property="og:image:width" content="{{ social_image_width or metadata.social_image_width}}">
     <meta property="og:image:height" content="{{social_image_height or metadata.social_image_height}}">
     <meta property="og:image" content="{{ social_image or metadata.social_image}}">
-    <meta property="twitter:image:alt" content="{{ social_image_alt or 'Learning is fun!' }}">
+    <meta property="twitter:image:alt" content="{{ social_image_alt or metadata.social_image_alt }}">
   </head>
   <body>
     <header class='site-header'>

@@ -1,5 +1,4 @@
 {
-    "layout": "layouts/til-post.njk",
     "description": "The more you know!",
     "social_image": "https://cdn.glitch.com/238f8585-6bd5-40c4-a0ff-2b87d4acea6c%2Fknowledge-256.png?v=1561398158147",
     "social_image_height": 256,
