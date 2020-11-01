@@ -13,7 +13,7 @@ In 11ty there are a lot of ways of defining data for your templates, including c
 
 Inside `til/`, I added a file called `til.json`. (Relative path: `posts/til/til.json`, matching `posts/subdir/subdir.json` as shown in the docs). It's contents are pretty bare bones right now: 
 
-```
+``` json
 {
     "layout": "layouts/til-post.njk"
 }

@@ -23,11 +23,11 @@ My workflow here was to:
 1. in the browser console of another tab (yes it could have been the same tab at this point, but it wasn't), run `encodeURIComponent("<paste>")`
 1. copy the encoded string I got back
 1. open up VS Code where a snippet of unsaved code is waiting. Replace the encoded url string that's there from the last time I ran it with the new url string. Now I have a curl command that POSTs to the twitter oembed endpoint to get the embed for a tweet, and pretty-prints the output
-   ```
+   ``` bash
    curl 'https://publish.twitter.com/oembed?url=https%3A%2F%2Ftwitter.com%2FCasseyLottman%2Fstatus%2F1237164009159380994&omit_script=true' | json_pp
    ```
 1. copy the curl command, paste it into my WSL terminal. See output like this:
-   ```
+   ``` json
     {
     "type" : "rich",
     "version" : "1.0",

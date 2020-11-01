@@ -9,7 +9,7 @@ There's a new library of React components that are shared across the organizatio
 I know that styled components use JavaScript template literals to define the CSS for an element right in line with the element tag. 
 
 From the Styled Components docs: 
-```
+``` javascript
 // define a component
 const Title = styled.h1`
   font-size: 1.5em;
@@ -36,7 +36,7 @@ Things I learned today:
   - I had been wondering how to know which props were available on shared components like `<Button>` - but turns out it's everything available on the base element!
  - You can also define other props that your component will accept, that perhaps change the styles on the base element.
 
-```
+``` javascript
 // from https://www.styled-components.com/docs/basics#passed-props
 const Button = styled.button`
   /* Adapt the colors based on primary prop */

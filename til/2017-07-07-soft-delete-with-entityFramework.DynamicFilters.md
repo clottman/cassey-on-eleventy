@@ -12,7 +12,7 @@ When we turned off the soft delete filter on our Entity Framework DB connection,
 
 The way we set up our Soft Delete Interceptor using the [EntityFramework.DynamicFilters library](https://github.com/jcachat/EntityFramework.DynamicFilters), the soft delete filter was turned on in a base class that extended DbContext. It was set up like this:
 
-```
+``` csharp
 class ApplicationDb : SoftDeleteDb 
 {
 	ApplicationDb(string connectionString, bool softDeleteFilterActive) : base(softDeleteFilterActive)
@@ -40,7 +40,7 @@ Looking at the [source of the extension method we call](https://github.com/jcach
 
 The connection string info must be passed as a parameter and set in the SoftDeleteDb constructor, because in C# the base class's constructor must always be called first if the subclass overrides a constructor. That is, the code below doesn't work:
 
-```
+``` csharp
 class Subclass : BaseClass 
 {
 	Subclass(bool param) 
@@ -56,7 +56,7 @@ class Subclass : BaseClass
 
 Set the `DbContext.Database.Connection.ConnectionString` before calling `DbContext.DisableFilter`. 
 
-```
+``` csharp
 class ApplicationDb : SoftDeleteDb 
 {
 	ApplicationDb(string connectionString, bool softDeleteFilterActive) : base(connectionString, softDeleteFilterActive)

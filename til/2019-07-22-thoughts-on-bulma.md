@@ -9,7 +9,7 @@ I wanted a simple UI library for making a simple page with a simple form prettie
 
 It's also a library that relies on Sass, and my project only used Handlebars and Express/Node. So I had to figure out how to compile Sass and serve it from a Node project. I thought about adding a bundler to my project, but since it was already working just fine with Handlebars and simple templating, that felt like too much overhead. I found a starter app called [Example-Scss](https://glitch.com/~example-scss) on Glitch where I was able to get the gist of what I needed to add to my `server.js` file to make it work. 
 
-```
+``` javascript
 var sassMiddleware = require("node-sass-middleware");
 
 app.use(sassMiddleware({

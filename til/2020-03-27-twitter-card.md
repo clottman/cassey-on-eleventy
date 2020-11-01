@@ -13,13 +13,13 @@ Before, when I shared posts from cassey-til.glitch.me on twitter, the card looke
 
 
 That was because I had a meta tag on my page like this: 
-```
+``` html
 <meta property="twitter:card" content="summary_large_image">
 ```
 
 The meta tag should use `summary` as the value instead since my social sharing image is square. Like this: 
 
-```
+``` html
 <meta property="twitter:card" content="summary">
 ```
 

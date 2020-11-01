@@ -9,7 +9,7 @@ On Friday, I was working on converting a very complex tooltip component in React
 
 Some of the styles were used by multiple selectors, like this: 
 
-```
+``` css
 .tooltip.left,
 .tooltip.left::before { 
   left: 0;
@@ -19,7 +19,7 @@ Some of the styles were used by multiple selectors, like this:
 ```
 
 At first I thought I wouldn't be able to share those styles in the styled-component version, and would have to write them out twice, like this: 
-```
+``` css
 styled.div`
   left: 0;
   right: initial;
@@ -34,7 +34,7 @@ styled.div`
 
 Today I realized the answer lies in the fact that styled components are built on string interpolation. If I want to reuse some styles, I can store them as a string in another variable, and interpolate the variable in the places I want to use the shared styles.
 
-```
+``` javascript
 const sharedTooltipLeft = `left: 0;
   right: initial;
   transform: translateX(0);
