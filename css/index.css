@@ -188,6 +188,9 @@ a[href].tag:visited {
   background-color: rgb(255, 184, 0);
   color: var(--navy);
 }
+.tagslist {
+  margin-bottom: .8em;
+}
 
 /* Warning */
 .warning {
