@@ -1,10 +1,5 @@
 :root {
-  --lightgray: #e0e0e0;
-  --gray: #c0c0c0;
-  --darkgray: #333;
   --navy: #17050f;
-  --blue: #082840;
-  --white: #fff;
   --yellow: rgb(255, 192, 28);
 
   --primary100: hsl(331, 99%, 86%);
@@ -29,12 +24,6 @@
 
 p {
   line-height: 1.45;
-}
-a[href] {
-  color: var(--blue);
-}
-a[href]:visited {
-  color: var(--navy);
 }
 
 pre,
@@ -67,24 +56,9 @@ code {
 }
 
 /* Posts list */
-.postlist {
-  list-style: none;
-  padding: 0;
-}
-.postlist-item {
-  counter-increment: start-from -1;
-}
-.postlist-item:before {
-  display: inline-block;
-  pointer-events: none;
-  content: "" counter(start-from, decimal-leading-zero) ". ";
-  line-height: 100%;
-  text-align: right;
-}
-.postlist-date,
-.postlist-item:before {
+.postlist-date {
   font-size: 0.8125em; /* 13px /16 */
-  color: var(--darkgray);
+  color: var(--gray300);
 }
 .postlist-date {
   word-spacing: -0.5px;
@@ -109,11 +83,7 @@ code {
   border-radius: 0.25em; /* 3px /12 */
   text-decoration: none;
 }
-a[href].tag,
-a[href].tag:visited {
-  background-color: var(--yellow);
-  color: var(--navy);
-}
+
 .tagslist {
   margin-bottom: 0.8em;
   padding: 6px 8px;

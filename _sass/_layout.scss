@@ -20,8 +20,7 @@ main {
  * Site header
  */
 .site-header {
-  border-top: 5px solid var(--gray-100);
-  border-bottom: 1px solid var(--gray-100);
+  border-bottom: 8px solid var(--gray300);
   min-height: 56px;
 
   background-color: var(--gray100);
@@ -30,9 +29,57 @@ main {
     margin: 0;
   }
 
-  // Positioning context for the mobile navigation icon
-  position: relative;
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    
+    @media screen and (max-width: $on-laptop) {
+      display: grid;
+      grid-template-columns: max-content 1fr;
+      margin: 0;
+      max-width: unset;
+      width: 100%;
+    }
+
+    @media screen and (max-width: 1028px) {
+      width: calc(100vw - 30px);
+      padding-right:8px;
+      padding-left: 8px;
+    }
+
+  }
 }
+
+#nav-toggle {
+  @media screen and (min-width: $on-laptop + 1) {
+    display: none;
+  }
+
+  --nav-toggle: var(--gray700);
+  all: unset;
+  cursor: pointer;
+
+  padding-top: 8px;
+  margin-left: auto;
+  padding-right: 15px;
+  margin-top: auto;
+  margin-bottom: auto;
+
+  &:focus, &:hover, &:active {
+    --nav-toggle: var(--secondary500);
+  }
+}
+.nav {
+  @media screen and (max-width: $on-laptop) {
+    display: none;
+  }
+}
+
+.nav.visible {
+  display: block !important;
+}
+
 
 .site-title {
   font-size: 26px;
@@ -40,16 +87,10 @@ main {
   line-height: 56px;
   letter-spacing: -1px;
   margin-bottom: 0;
-  float: left;
-
-  &,
-  &:visited {
-    color: $grey-color-dark;
-  }
+  font-weight: 500;
 }
 
 .site-nav {
-  float: right;
   line-height: 56px;
 
   .menu-icon {
@@ -57,7 +98,6 @@ main {
   }
 
   .page-link {
-    color: $text-color;
     line-height: $base-line-height;
 
     // Gaps between nav items, but not on the last one
@@ -65,14 +105,27 @@ main {
       margin-right: 20px;
     }
   }
+
+  @include media-query($on-palm) {
+    float: unset;
+    
+    > div {
+      max-width: calc(100vw-16px);
+      padding-left: 8px;
+      padding-right: 8px;
+    }
+    .nav-item {
+      display: block;
+      text-align: left;
+    }
+
+  }
 }
 
 /**
  * Site footer
  */
 .site-footer {
-  border-top: 1px solid black;
-  padding: 0 $spacing-unit;
   margin-bottom: $spacing-unit;
 }
 
@@ -89,51 +142,23 @@ main {
 
 .footer-col-wrapper {
   font-size: 15px;
-  color: black;
-  margin-left: -$spacing-unit / 2;
-  @extend %clearfix;
-}
-
-.footer-col {
-  float: left;
-  padding-left: $spacing-unit / 2;
-}
-
-.footer-col-1 {
-  width: -webkit-calc(35% - (#{$spacing-unit} / 2));
-  width: calc(35% - (#{$spacing-unit} / 2));
-}
-
-.footer-col-2 {
-  width: -webkit-calc(20% - (#{$spacing-unit} / 2));
-  width: calc(20% - (#{$spacing-unit} / 2));
-}
-
-.footer-col-3 {
-  width: -webkit-calc(45% - (#{$spacing-unit} / 2));
-  width: calc(45% - (#{$spacing-unit} / 2));
-}
-
-@include media-query($on-laptop) {
-  .footer-col-1,
-  .footer-col-2 {
-    width: -webkit-calc(50% - (#{$spacing-unit} / 2));
-    width: calc(50% - (#{$spacing-unit} / 2));
-  }
-
-  .footer-col-3 {
-    width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-    width: calc(100% - (#{$spacing-unit} / 2));
+  display: flex;
+  @include media-query($on-palm) {
+    flex-direction: column;
   }
 }
-
-@include media-query($on-palm) {
-  .footer-col {
-    float: none;
-    width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-    width: calc(100% - (#{$spacing-unit} / 2));
-  }
+.footer-col-wrapper div:first-child {
+  margin-right: 30px;
 }
+.footer-col-wrapper > p {
+  display: inline-block;
+  max-width: 384px;
+}
+
+.social-media-list {
+  min-width: max-content;
+}
+
 
 /**
  * Page content
@@ -154,7 +179,7 @@ main {
 
 .post-meta {
   font-size: $small-font-size;
-  color: $grey-color;
+  color: var(--gray300);
 }
 
 .post-link {
@@ -181,7 +206,7 @@ main {
 
 .post-date {
   font-size: 18px;
-  color: var(--darkgray);
+  color: var(--gray300);
 }
 
 .post-content {
