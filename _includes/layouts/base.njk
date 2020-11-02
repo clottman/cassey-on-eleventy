@@ -47,7 +47,6 @@
     <h2 class="footer-heading">{{ metadata.title }}</h2>
 
     <div class="footer-col-wrapper">
-      <div>
         <ul class="social-media-list">
             {% if metadata.author.glitch_username %}
             <li>
@@ -73,7 +72,6 @@
           </li>
           {% endfor %}
         </ul>
-      </div>
       <p>{{ metadata.description | markdownify | stripPs | safe  }}</p>
     </div>
   </div>
