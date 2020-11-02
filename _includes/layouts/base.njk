@@ -24,17 +24,22 @@
     <header class='site-header'>
       <div class="wrapper">
         <h1><a class='site-title' href="{{ '/' | url }}">{{ metadata.title }}</a></h1>
+        <button aria-label="Toggle navigation" id="nav-toggle">
+          <?xml version="1.0" ?><svg width="32px" height="32px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><g><path fill="var(--nav-toggle)" d="M16,31A15,15,0,1,1,31,16,15,15,0,0,1,16,31ZM16,3A13,13,0,1,0,29,16,13,13,0,0,0,16,3Z"/><path fill="var(--nav-toggle)" d="M21,17H11a1,1,0,0,1,0-2H21a1,1,0,0,1,0,2Z"/><path fill="var(--nav-toggle)" d="M21,12H11a1,1,0,0,1,0-2H21a1,1,0,0,1,0,2Z"/><path fill="var(--nav-toggle)" d="M21,22H11a1,1,0,0,1,0-2H21a1,1,0,0,1,0,2Z"/></g></svg>
+        </button>
         <ul class="nav site-nav">
           {%- for nav in collections.sortedNav -%}
-          <li class="nav-item{% if nav.url == page.url %} nav-item-active{% endif %}"><a href="{{ nav.url | url }}">{{ nav.data.navtitle }}</a></li>
+          <li {% if nav.url == page.url %}aria-current="page"{% endif %} class="nav-item{% if nav.url == page.url %} nav-item-active{% endif %}"><a href="{{ nav.url | url }}">{{ nav.data.navtitle }}</a></li>
           {%- endfor -%}
         </ul>
       </div>
     </header>
 
     <main class="page-content">
-    <div class="content-wrapper wrapper">
-      {{ content | safe }}
+    <div class="wrapper">
+      <div class="inner-content-wrapper">
+        {{ content | safe }}
+      </div>
       </div>
     </main>
 
@@ -42,8 +47,7 @@
     <h2 class="footer-heading">{{ metadata.title }}</h2>
 
     <div class="footer-col-wrapper">
-
-      <div class="footer-col footer-col-2">
+      <div>
         <ul class="social-media-list">
             {% if metadata.author.glitch_username %}
             <li>
@@ -70,15 +74,20 @@
           {% endfor %}
         </ul>
       </div>
-
-      <div class="footer-col footer-col-3 description">
-        <p>{{ metadata.description | markdownify | stripPs | safe  }}</p>
-      </div>
+      <p>{{ metadata.description | markdownify | stripPs | safe  }}</p>
     </div>
 
   </div>
-<img src="https://cassey-lytics.glitch.me/counter.png?fallback=casseydev&color=black" alt="" style="vertical-align: bottom; visibility:hidden" aria-hidden="true">
+<img height=0 width=0 src="https://cassey-lytics.glitch.me/counter.png?fallback=casseydev&color=black" alt="" style="float: left; visibility:hidden" aria-hidden="true">
 </footer>
-    <!-- Current page: {{ page.url | url }} -->
+    <script>
+      (function() {
+        var toggle = document.querySelector('#nav-toggle');
+        toggle.addEventListener('click', function(e) {
+          var nav = document.querySelector('.nav');
+          nav.classList.toggle('visible');
+        });
+      })();
+    </script>
   </body>
 </html>

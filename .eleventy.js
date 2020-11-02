@@ -102,17 +102,18 @@ module.exports = function (eleventyConfig) {
   let options = {
     html: true,
     breaks: true,
-    linkify: true
+    linkify: true,
   };
-  let opts = {
+  let markDownItAnchorOpts = {
     permalink: true,
     permalinkClass: "direct-link",
-    permalinkSymbol: "#"
+    permalinkSymbol: "#",
+    permalinkBefore: true,
   };
 
   eleventyConfig.setLibrary(
     "md",
-    MarkdownIt(options).use(markdownItAnchor, opts)
+    MarkdownIt(options).use(markdownItAnchor, markDownItAnchorOpts)
   );
 
   eleventyConfig.addCollection("sortedNav", collection =>
