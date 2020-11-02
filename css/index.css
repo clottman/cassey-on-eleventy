@@ -1,7 +1,4 @@
 :root {
-  --navy: #17050f;
-  --yellow: rgb(255, 192, 28);
-
   --primary100: hsl(331, 99%, 86%);
   --primary300: hsl(331, 77%, 79%); /* f3a0c8*/
   --primary500: hsl(331, 57%, 59%); /* d25b94 */
@@ -14,6 +11,7 @@
   --gray700: hsla(331, 1%, 34%, 1);
   --gray900: hsla(331, 1%, 23%, 1);
 
+  --secondary100: hsla(121, 29%, 70%, 1);
   --secondary300: hsla(121, 29%, 57%, 1); /* #72b173 */
   --secondary500: hsla(121, 48%, 57%, 1);
   --secondary900: hsla(121, 48%, 18%, 1);
@@ -56,15 +54,18 @@ code {
 }
 
 /* Posts list */
+
+.postlist-post {
+  margin-bottom: 16px;
+}
 .postlist-date {
-  font-size: 0.8125em; /* 13px /16 */
+  font-size: 16px;
   color: var(--gray300);
+  margin-left: 24px;
 }
-.postlist-date {
-  word-spacing: -0.5px;
-}
+
 .postlist-link {
-  display: inline-block;
+  display: block;
   padding: 0.25em 0.1875em; /* 4px 3px /16 */
 }
 .postlist-item-active .postlist-link {
@@ -75,13 +76,13 @@ code {
 /* but not the ones from prism/syntax highlighting plugin */
 .tag:not(.token) {
   display: inline-block;
-  text-transform: uppercase;
-  padding: 2px 4px;
-  margin-left: 0.8em; /* 8px /10 */
-  background-color: var(--yellow);
-  color: var(--navy);
-  border-radius: 0.25em; /* 3px /12 */
+  margin-left: 8px;
+  background-color: var(--secondary100);
+  color: var(--gray900);
+  border-radius: 8px;
   text-decoration: none;
+  font-size: 16px;
+  padding: 2px 4px;
 }
 
 .tagslist {
