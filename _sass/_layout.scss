@@ -24,6 +24,14 @@ main {
   min-height: 56px;
 
   background-color: var(--gray100);
+  a, a:hover, a:focus, a:visited {
+    text-decoration: none;
+    color: var(--primary700);
+  }
+  a:hover, a:focus {
+    color: var(--secondary900);
+  }
+  
 
   h1 {
     margin: 0;

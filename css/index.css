@@ -43,14 +43,11 @@ code {
 }
 .nav-item {
   display: inline-block;
-  margin-right: 1em;
+  margin-right: 24px;
 }
-.nav-item a[href]:not(:hover) {
-  text-decoration: none;
-}
-.nav-item-active {
-  font-weight: 700;
-  text-decoration: underline;
+
+.nav-item-active a {
+  border-bottom: 6px solid var(--secondary300);
 }
 
 /* Posts list */

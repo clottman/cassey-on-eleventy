@@ -103,16 +103,17 @@ h4,
 h5,
 h6 {
   font-weight: $base-font-weight;
+  font-family: $special-font-family;
 }
 
 /**
  * Links
  */
 a {
-  color: var(--primary900);
+  color: var(--primary700);
 
   &:visited {
-    color: var(--primary700);
+    color: var(--primary900);
   }
 
   &:hover,
@@ -125,8 +126,7 @@ a {
 
 .post-list,
 .social-media-list,
-.tags,
-.site-header {
+.tags {
   a {
     text-decoration: none;
     &:hover,
