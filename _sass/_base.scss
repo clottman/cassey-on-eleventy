@@ -103,21 +103,30 @@ h4,
 h5,
 h6 {
   font-weight: $base-font-weight;
+  font-family: $special-font-family;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--gray300);
 }
 
 /**
  * Links
  */
 a {
-  color: var(--primary900);
+  color: var(--primary700);
 
   &:visited {
-    color: var(--primary700);
+    color: var(--primary900);
   }
 
   &:hover,
   &:focus {
-    color: var(--primary500);
+    color: var(--secondary900);
     text-decoration: underline;
     text-decoration-thickness: 2px;
   }
@@ -125,8 +134,7 @@ a {
 
 .post-list,
 .social-media-list,
-.tags,
-.site-header {
+.tags {
   a {
     text-decoration: none;
     &:hover,

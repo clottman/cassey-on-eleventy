@@ -24,6 +24,14 @@ main {
   min-height: 56px;
 
   background-color: var(--gray100);
+  a, a:hover, a:focus, a:visited {
+    text-decoration: none;
+    color: var(--primary700);
+  }
+  a:hover, a:focus {
+    color: var(--secondary900);
+  }
+  
 
   h1 {
     margin: 0;
@@ -81,7 +89,7 @@ main {
 
 
 .site-title {
-  font-size: 26px;
+  font-size: 30px;
   font-weight: 300;
   line-height: 56px;
   letter-spacing: -1px;
@@ -91,6 +99,8 @@ main {
 
 .site-nav {
   line-height: 56px;
+  font-size: 20px;
+
 
   .menu-icon {
     display: none;
@@ -163,10 +173,6 @@ main {
  * Page content
  */
 
-.page-heading {
-  font-size: 20px;
-}
-
 .post-list {
   margin-left: 0;
   list-style: none;
@@ -208,32 +214,36 @@ main {
   color: var(--gray300);
 }
 
+h1, .post-title {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 24px;
+
+  @include media-query($on-laptop) {
+    font-size: 28px;
+  }
+}
+
+h3 {
+  font-size: 24px;
+
+  @include media-query($on-laptop) {
+    font-size: 22px;
+  }
+}
+
+h4 {
+  font-size: 20px;
+
+  @include media-query($on-laptop) {
+    font-size: 18px;
+  }
+}
+
 .post-content {
   margin-bottom: $spacing-unit;
-
-  h2 {
-    font-size: 32px;
-
-    @include media-query($on-laptop) {
-      font-size: 28px;
-    }
-  }
-
-  h3 {
-    font-size: 26px;
-
-    @include media-query($on-laptop) {
-      font-size: 22px;
-    }
-  }
-
-  h4 {
-    font-size: 20px;
-
-    @include media-query($on-laptop) {
-      font-size: 18px;
-    }
-  }
 }
 
 #sidebar {

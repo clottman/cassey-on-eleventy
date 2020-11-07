@@ -1,10 +1,11 @@
 ---
 layout: layouts/home.njk
+wrapperClass: home
 ---
 
-Hello, and welcome.
+<p class="mainGreeting">Hello, and welcome.</p>
 
-Here you'll find a few links to stuff I've worked on.
+<p class="secondaryGreeting">Here you'll find links to a few things I've worked on.</p>
 
 ## Code
 
