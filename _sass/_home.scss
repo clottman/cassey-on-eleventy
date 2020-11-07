@@ -1,0 +1,23 @@
+.home {
+    .mainGreeting {
+        font-size: 48px;
+        font-family: $special-font-family;
+    }    
+    .secondaryGreeting {
+        font-size: 24px;
+        font-family: $special-font-family;
+        margin-bottom: 32px;
+    }
+
+    h2 {
+        margin-bottom: 4px;
+        font-size: 36px;
+    }
+
+    ul {
+        list-style: none;
+        a {
+            text-decoration: none;
+        }
+    }
+}

@@ -106,6 +106,14 @@ h6 {
   font-family: $special-font-family;
 }
 
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--gray300);
+}
+
 /**
  * Links
  */
@@ -118,7 +126,7 @@ a {
 
   &:hover,
   &:focus {
-    color: var(--primary500);
+    color: var(--secondary900);
     text-decoration: underline;
     text-decoration-thickness: 2px;
   }
