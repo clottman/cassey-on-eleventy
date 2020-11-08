@@ -3,11 +3,6 @@ layout: post
 title: "Glitch App to Glitch Project Extension"
 date: 2019-05-30 12:04:31.000000000 -08:00
 tags: [code, posts, glitch]
-status: publish
-type: post
-published: true
-author:
-  display_name: Cassey
 ---
 
 # What I Made

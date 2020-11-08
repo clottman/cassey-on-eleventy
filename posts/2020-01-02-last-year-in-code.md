@@ -3,7 +3,7 @@ layout: post
 title: "2019: A year of many apps"
 date: 2020-01-02
 tags: [posts, reflection, glitch]
-excerpt: "Cool Apps I Made & Projects I Worked On"
+social_description: "Cool Apps I Made & Projects I Worked On"
 ---
 
 I coded quite a bit this year - I'm a full-time software developer, after all. I didn't just code for work, though - this year, like last year, I branched out and also wrote code outside of projects that were strictly for work. It certainly helps that Glitch encourages employees to spend some work time working on whatever personal projects we'd like, as long as we build on Glitch. While not all of the work for these projects took place during my work day, you'll notice that most of them were built on Glitch, because Glitch makes it easy to start creating new things based on a starter project ("remix" in Glitch parlance) and get something instantly on the web without thinking about hosting at all.

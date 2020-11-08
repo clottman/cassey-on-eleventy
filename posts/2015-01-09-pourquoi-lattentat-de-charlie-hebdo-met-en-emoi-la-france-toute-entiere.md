@@ -2,17 +2,11 @@
 layout: post
 title: Pourquoi l'attentat de Charlie Hebdo met en émoi la France toute entière
 date: 2015-01-09 14:54:42.000000000 -08:00
-categories: []
 tags: 
   - france
   - racism
   - current-events
   - posts
-status: publish
-type: post
-published: true
-author:
-  display_name: Cassey
 ---
 <em>Click [to see this post in English](/posts/2015-01-09-why-the-charlie-hebdo-attack-is-so-devastating)
 

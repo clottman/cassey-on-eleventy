@@ -2,18 +2,11 @@
 layout: post
 title: Why the Charlie Hebdo Attack is So Devastaing
 date: 2015-01-09 00:56:31.000000000 -08:00
-categories:
-- current-events
 tags:
 - current-events
 - france
 - racism
 - posts
-status: publish
-type: post
-published: true
-author:
-  display_name: Cassey
 ---
 <em>Cliquez ici pour [une traduction de cet article en français](/posts/2015-01-09-pourquoi-lattentat-de-charlie-hebdo-met-en-emoi-la-france-toute-entiere).</em>
 

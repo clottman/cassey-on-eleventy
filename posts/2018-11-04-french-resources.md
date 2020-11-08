@@ -1,16 +1,11 @@
 ---
 layout: post
 title: Favorite Resources for Learning French
-date: 2018-11-04 03:40:31.000000000 -08:00
+date: 2018-11-04
 tags:
     - france
     - education
     - posts
-status: publish
-type: post
-published: true
-author:
-  display_name: Cassey
 ---
 
 I learned French in high school by taking classes online from the <a href="https://highschool.nebraska.edu/">UNL Independent Study High School</a>, then spending 10 months in France as a foreign exchange student with <a href="https://www.yfuusa.org/">Youth for Understanding</a>.

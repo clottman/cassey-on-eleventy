@@ -5,11 +5,6 @@ date: 2018-11-04 03:40:31.000000000 -08:00
 tags:
     - relationships
     - posts
-status: publish
-type: post
-published: true
-author:
-  display_name: Cassey
 ---
 
 As a junior in high school, I spent 10 months living in France with a host family and attending a local <em>lycée</em>. I documented my experiences on <a href="http://dixmois.blogspot.com/">a blog called Dix Mois</a>. Thanks to the magic of the Internet and long-lasting Blogspot hosting, it's still up!

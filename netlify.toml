@@ -1,2 +1,21 @@
 [build]
   publish = "_site"
+
+[[redirects]]
+  from = "/posts"
+  to = "/blog
+  status = 301
+  force = false
+
+[[redirects]]
+  from = "/2019/04/23/veg-recipes.html"
+  to = "/posts/2019-04-23-veg-recipes/"
+  status = 301
+  force = false
+
+[[redirects]]
+  from = "/2019/07/06/nifa-report.html"
+  to = "/posts/2019-07-05-nifa-report/"
+  status = 301
+  force = false
+

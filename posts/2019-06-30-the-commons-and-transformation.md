@@ -1,14 +1,9 @@
 ---
 layout: post
 title: "Thoughts on The Commons LNK and 'Transformations'"
-date: 2019-06-30 9:23:31.000000000 -08:00
+date: 2019-06-30
 tags: [justice, posts]
-status: publish
-type: post
-published: true
-author:
-  display_name: Cassey
-excerpt: A new church-owned thrift shop at 14th & B is being heralded as a huge success. A community space for rebels, misfits, and queer folk used to sit on its location, and still can't find a home despite an empty building on that very corner. Success?
+social_description: A new church-owned thrift shop at 14th & B is being heralded as a huge success. A community space for rebels, misfits, and queer folk used to sit on its location, and still can't find a home despite an empty building on that very corner. Success?
 ---
 
 A response to [The Lincoln Journal Star's coverage of a new thrift shop on 14th & B that displaced The Commons, possibly permanently.](https://journalstar.com/news/local/something-had-to-change-the-resurrection-of-a-nightmarish-near/article_339d7f71-45e2-5922-b33a-770d9f61ddb6.html)

@@ -1,23 +1,12 @@
 ---
 layout: post
 title: Useful Textbooks from a Computer Science Degree
-date: 2017-07-24 01:08:23.000000000 -04:00
-categories:
-- tech
+date: 2017-07-24
 tags:
 - code
 - code for non-coders
 - education
 - posts
-status: publish
-type: post
-published: true
-meta:
-  _rest_api_published: '1'
-  _rest_api_client_id: "-1"
-  _publicize_job_id: '7413222864'
-author:
-  display_name: Cassey
 ---
 <p>In my time as an undergraduate studying Computer Science, I came across several textbooks that were really useful. (This may be a surprise to you; it was to me when I finally started finding them.) I share them here for others who may know how to program, but are not yet confident in their grasp of the things one would learn in a formal Computer Science (CS) curriculum.</p>
 
