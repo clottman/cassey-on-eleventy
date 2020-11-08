@@ -1,10 +1,16 @@
 ---
 permalink: /blog/tags/
-layout: layouts/home.njk
+layout: layouts/post.njk
+title: All Blog Tags
+flexWrapperClass: wrap
 ---
-<h1>Tags</h1>
-
-{% for tag in collections.tagList %}
+<ul id="tagsContainer">
+  {% for tag in collections.tagList %}
   {% set tagUrl %}/blog/tags/{{ tag }}/{% endset %}
-  <a href="{{ tagUrl | url }}" class="tag tagslist">{{ tag }}</a>
+  <li><a href="{{ tagUrl | url }}" class="tag tagslist">{{ tag }}</a></li>
 {% endfor %}
+</ul>
+
+<p>Did you possibly want the <a href="/til/tags">Today I Learned blog tags</a>?</p>
+
+<p>What about <a href="/blog/archive">this blog's archive</a>?</p>

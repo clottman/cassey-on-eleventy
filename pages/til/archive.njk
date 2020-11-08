@@ -1,0 +1,11 @@
+---
+layout: layouts/post.njk
+permalink: /til/archive/
+title: TIL Archive
+---
+<p>All of my <a href="/til">Today I Learned</a> posts, on one handy page.</p>
+
+<p>Some day these will have pagination; for now, enjoy ctrl+f-ing that was as easy for me as it is for you.</p>
+
+{% set postslist = collections.til %}
+{% include "postslist.njk" %}

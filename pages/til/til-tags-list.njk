@@ -1,10 +1,15 @@
 ---
 permalink: /til/tags/
-layout: layouts/home.njk
+layout: layouts/post.njk
+title: Today I Learned Tags
 ---
-<h1>Today I Learned Tags</h1>
-
-{% for tag in collections.tilTags %}
+<ul id="tagsContainer">
+  {% for tag in collections.tilTags %}
   {% set tagUrl %}/til/tags/{{ tag }}/{% endset %}
-  <a href="{{ tagUrl | url }}" class="tag tagslist">{{ tag }}</a>
+  <li><a href="{{ tagUrl | url }}" class="tag tagslist">{{ tag }}</a></li>
 {% endfor %}
+</ul>
+
+<p>Did you possibly want the <a href="/blog/tags">regular blog tags</a>?</p>
+
+<p>What about seeing <a href="/til/archive">all TIL posts</a>?</p>

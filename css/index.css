@@ -110,3 +110,13 @@ a[href].direct-link:focus:visited,
   display: block;
 }
 
+#tagsContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#tagsContainer li {
+  list-style: none;
+}
+
