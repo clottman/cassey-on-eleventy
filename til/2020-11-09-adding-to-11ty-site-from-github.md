@@ -1,0 +1,16 @@
+---
+til-tags: ["tools", "eleventy"]
+title: "How can I see my new blog post rendered before I deploy, if I don't have my whole dev environment?"
+description: "Draft a PR on Github & use Netlify Deployment Previews"
+date: 2020-11-09
+---
+
+Today I learned a new way to write today I learned posts! 
+
+I publish this site using Netlify, and it's built with [Eleventy](https://www.11ty.dev/) and [hosted on github](https://github.com/clottman/cassey-on-eleventy). 
+
+Sometimes I have want to publish a quick blog post when I'm not at my regular computer with my full development environment set up. (On a loaner laptop while mine is getting repairs, or, I don't know, on a short break from work, for example.) 
+
+In the past I've written files directly in Github's web UI, which I merge directly to the primary branch (which triggers a deployment in Netlify). Today I realized that since I have [Netlify Deploy Previews](https://www.netlify.com/blog/2016/07/20/introducing-deploy-previews-in-netlify/) enabled, I can make a pull request, and even add multiple files to it, all from github.com, and see what my site will look like when the posts get rendered, right from my browser, with no extra dependencies installed or running. Woo! 
+
+(today I might also have learned, using this feature, that the changes I pushed this weekend didn't deploy correctly. Oops. TIL to verify your deploys even if usually it /~just works/~.)
