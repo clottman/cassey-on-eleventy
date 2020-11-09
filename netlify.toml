@@ -3,7 +3,7 @@
 
 [[redirects]]
   from = "/posts"
-  to = "/blog
+  to = "/blog"
   status = 301
   force = false
 
