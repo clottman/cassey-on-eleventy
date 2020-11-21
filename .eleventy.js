@@ -1,12 +1,15 @@
 const { DateTime } = require("luxon");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
-const fs = require("fs");
+const fs = require("fs-extra");
 const path = require("path");
 const getTagList = require("./_11ty/getTagList");
 const MarkdownIt = require("markdown-it");
 const lodash = require("lodash");
 const slugify = require("slugify");
+const sass = require("sass");
+const postcss = require("postcss");
+const autoprefixer = require("autoprefixer");
 
 /**
  * Get all unique key values from a collection
@@ -143,25 +146,31 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addFilter("include", require("./filters/include.js"));
-  /*
-  eleventyConfig.setBrowserSyncConfig({
-    callbacks: {
-      ready: function(err, bs) {
-        const content_404 = fs.readFileSync('./_site/404.html');
-        bs.addMiddleware('*', (req, res) => {
-          // Provides the 404 content without redirect.
-          res.write(content_404);
-          res.end();
+
+  // compile sass and optimize it https://www.d-hagemeier.com/en/articles/sass-compile-11ty/ 
+  eleventyConfig.on("beforeBuild", () => {
+    // Compile Sass
+    let result = sass.renderSync({
+      file: "_sass/main.scss",
+      sourceMap: false,
+      outputStyle: "compressed",
+    });
+    console.log("SCSS compiled");
+
+    // Optimize and write file with PostCSS
+    let css = result.css.toString();
+    postcss([autoprefixer])
+      .process(css, { from: "main.css", to: "css/main.css" })
+      .then((result) => {
+        fs.outputFile("_site/css/main.css", result.css, (err) => {
+          if (err) throw err;
+          console.log("CSS optimized");
         });
-      },
-    },
-    ghostMode: {
-      clicks: false,
-      forms: false,
-      scroll: false,
-    },
+      });
   });
-*/
+
+  // trigger a rebuild if sass changes
+  eleventyConfig.addWatchTarget("_sass/");
 
   return {
     templateFormats: ["md", "njk", "html", "liquid", "hbs"],
