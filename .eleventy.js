@@ -61,23 +61,23 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addLayoutAlias("post", "layouts/post.njk");
   eleventyConfig.addLayoutAlias("base", "layouts/base.njk");
   const md = new MarkdownIt();
-  eleventyConfig.addFilter("markdownify", value => {
+  eleventyConfig.addFilter("markdownify", (value) => {
     return md.render(value);
   });
 
-  eleventyConfig.addFilter("stripPs", value => {
+  eleventyConfig.addFilter("stripPs", (value) => {
     const firstPass = value.replace("<p>", "");
     return firstPass.replace("</p>", "");
-  })
+  });
 
-  eleventyConfig.addFilter("readableDate", dateObj => {
+  eleventyConfig.addFilter("readableDate", (dateObj) => {
     const dateFormat = "dd LLL yyyy";
     const dateToUse = dateObj instanceof Date ? dateObj : new Date(dateObj);
     return DateTime.fromJSDate(dateToUse, { zone: "utc" }).toFormat(dateFormat);
   });
 
   // https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
-  eleventyConfig.addFilter("htmlDateString", dateObj => {
+  eleventyConfig.addFilter("htmlDateString", (dateObj) => {
     return DateTime.fromJSDate(dateObj).toFormat("yyyy-LL-dd");
   });
 
@@ -116,10 +116,10 @@ module.exports = function (eleventyConfig) {
     MarkdownIt(options).use(markdownItAnchor, markDownItAnchorOpts)
   );
 
-  eleventyConfig.addCollection("sortedNav", collection =>
+  eleventyConfig.addCollection("sortedNav", (collection) =>
     collection
       .getAllSorted()
-      .filter(item => item.data.navtitle)
+      .filter((item) => item.data.navtitle)
       .sort(function (a, b) {
         if (a.data.navorder < b.data.navorder) return -1;
         else if (a.data.navorder > b.data.navorder) return 1;
@@ -127,7 +127,7 @@ module.exports = function (eleventyConfig) {
       })
   );
   const tilGlob = "til/*.*";
-  eleventyConfig.addCollection("til", function(collectionApi) {
+  eleventyConfig.addCollection("til", function (collectionApi) {
     return collectionApi.getFilteredByGlob(tilGlob);
   });
 
@@ -180,7 +180,7 @@ module.exports = function (eleventyConfig) {
       input: "./",
       includes: "./_includes",
       data: "./_data",
-      output: "./_site"
-    }
+      output: "./_site",
+    },
   };
 };
