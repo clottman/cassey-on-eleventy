@@ -2,7 +2,7 @@
 layout: post
 title: "Funeral Sandwiches: a poem"
 date: 2020-02-14
-tags: [posts, poetry]
+tags: [posts, poetry, art]
 social_description: "Grief is an ailment best treated with white bread sandwiches."
 ---
 
