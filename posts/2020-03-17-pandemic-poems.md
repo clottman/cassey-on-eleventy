@@ -2,7 +2,7 @@
 layout: post
 title: Pandemic Poetry
 date: 2020-03-17
-tags: [posts, coronavirus, poetry]
+tags: [posts, coronavirus, poetry, art]
 social_description: "Poems I've seen folks share, or that I've been thinking about"
 ---
 

@@ -21,3 +21,8 @@ In the past I've written files directly in Github's web UI, which I merge direct
 
 ## update 3
 (ok that did not work, Netlify is still not updating. Guess I'll have to merge the primary branch into my PR branch manually, then push to update the PR in order to see my deploy preview)
+
+## update 4
+After a lot of [back & forth with Netlify support](https://community.netlify.com/t/docs-say-deploy-previews-say-preview-will-show-result-of-merge-but-it-does-not/26174/9) to make it clear that my issue was not that I didn't understand the behavior, but rather that the behavior that happened (and that support was explaining was happening) was different than the behavior currently described by the docs for build previews, Netlify now understands the discrepancy and plans to address it. 
+
+Tl;dr is that the docs say that the build preview will show the result of merging the PR, but what the preview actually shows is exactly what is on the PR branch, without the merge into the production branch. 
