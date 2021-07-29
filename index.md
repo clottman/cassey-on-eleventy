@@ -1,6 +1,7 @@
 ---
 layout: layouts/home.njk
 wrapperClass: home
+eleventyExcludeFromCollections: true
 ---
 
 <p class="mainGreeting">Hello, and welcome.</p>
