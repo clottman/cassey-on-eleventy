@@ -84,7 +84,8 @@ async function imgShortcode(src, alt, width, classes) {
 
   let metadata = await Image(src, {
     widths: [width],
-    formats: ["jpeg"]
+    formats: ["jpeg"],
+    outputDir: './_site/img/'
   });
 
   let data = metadata.jpeg[metadata.jpeg.length - 1];
