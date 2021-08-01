@@ -1,0 +1,57 @@
+---
+layout: layouts/post.njk
+title: Places I Love
+navtitle: Favorite Places
+navorder: 3
+---
+
+<style>
+  .gallery {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(auto-fill, 125px);
+  }
+  .gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  @media screen and (min-width: 600px) {
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(auto-fill, 125px);
+      grid-gap: 15px;
+      grid-auto-flow: dense;
+    }
+
+    .rowSpan1 {
+      grid-row-end: span 1;
+    }
+
+    .rowSpan2 {
+      grid-row-end: span 2;
+    }
+
+    .rowSpan3 {
+      grid-row-end: span 3;
+    }
+
+    .colSpan1 {
+      grid-column-end: span 1;
+    }
+    .colSpan2 {
+      grid-column-end: span 2;
+    }
+    .colSpan3 {
+      grid-column-end: span 3;
+    }
+  }
+</style>
+<section class="gallery">
+  {% for attraction in attractions %} {% set orientation = 'landscape' if
+  attraction.landscape else 'portrait' %} {% set classes = 'colSpan' +
+  attraction.colSpan + ' rowSpan' + attraction.rowSpan %} {% img
+  attraction.filename, attraction.alt, attraction.width, classes %} {% endfor %}
+</section>

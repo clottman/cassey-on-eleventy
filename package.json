@@ -19,6 +19,7 @@
     "url": "https://github.com/clottman/cassey-on-eleventy/issues"
   },
   "dependencies": {
+    "@11ty/eleventy-img": "^0.9.0",
     "lodash": "^4.17.20",
     "nunjucks": "^3.2.2",
     "slugify": "^1.4.6",
