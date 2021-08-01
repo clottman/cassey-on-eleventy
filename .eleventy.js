@@ -10,6 +10,7 @@ const slugify = require("slugify");
 const sass = require("sass");
 const postcss = require("postcss");
 const autoprefixer = require("autoprefixer");
+const Image = require("@11ty/eleventy-img");
 
 /**
  * Get all unique key values from a collection
@@ -54,6 +55,41 @@ function strToSlug(str) {
   };
 
   return slugify(str, options);
+}
+
+async function imageShortcode(src, alt, sizes, extraImgClasses) {
+  let metadata = await Image(src, {
+    widths: [300, 600],
+    formats: ["webp", "jpeg"],
+    outputDir: './_site/img/'
+  });
+
+  let imageAttributes = {
+    alt,
+    sizes,
+    class: extraImgClasses,
+    loading: "lazy",
+    decoding: "async",
+  };
+
+  // You bet we throw an error on missing alt in `imageAttributes` (alt="" works okay)
+  return Image.generateHTML(metadata, imageAttributes);
+}
+
+async function imgShortcode(src, alt, width, classes) {
+  if(alt === undefined) {
+    // You bet we throw an error on missing alt (alt="" works okay)
+    throw new Error(`Missing \`alt\` on myImage from: ${src}`);
+  }
+
+  let metadata = await Image(src, {
+    widths: [width],
+    formats: ["jpeg"]
+  });
+
+  let data = metadata.jpeg[metadata.jpeg.length - 1];
+  console.log(data);
+  return `<img class="${classes}" src="${data.url}" width="${data.width}" height="${data.height}" alt="${alt}" loading="lazy" decoding="async">`;
 }
 
 module.exports = function (eleventyConfig) {
@@ -147,6 +183,11 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addFilter("include", require("./filters/include.js"));
 
+  eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode);
+
+  eleventyConfig.addNunjucksAsyncShortcode("img", imgShortcode);
+
+
   // compile sass and optimize it https://www.d-hagemeier.com/en/articles/sass-compile-11ty/ 
   eleventyConfig.on("beforeBuild", () => {
     // Compile Sass
@@ -181,7 +222,7 @@ module.exports = function (eleventyConfig) {
     // This is only used for URLs (it does not affect your file structure)
     pathPrefix: "/",
 
-    markdownTemplateEngine: "liquid",
+    markdownTemplateEngine: "njk",
     htmlTemplateEngine: "njk",
     dataTemplateEngine: "njk",
     passthroughFileCopy: true,
