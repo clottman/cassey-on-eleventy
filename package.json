@@ -3,9 +3,9 @@
   "version": "5.0.0",
   "description": "A starter repository for a blog web site using the Eleventy static site generator.",
   "scripts": {
-    "build": "npx eleventy",
-    "start": "npx eleventy --serve",
-    "debug": "DEBUG=* npx eleventy"
+    "build": "npx @11ty/eleventy",
+    "start": "npx @11ty/eleventy --serve",
+    "debug": "DEBUG=* npx @11ty/eleventy"
   },
   "repository": {
     "type": "git",
