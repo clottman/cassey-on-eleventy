@@ -7,6 +7,8 @@ module.exports = async function () {
 
   return {
       social_image,
-      social_image_alt: "Cassey, with long blonde hair, stands in a grassy lot next to 3 toilets painted red, white, and blue respectively. In the background is a semi-circle of more old toilets, a mailbox, a sign that says 'MEN WORKING', and a life-size rusty metal yeti figure."
+      social_image_alt: "Cassey, with long blonde hair, stands in a grassy lot next to 3 toilets painted red, white, and blue respectively. In the background is a semi-circle of more old toilets, a mailbox, a sign that says 'MEN WORKING', and a life-size rusty metal yeti figure.",
+      description: "Pictures of all the best places on Earth"
+
     };
 };
