@@ -2,7 +2,7 @@ const landscape = "landscape";
 module.exports = [
   {
     filename: "raw_img/attractions/beef_king_of_meats.jpg",
-    alt: "",
+    alt: "a large statue of a black bull with a pink blanket on it that reads 'BEEF KING OF MEATS' sits on a pedestal that says Silver Spur Feeders, against an empty crop field",
     landscape,
     rowSpan: 1,
     colSpan: 1,
@@ -10,7 +10,7 @@ module.exports = [
   },
   {
     filename: "raw_img/attractions/carhenge copy.jpeg",
-    alt: "",
+    alt: "a large replica of Stonehenge made of grey-pained vintage cars against a sunset",
     landscape,
     rowSpan: 1,
     colSpan: 2,
@@ -18,7 +18,7 @@ module.exports = [
   },
   {
     filename: "raw_img/attractions/cassey_toilets.jpg",
-    alt: "",
+    alt: "Cassey, with long blonde hair, stands in a grassy lot next to 3 toilets painted red, white, and blue respectively. In the background is a semi-circle of more old toilets, a mailbox, a sign that says 'MEN WORKING', and a life-size rusty metal yeti figure.",
     landscape,
     rowSpan: 1,
     colSpan: 2,
@@ -26,14 +26,14 @@ module.exports = [
   },
   {
     filename: "raw_img/attractions/carhenge_josh.jpg",
-    alt: "",
+    alt: "a person with a beard and short pink hair, wearing sunglasses, looks away from the camera. they're sitting on a grey-painted car, and Carhenge appears in the background",
     rowSpan: 2,
     colSpan: 1,
     width: '300',
   },
   {
     filename: "raw_img/attractions/carhenge_loves.jpg",
-    alt: "",
+    alt: "Cassey and a person with a beard and short pink hair, both wearing sunglasses and hugging, stand in the foreground with Carhenge in the background",
     landscape,
     rowSpan: 2,
     colSpan: 2,
@@ -41,7 +41,7 @@ module.exports = [
   },
   {
     filename: "raw_img/attractions/cars_cars.jpg",
-    alt: "",
+    alt: "two real-life cars that are made to look like Mater and Lightning McQueen from the Cars movie using big emotive facial features",
     landscape,
     rowSpan: 1,
     colSpan: 2,
@@ -49,42 +49,42 @@ module.exports = [
   },
   {
     filename: "raw_img/attractions/classic_head.jpg",
-    alt: "",
+    alt: "a statue that looks a head that got knocked off a greco-roman is planted in a grassy yard",
     rowSpan: 1,
     colSpan: 1,
     width: '300',
   },
   {
     filename: "raw_img/attractions/capitol.jpg",
-    alt: "",
+    alt: "A piece of felt with BLM stitched on it is stapled to a pole in the foreground, with the Nebraska state capitol building rising in the background",
     rowSpan: 1,
     colSpan: 2,
     width: '600',
   },
   {
     filename: "raw_img/attractions/clay-sculptures.jpg",
-    alt: "",
+    alt: "on the ground at the corner of a porch sits two clay sculptures, each about 2-3 feet tall. one is of a team-sized gatorade dispenser complete with painted logo, and the other is of a triangle shaped mask and covered in painted zebra stripes",
     rowSpan: 1,
     colSpan: 1,
     width: '400',
   },
   {
     filename: "raw_img/attractions/hbd_big_jeff.jpg",
-    alt: "",
+    alt: "a sign with multicolored letters hangs in the window of a building. the sign reads 'Happy birthday big Jeff' in all caps",
     rowSpan: 1,
     colSpan: 1,
     width: '300',
   },
   {
     filename: "raw_img/attractions/modern_tv.jpg",
-    alt: "",
+    alt: "a DirectTv satelite dish sticks out of a toilet in the yard of a house. the toilet has decaying plant matter in it, too.",
     rowSpan: 1,
     colSpan: 1,
     width: '300',
   },
   {
     filename: "raw_img/attractions/ravenna.jpg",
-    alt: "",
+    alt: "Cassey stands in front of a mid-chest-height mural of the word 'Ravenna' painted over a river background",
     landscape,
     rowSpan: 1,
     colSpan: 2,
@@ -92,7 +92,7 @@ module.exports = [
   },
   {
     filename: "raw_img/attractions/thinking about carhenge copy.jpg",
-    alt: "",
+    alt: "Cassey, who appears in the photo as a person with long red hair an sunglasses, looks towards Carhenge in the distance, a replica of stonehenge made entirely of old cars painted grey",
     landscape,
     rowSpan: 1,
     colSpan: 1,
@@ -100,7 +100,7 @@ module.exports = [
   },
   {
     filename: "raw_img/attractions/windmills.jpg",
-    alt: "",
+    alt: "a field full of rusty windmills",
     landscape,
     rowSpan: 1,
     colSpan: 3,
@@ -108,7 +108,7 @@ module.exports = [
   },
   {
     filename: "raw_img/attractions/veggies.png",
-    alt: "",
+    alt: "two images side by side: one of Cassey standing under a sculpture of corn in the shape of an airplane hanging from the ceiling of an airport waiting room, the other of Cassey standing proudly next to a carrot in the shape of a rocket about to blast off",
     rowSpan: 1,
     colSpan: 2,
     width: '600',
