@@ -77,7 +77,7 @@ async function imageShortcode(src, alt, sizes, extraImgClasses) {
 }
 
 async function imgShortcode(src, alt, width, classes) {
-  if(alt === undefined) {
+  if (alt === undefined) {
     // You bet we throw an error on missing alt (alt="" works okay)
     throw new Error(`Missing \`alt\` on myImage from: ${src}`);
   }
@@ -189,7 +189,6 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("include", require("./filters/include.js"));
 
   eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode);
-
   eleventyConfig.addNunjucksAsyncShortcode("img", imgShortcode);
 
 
