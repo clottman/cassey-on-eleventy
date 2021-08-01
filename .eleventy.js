@@ -171,6 +171,10 @@ module.exports = function (eleventyConfig) {
     return collectionApi.getFilteredByGlob(tilGlob);
   });
 
+  eleventyConfig.addCollection("rss", function (collectionApi) {
+    return collectionApi.getFilteredByGlob([tilGlob, "posts/*.*"]);
+  });
+
   // create til-tags collection
   eleventyConfig.addCollection("tilTags", function (collection) {
     let allTilTags = getAllKeyValues(
