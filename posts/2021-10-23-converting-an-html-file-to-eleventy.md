@@ -32,7 +32,6 @@ For this post, I'm assuming you already have node and npm installed on your mach
 ```text
 _site/
 node_modules/
-package-lock.json
 .DS_Store
 ```
 
