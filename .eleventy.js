@@ -89,7 +89,7 @@ async function imgShortcode(src, alt, width, classes) {
   });
 
   let data = metadata.jpeg[metadata.jpeg.length - 1];
-  console.log(data);
+
   return `<img class="${classes}" src="${data.url}" width="${data.width}" height="${data.height}" alt="${alt}" loading="lazy" decoding="async">`;
 }
 
