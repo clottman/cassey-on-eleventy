@@ -136,6 +136,7 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy("img");
   eleventyConfig.addPassthroughCopy("css");
+  eleventyConfig.addPassthroughCopy("files");
 
   /* Markdown Plugins */
   let markdownItAnchor = require("markdown-it-anchor");
