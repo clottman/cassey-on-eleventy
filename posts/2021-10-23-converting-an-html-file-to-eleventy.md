@@ -140,7 +140,7 @@ At this point your directory structure might feel a little messy - you've got co
 
 At this point, my Eleventy config looks like this:
 
-```
+```javascript
 module.exports = function (eleventyConfig) {
   // call functions on eleventyConfig here
   eleventyConfig.addPassthroughCopy("*.css");
