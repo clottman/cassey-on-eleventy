@@ -4,6 +4,10 @@ tags: ["posts", "eleventy"]
 title: "Just Enough JavaScript for Eleventy"
 description: "Want to try Eleventy, but not very experienced in JavaScript yet? You're in the right place."
 date: 2021-12-25
+social_image: "https://cdn.glitch.com/238f8585-6bd5-40c4-a0ff-2b87d4acea6c%2Fknowledge-256.png?v=1561398158147"
+social_image_height: 256
+social_image_width: 256
+social_image_alt: "a stack of books with an apple on top"
 ---
 
 Sometimes I hear from people who'd like to try out the well-loved and hip static site generator Eleventy, but their main programming language expertise is in something other than JavaScript and they're worried it will be too challenging to configure and use. This post attempts to bridge that gap a bit - giving you some basic hints about modern JavaScript (aka JS) that will hopefully make the world of Eleventy static site generation feel a little less intimidating. 
