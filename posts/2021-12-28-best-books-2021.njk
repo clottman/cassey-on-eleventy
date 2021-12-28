@@ -50,15 +50,21 @@ social_description: "All the books I read in 2021"
     }
 </style>
 
+<p>I read a lot of books in 2021! 30 in total, not counting a few that I read partially but didn't finish. (Books I didn't finish don't appear on this page.) Pregnancy and parenting was a big theme, as I am preparing for my first baby to enter the world in the early 2022. To my surprise even the fiction I read frequently drew on parenthood as a theme; <u>Outlawed</u>, <u>The Once and Future Witches</u>, and <u>Detransition, Baby</u> being a few examples.</p>
+
+<p>Getting a dedicated e-reader sometime in the early-mid pandemic of 2020 helped me read a lot more. This year I also found myself reading books on my phone sometimes using the Kindle app. Quite a few of the books I read came from the library - mostly e-books through the Overdrive system. I did purchase hard copies of some of the parenting books I read, especially if I thought my spouse might want to read them, too.</p>
+
 <p>Click to filter:</p>
 {% for bookTag in books_2021_tags %}
-    <button onClick="filterToTag('{{bookTag}}')" class="tag {{bookTag}}">{{ bookTag }}</button>
+    <button onClick="filterToTag('{{bookTag | classifyTag}}')" class="tag {{bookTag | classifyTag}}">{{ bookTag }}</button>
 {% endfor %}
+    <button onClick="clearFilters()" class="tag">Clear Filters</button>
 <div class="bookGrid">
     {% for book in books_2021 %}
     {% set tags = "" %}
     {% for bookTag in book.tags %}
-        {% set tags = tags + " " + bookTag %}
+        {% set bookTagSlug = bookTag | classifyTag %}
+        {% set tags = tags + " " + bookTagSlug %}
     {% endfor %}
     <div class="book {{tags}}">
         {% set alt = "Cover of " + book.name %}
@@ -80,14 +86,19 @@ social_description: "All the books I read in 2021"
 <script type="text/javascript">
     function filterToTag(tagName) {
         const allBooks = document.querySelectorAll('.book');
-        console.log(allBooks);
         for (book of allBooks) {
             book.classList.add('hidden');
         }
         const tagBooks = document.querySelectorAll('.book.' + tagName);
-        console.log(tagBooks);
         for (taggedBook of tagBooks) {
-            taggedBook.classList.remove('hidden');
+            taggedBook.classList.toggle('hidden');
+        }
+    }
+
+    function clearFilters() {
+        const allBooks = document.querySelectorAll('.book');
+        for (book of allBooks) {
+            book.classList.remove('hidden');
         }
     }
 </script>

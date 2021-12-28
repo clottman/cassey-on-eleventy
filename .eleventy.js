@@ -116,6 +116,12 @@ module.exports = function (eleventyConfig) {
     return DateTime.fromJSDate(dateToUse, { zone: "utc" }).toFormat(dateFormat);
   });
 
+  // replaces whitespace with _ and removes slashes
+  eleventyConfig.addFilter("classifyTag", (str) => {
+    const noSpaces = str.replace(" ", "_");
+    return noSpaces.replace("/", "_");
+  })
+
   // https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
   eleventyConfig.addFilter("htmlDateString", (dateObj) => {
     return DateTime.fromJSDate(dateObj).toFormat("yyyy-LL-dd");
