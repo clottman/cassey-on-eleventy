@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "My Bookshelf, 2021"
+title: "2021 in Books"
 date: 2021-12-28
 tags: [posts, reflection, year-in-review]
-social_description: "All the books I read in 2021"
+social_description: "My (virtual) bookshelf"
 ---
 
 <style>
@@ -30,8 +30,10 @@ social_description: "All the books I read in 2021"
         font-weight: bold;
         text-align: center;
     }
-    .tag:not(.token) {
+    .tag:not(.token):not(.clear):not(.favorites) {
         background-color: var(--primary100);
+    }
+    .tag:not(.token) {
         display: inline-block;
     }
     .tagSection {
@@ -58,7 +60,7 @@ social_description: "All the books I read in 2021"
 {% for bookTag in books_2021_tags %}
     <button onClick="filterToTag('{{bookTag | classifyTag}}')" class="tag {{bookTag | classifyTag}}">{{ bookTag }}</button>
 {% endfor %}
-    <button onClick="clearFilters()" class="tag">Clear Filters</button>
+    <button onClick="clearFilters()" class="tag clear">Clear Filters</button>
 <div class="bookGrid">
     {% for book in books_2021 %}
     {% set tags = "" %}
@@ -91,7 +93,7 @@ social_description: "All the books I read in 2021"
         }
         const tagBooks = document.querySelectorAll('.book.' + tagName);
         for (taggedBook of tagBooks) {
-            taggedBook.classList.toggle('hidden');
+            taggedBook.classList.remove('hidden');
         }
     }
 
