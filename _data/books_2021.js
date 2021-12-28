@@ -24,6 +24,12 @@ module.exports = [
         img: "detransition.jpg",
     },
     {
+        name: "The Galaxy, and the Ground Within",
+        author: "Becky Chambers",
+        tags: ["fiction", "sci fi/fantasy"],
+        img: "galaxy.jpg"
+    },
+    {
         name: "Parable of the Sower",
         author: "Octavia Butler",
         tags: ["fiction", "favorites"],
