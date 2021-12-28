@@ -1,0 +1,88 @@
+---
+layout: post
+title: "My Bookshelf, 2021"
+date: 2021-12-28
+tags: [posts, reflection, year-in-review]
+social_description: "All the books I read in 2021"
+---
+
+<style>
+    .bookGrid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .bookGrid > div {
+        max-width: 31%;
+        margin-right: 10px;
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .bookGrid h3 {
+        margin-bottom: 5px;
+        font-weight: bold;
+        text-align: center;
+    }
+    .tag:not(.token) {
+        background-color: var(--primary100);
+        display: inline-block;
+    }
+    .tagSection {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .tagSection span {
+        margin-bottom: 10px;
+    }
+    button.tag {
+        margin-bottom: 10px;
+    }
+    .book.hidden {
+        display: none;
+    }
+</style>
+
+<p>Click to filter:</p>
+{% for bookTag in books_2021_tags %}
+    <button onClick="filterToTag('{{bookTag}}')" class="tag {{bookTag}}">{{ bookTag }}</button>
+{% endfor %}
+<div class="bookGrid">
+    {% for book in books_2021 %}
+    {% set tags = "" %}
+    {% for bookTag in book.tags %}
+        {% set tags = tags + " " + bookTag %}
+    {% endfor %}
+    <div class="book {{tags}}">
+        {% set alt = "Cover of " + book.name %}
+        {% set imgKey = "raw_img/books_2021/" + book.img %}
+        {% if book.img %}
+            {% img imgKey, alt, null, tags %} 
+        {% endif %}
+        <h3>{{ book.name }}</h3>
+        <p>{{book.author}}</p>
+        <div class="tagSection">
+            {% for bookTag in book.tags %}
+                <span class="tag">{{bookTag}}</span>
+            {% endfor %}
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+<script type="text/javascript">
+    function filterToTag(tagName) {
+        const allBooks = document.querySelectorAll('.book');
+        console.log(allBooks);
+        for (book of allBooks) {
+            book.classList.add('hidden');
+        }
+        const tagBooks = document.querySelectorAll('.book.' + tagName);
+        console.log(tagBooks);
+        for (taggedBook of tagBooks) {
+            taggedBook.classList.remove('hidden');
+        }
+    }
+</script>
