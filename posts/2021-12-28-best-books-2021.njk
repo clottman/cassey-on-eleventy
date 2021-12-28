@@ -20,6 +20,11 @@ social_description: "All the books I read in 2021"
         flex-direction: column;
         align-items: center;
     }
+    @media screen and (max-width: 600px) {
+        .bookGrid > div {
+            max-width: unset;
+        }
+    }
     .bookGrid h3 {
         margin-bottom: 5px;
         font-weight: bold;
@@ -59,7 +64,7 @@ social_description: "All the books I read in 2021"
         {% set alt = "Cover of " + book.name %}
         {% set imgKey = "raw_img/books_2021/" + book.img %}
         {% if book.img %}
-            {% img imgKey, alt, null, tags %} 
+            {% img imgKey, alt, 180, tags %} 
         {% endif %}
         <h3>{{ book.name }}</h3>
         <p>{{book.author}}</p>

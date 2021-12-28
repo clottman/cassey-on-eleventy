@@ -46,11 +46,13 @@ module.exports = [
         name: "It Came From Something Awful",
         author: "Dale Beran",
         tags: ["nonfiction", "book club"],
+        img: "something_awful.jpg",
     },
     {
         name: "The Bottom Line for Baby",
         author: "Tina Payne Bryson",
-        tags: ["nonfiction", "parenting"],  
+        tags: ["nonfiction", "parenting"],
+        img: "bottom_line.jpg"
     },
     {
         name: "Cribheet",
@@ -116,6 +118,7 @@ module.exports = [
         name: "Nurture the Wow",
         author: "Rabbi Danya Ruttenberg",
         tags: ["nonfiction", "parenting"],
+        img: "nurture.jpg",
     },
     {
         name: "Cultish: The Language of Fanaticism",
