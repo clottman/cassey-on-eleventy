@@ -174,4 +174,10 @@ module.exports = [
         tags: ["fiction", "book club"],
         img: "rivers.jpg"
     },
+    {
+        name: "The Mayo Clinic Guide to a Healthy Pregnancy",
+        author: "Mayo Clinic",
+        tags: ["nonfiction", 'parenting'],
+        img: "mayo.jpg",
+    }
 ];
