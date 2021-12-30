@@ -156,6 +156,18 @@ module.exports = [
         img: "mayo.jpg",
     },
     {
+      name: "We Do This 'Til We Free Us",
+      author: "Mariame Kaba",
+      tags: ["nonfiction"],
+      img: "free_us.jpg"
+    },
+    {
+        name: "The Eating Instinct",
+        author: "Virginia Sole-Smith",
+        tags: ["nonfiction"],
+        img: "eating.jpg",
+    },
+    {
         name: "The Bottom Line for Baby",
         author: "Tina Payne Bryson",
         tags: ["nonfiction", "parenting"],
@@ -166,6 +178,12 @@ module.exports = [
         author: "Emily Oster",
         tags: ["nonfiction", "parenting"],
         img: "cribsheet.jpg",
+    },
+    {
+        name: "Piranesi",
+        author: "Susanna Clarke",
+        tags: ["fiction", "sci fi/fantasy"],
+        img: "piranesi.jpg",
     },
     {
         name: "The Whole Brain Child",
