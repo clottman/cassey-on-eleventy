@@ -11,6 +11,7 @@ const sass = require("sass");
 const postcss = require("postcss");
 const autoprefixer = require("autoprefixer");
 const Image = require("@11ty/eleventy-img");
+require('dotenv').config();
 
 /**
  * Get all unique key values from a collection
