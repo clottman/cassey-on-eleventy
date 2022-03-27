@@ -17,7 +17,7 @@
 .two-image-grid {
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-auto-flow: column;  
+  grid-auto-flow: column;
 }
 
 .post {
@@ -47,4 +47,14 @@
 }
 .casseygram-entry p {
   display: inline-block;
+}
+
+.photo-nav {
+  display: flex;
+  justify-content: center;
+  li {
+    display: inline-block;
+    list-style: none;
+    margin-right: 15px;
+  }
 }
