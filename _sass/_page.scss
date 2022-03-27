@@ -17,7 +17,7 @@
 .two-image-grid {
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-auto-flow: column;
+  grid-auto-flow: column;  
 }
 
 .post {
@@ -30,4 +30,21 @@
 
 .pagination .previous {
   margin-right: 15px;
+}
+
+.casseygram-hub {
+  display: grid;
+  grid-template-columns: 50% 50%;
+
+  @include media-query($on-palm) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.casseygram-entry {
+  list-style: none;
+  display: inline-block;
+}
+.casseygram-entry p {
+  display: inline-block;
 }
