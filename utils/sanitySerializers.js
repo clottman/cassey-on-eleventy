@@ -6,7 +6,6 @@ function urlFor(source) {
   return imageUrl(sanityClient).image(source)
 }
 
-// Learn more on https://www.sanity.io/guides/introduction-to-portable-text
 module.exports = {
   types: {
     image: ({node}) => `![${node.alt}](${urlFor(node).width(600).url()})`,
