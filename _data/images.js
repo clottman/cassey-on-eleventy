@@ -1,30 +1,32 @@
-const groq = require('groq')
-const client = require('../utils/sanityClient.js')
-const imageUrl = require('@sanity/image-url')
+const groq = require("groq");
+const client = require("../utils/sanityClient.js");
+const imageUrl = require("@sanity/image-url");
 
-function generateImageData ({blogImage, date, slug}) {
-    const node = blogImage;
+function generateImageData({ blogImage, date, slug }) {
   return {
-    image: `![${node.alt}](${imageUrl(client).image(node).width(300).url()})`,
-    caption: node.caption,
+    image: `![${blogImage.alt}](${imageUrl(client)
+      .image(blogImage)
+      .width(300)
+      .url()})`,
+    caption: blogImage.caption,
     date,
     slug,
-  }
+  };
 }
 
-async function getImages () {
+async function getImages() {
   // Learn more: https://www.sanity.io/docs/data-store/how-queries-work
-  const filter = groq`*[_type == "imageHolder"]`
+  const filter = groq`*[_type == "imageHolder"]`;
   const projection = groq`{
     blogImage,
     date,
     slug
-  }`
-  const order = `| order(date desc)`
-  const query = [filter, projection, order].join(' ')
-  const docs = await client.fetch(query).catch(err => console.error(err))
+  }`;
+  const order = `| order(date desc)`;
+  const query = [filter, projection, order].join(" ");
+  const docs = await client.fetch(query).catch((err) => console.error(err));
   const preparePosts = docs.map(generateImageData);
-  return preparePosts
+  return preparePosts;
 }
 
-module.exports = getImages
+module.exports = getImages;
