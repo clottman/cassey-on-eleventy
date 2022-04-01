@@ -246,6 +246,7 @@ The `markdownify` filter converts our Markdown-formatted image tag to HTML. The 
 I also want to generate a standalone page for each individual image, which I can also do with pagination, using size=1.
 
 ```
+{% raw %}
 ---
 pagination: 
     data: images
@@ -253,7 +254,6 @@ pagination:
     alias: thisImage
 permalink: "casseygram/{{ thisImage.date }}-{{thisImage.slug}}/index.html"    
 ---
-{% raw %}
 {{ thisImage.image | safe }}
 {{ thisImage.caption }}
 {% endraw %}
