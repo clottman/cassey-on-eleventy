@@ -7,5 +7,8 @@ const sanity = {
     apiVersion: '2022-03-27'
 };
 
-module.exports = sanityClient({...sanity, useCdn: false, token: process.env.SANITY_READ_TOKEN});
-  
+var client;
+if (sanity.projectId) {
+    client = sanityClient({...sanity, useCdn: false, token: process.env.SANITY_READ_TOKEN});
+}
+module.exports = client; 
