@@ -21,3 +21,8 @@ After I added this line to the config, I had to exit my Rails console instance a
 
 But once I restarted my console, I was able to run my service without `require`ing anything special once more.
 
+## Update 4-19-22
+A coworker shared with me that if you namespace all your code in the subfolder using the name of the subfolder, you don't have to change the autoload paths and the code will get picked up automatically.
+
+To namespace, either wrap everything in `module FolderNameInCamelCase`, or prefix your class names with `FolderNameInCamelCase::`. 
+
