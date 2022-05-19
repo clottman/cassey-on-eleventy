@@ -26,6 +26,8 @@ end
 
 These move the stack frame `up` or `down` respectively. Melinda told me about these methods which were exactly what I needed to solve my problem - the error was thrown in a method call based on what was getting passed in, but I needed to jump up the call stack to look at why that problematic data was getting passed in rather than what I should have had.
 
+You can also keep going with `next`, which goes to the next line, and `continue`, which resumes normal execution until a pry is hit again.
+
 ## `tap` a method
 
 Drew's favorite method is using `tap` on the result of a method. 
