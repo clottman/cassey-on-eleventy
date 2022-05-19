@@ -4,7 +4,7 @@ title: "Debugging strategies using binding.pry in Rails"
 date: 2022-05-19
 ---
 
-Something I had to get used to when switching to primarily Ruby on Rails development while working at Unabridged is debugging using `binding.pry` instead of a step-debugger tool. 
+Something I had to get used to when switching to primarily Ruby on Rails development while working at [Unabridged](https://unabridgedsoftware.com) is debugging using `binding.pry` instead of a step-debugger tool. 
 
 `pry` lets you stop the execution of running code, and inspect the values of all the in-scope variables at that point or run arbitrary code in that environment to figure out what's going wrong.
 
@@ -24,9 +24,11 @@ end
 
 ## use `up` and `down`
 
-These move the stack frame `up` or `down` respectively. This was exactly what I needed to solve my problem - the error was thrown in a method call based on what was getting passed in, but I needed to jump up the call stack to look at why that problematic data was getting passed in rather than what I should have had.
+These move the stack frame `up` or `down` respectively. Melinda told me about these methods which were exactly what I needed to solve my problem - the error was thrown in a method call based on what was getting passed in, but I needed to jump up the call stack to look at why that problematic data was getting passed in rather than what I should have had.
 
 ## `tap` a method
+
+Drew's favorite method is using `tap` on the result of a method. 
 
 ```ruby
 do_some_stuff.tap do |result|
@@ -58,9 +60,8 @@ Another variation on conditional binding, Nick likes to use
 binding.pry unless $skip_binding
 ```
 
-So that when he's done, he can do `$skip_binding = true` and let execution continue instead of stopping the whole server in order to make the binding stop getting hit. 
+So that when he's done, he can do `$skip_binding = true` and let execution continue instead of stopping the whole server in order to make the binding stop getting hit. (The `$` prefix on the variable makes it a global variable in Ruby).
 
 ### disable-pry
-Pry also has a built-in `disable-pry` command which just continues without hitting any more prys. 
-
+Dre pointed out that Pry also has a built-in `disable-pry` command which just continues without hitting any more prys. 
 
