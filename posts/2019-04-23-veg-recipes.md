@@ -2,7 +2,7 @@
 layout: post
 title: "Favorite Non-Meat Recipes"
 date: 2019-04-23 06:20:31.000000000 -08:00
-tags: [food, posts]
+tags: [food, posts, resources]
 ---
 
 A friend asked today what they can eat if they want to avoid meat, but also can't eat peanuts, soy, or a lot of wheat. The answer is: so many things! Here are some of my favorites.
