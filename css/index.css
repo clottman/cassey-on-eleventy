@@ -119,3 +119,7 @@ a[href].direct-link:focus:visited,
 #tagsContainer li {
   list-style: none;
 }
+
+.margin-bottom {
+  margin-bottom: 10px;
+}
