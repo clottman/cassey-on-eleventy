@@ -13,6 +13,8 @@ date: 2022-05-26
 
 I made a zine on how to host your own community event. Here it is. 
 
+You can [download a PDF of this zine](/files/host-an-event-zine.pdf) and [fold it](https://www.readbrightly.com/how-to-make-zine/). Print as many as you want & do what you want with them, but please don't take my name off the front.
+
 {% img "raw_img/community-event-zine/1.jpg", "the front of a small zine on white paper, which reads 'Host your own community event', by Cassey Lottman", 300, "center-block margin-bottom" %}
 
 {% img "raw_img/community-event-zine/2.jpg", "the left page of a zine reads: Did you know anyone, even you, can just decide to host a community event? It just takes an idea, a little legwork, and getting the word out. Here's what to do. the right page reads: Find a place! potential free spaces: a library with reservable rooms, open space in a park, coffee shop back room, your religious building. For $$, consider renting a shelter at a public park to hold your event rain or shine", 600, "center-block margin-bottom" %}
