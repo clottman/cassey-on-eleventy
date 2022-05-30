@@ -1,6 +1,6 @@
 ---
 layout: post
-tags: ["posts", "community"]
+tags: ["posts", "community", "zines"]
 title: "Host your own community event: a zine"
 description: "Anyone can do it, even you!"
 social_image: "https://cassey.dev/img/til-icon.png"

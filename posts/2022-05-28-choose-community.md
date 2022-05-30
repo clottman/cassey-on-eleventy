@@ -1,6 +1,6 @@
 ---
 layout: post
-tags: ["posts", "community"]
+tags: ["posts", "community", "zines"]
 title: "Choose Community: a zine"
 description: "a manifesto for saving the world"
 social_image: "https://cassey.dev/img/til-icon.png"
