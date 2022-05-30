@@ -1,4 +1,9 @@
-{
+const imgUrlShortcode = require('../imageHelpers').imgUrlShortcode;
+
+module.exports = async function() {
+  let social_image = await imgUrlShortcode("raw_img/cassey-dev.png", [1600]);
+  social_image = 'https://cassey.dev' + social_image;
+  return {
   "title": "Cassey Lottman",
   "url": "https://cassey.dev/",
   "description": "Cassey is a software developer who likes building for the Web most of all. She [ran for City Council](http://casseyforcouncil.com) in Lincoln, Nebraska in 2019 and, according to Councilman Bennie Shobe, \"is not going to go away.\"",
@@ -24,8 +29,9 @@
     "til": "https://cassey.dev/til"
   },
   "favicon": "/img/favicon.ico",
-  "social_image": "https://www.cassey.dev/img/cassey.jpg",
-  "social_image_alt": "Cassey, a smiling person with short green hair",
+  "social_image": social_image,
+  "social_image_alt": "cassey.dev",
   "social_image_height": 256,
   "social_image_width": 256
+}
 }
