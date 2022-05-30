@@ -1,8 +1,11 @@
 const imgUrlShortcode = require('../imageHelpers').imgUrlShortcode;
 
 module.exports = async function() {
+  site = process.env.CONTEXT === 'deploy-preview' ? process.env.DEPLOY_PRIME_URL : process.env.URL;
+
   let social_image = await imgUrlShortcode("raw_img/cassey-dev.png", [1600], ["png"]);
-  social_image = 'https://cassey.dev' + social_image;
+  social_image = site + social_image;
+
   return {
   "title": "Cassey Lottman",
   "url": "https://cassey.dev/",
