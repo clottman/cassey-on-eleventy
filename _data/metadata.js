@@ -34,7 +34,7 @@ module.exports = async function() {
   "favicon": "/img/favicon.ico",
   "social_image": social_image,
   "social_image_alt": "cassey.dev",
-  "social_image_height": 256,
-  "social_image_width": 256
+  "social_image_height": 900,
+  "social_image_width": 1600
 }
 }
