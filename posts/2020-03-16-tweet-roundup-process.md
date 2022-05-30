@@ -6,6 +6,7 @@ tags: [posts, coronavirus, code]
 social_description: "BuzzFeed does it better"
 social_image: "https://cassey.dev/img/grimace-clown.jpg"
 social_image_alt: "A grimacing clown emoji, from Emoji Mashup Bot"
+twitter_card_style: "summary"
 ---
 
 I wanted to make [a post with a bunch of tweets](/posts/2020-03-16-coronavirus-memes/) on it. I've mostly embedded a single tweet at a time before, so this is new territory. Here's what I did. This is not an example for you to follow; it is perhaps more like a great example of how sometimes even great programmers like myself follow ill-advised workflows because it's the past of least resistance.

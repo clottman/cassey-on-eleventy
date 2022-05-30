@@ -6,6 +6,7 @@ tags: [posts, poetry, art]
 social_image: "https://cassey.dev/img/great-gma.jpg"
 social_image_alt: "Cassey, in a wedding dress, embraces a well-dressed elderly woman"
 social_description: "I have, as the prophets say, some personal news."
+twitter_card_style: "summary"
 ---
 
 I have, as the prophets say,

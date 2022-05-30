@@ -6,6 +6,7 @@ date: 2020-03-18
 tags: [posts, coronavirus]
 social_image: "https://cassey.dev/img/icons8-coronavirus-80.png"
 social_image_alt: "icon of a coronavirus molecule"
+twitter_card_style: "summary"
 ---
 
 I have this strange feeling of being saturated in news, from all over the world, while at the same time, feeling like I really don't know what's going on overall.

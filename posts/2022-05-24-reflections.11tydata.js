@@ -8,5 +8,6 @@ module.exports = async function () {
   return {
       social_image,
       social_image_alt: "a curved arrow pointing down",
+      twitter_card_style: "summary"
     };
 };

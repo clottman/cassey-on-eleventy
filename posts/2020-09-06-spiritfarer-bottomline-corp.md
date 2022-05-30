@@ -6,6 +6,7 @@ date: 2020-09-06
 tags: [posts, spiritfarer]
 social_image: "https://steamcdn-a.akamaihd.net/steam/apps/972660/header.jpg?t=1598908042"
 social_image_alt: "Spiritfarer game logo"
+twitter_card_style: "summary"
 ---
 
 **This entire post is a spoiler for the Bottomline Corp quest in Spiritfarer** 

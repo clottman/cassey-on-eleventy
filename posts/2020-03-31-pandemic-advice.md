@@ -6,6 +6,7 @@ date: 2020-03-31
 tags: [posts, coronavirus]
 social_image: "https://cassey.dev/img/icons8-coronavirus-80.png"
 social_image_alt: "icon of a coronavirus molecule"
+twitter_card_style: "summary"
 ---
 
 As I have mentioned before, I [read a lot of advice columns](https://www.cassey.dev/posts/2020-03-16-advice-column-recs/). Here are a few I've read that are especially useful right now.

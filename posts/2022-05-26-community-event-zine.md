@@ -7,6 +7,7 @@ social_image: "https://cassey.dev/img/til-icon.png"
 "social_image_height": 256
 "social_image_width": 256
 "social_image_alt": "a stack of books with an apple on top"
+twitter_card_style: "summary"
 date: 2022-05-26
 ---
 

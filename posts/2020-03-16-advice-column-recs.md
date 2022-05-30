@@ -6,6 +6,7 @@ tags: [posts, coronavirus]
 social_description: "You aren't going out. Here's what I recommend doing instead."
 social_image: "https://img.icons8.com/dusk/256/000000/news.png"
 social_image_alt: "Newspaper"
+twitter_card_style: "summary"
 ---
 
 It's hard to think of anything that I have loved as long or as consistently as I have loved advice columns. My earliest memories of reading are of laying on the floor with a newspaper at my grandma's, because my arms were too short to hold the newspaper upright, reading the daily advice column in the back. Emily Yoffe's Dear Prudence carried me through high school and college. The Toast (RIP) had occasional advice columns; you can bet I read them. Here are a few I read today, that still post new stuff often, and also have rich, binge-worthy archives.
