@@ -1,7 +1,7 @@
 const imgUrlShortcode = require('../imageHelpers').imgUrlShortcode;
 
 module.exports = async function() {
-  let social_image = await imgUrlShortcode("raw_img/cassey-dev.png", [1600]);
+  let social_image = await imgUrlShortcode("raw_img/cassey-dev.png", [1600], ["png"]);
   social_image = 'https://cassey.dev' + social_image;
   return {
   "title": "Cassey Lottman",
