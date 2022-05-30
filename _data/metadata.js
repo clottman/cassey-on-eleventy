@@ -35,6 +35,7 @@ module.exports = async function() {
   "social_image": social_image,
   "social_image_alt": "cassey.dev",
   "social_image_height": 900,
-  "social_image_width": 1600
+  "social_image_width": 1600,
+  "twitter_card_style": "summary_large_image"
 }
 }
