@@ -14,7 +14,7 @@ module.exports = [
     {
         name: "A Prayer for the Crown-Shy",
         author: "Becky Chambers",
-        tags: ["sci fi/fantasy", "fiction", "queer"],
+        tags: ["sci fi/fantasy", "fiction", "queer", "favorites"],
         img: "prayer.jpg", 
     },
     {
@@ -26,7 +26,7 @@ module.exports = [
     {
         name: "Cemetery Boys",
         author: "Aiden Thomas",
-        tags: ["sci fi/fantasy", "fiction", "queer"],
+        tags: ["sci fi/fantasy", "fiction", "queer", "favorites"],
         img: "cemetery.jpg",
     },
     {
@@ -54,6 +54,24 @@ module.exports = [
         img: "ace.jpg", 
     },
     {
+        name: "How to Raise an Intuitive Eater",
+        author: "Sumner Brooks",
+        tags: ["parenting", "nonfiction", "food"],
+        img: "raise-intuitive.jpg",
+    },
+    {
+        name: "The Midnight Library",
+        author: "Matt Haig",
+        tags: ["fiction", "sci fi/fantasy"],
+        img: "midnight.jpg",
+    },
+    {
+        name: "Under the Whispering Door",
+        author: "TJ Klune",
+        tags: ["fiction", "favorites", "sci fi/fantasy", "queer"], 
+        img: "whispering.jpg",
+    },
+    {
         name: "The Art of Gathering: How We Meet and Why It Matters",
         author: "Priya Parker",
         tags: ["nonfiction", "favorites"],
@@ -74,7 +92,7 @@ module.exports = [
     {
         name: "The Third Person",
         author: "Emma Grove",
-        tags: ["graphical", "nonfiction", "queer"],
+        tags: ["graphical", "nonfiction", "queer", "favorites"],
         img: "third_person.jpg", 
     },
     {
@@ -90,6 +108,30 @@ module.exports = [
         img: "essential.jpg", 
     },
     {
+        name: "I Dream of Dinner: Low-Effort, High-Reward Recipes",
+        author: "Ali Slagle",
+        img: "dream.jpg",
+        tags: ["nonfiction", "food", "favorites"]
+    },
+    {
+        name: "Saladish: a crunchier, grainier, herbier, heartier, tastier way with vegetables",
+        author: "Ilene Rosen",
+        img: "saladish.jpg",
+        tags: ["nonfiction", "food"]
+    },
+    {
+        name: "Snacks for Dinner",
+        author: "Lukas Volger",
+        img: "snacks.jpg",
+        tags: ["nonfiction", "food"]
+    },
+    {
+        name: "Milk Street Fast and Slow",
+        author: "Christopher Kimball",
+        img: "fast-and-slow.jpg",
+        tags: ["nonfiction", "food"]
+    },
+    {
         name: "Everyday Vitality",
         author: "Kate Mangino",
         tags: ["nonfiction"],
@@ -102,6 +144,12 @@ module.exports = [
         img: "physical.jpg", 
     },
     {
+        name: "Paul Takes the Form of a Mortal Girl",
+        author: "Andrea Lawlor",
+        tags: ["queer", "fiction"],
+        img: "paul.jpg",
+    },
+    {
         name: "Guapa",
         author: "Saleem Haddad",
         tags: ["queer", "fiction"],
@@ -112,5 +160,5 @@ module.exports = [
         author: "Melissa Febos",
         tags: ["nonfiction", "queer"],
         img: "girlhood.jpg",
-    },
+    }
 ];
