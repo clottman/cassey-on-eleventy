@@ -150,6 +150,18 @@ module.exports = [
         img: "everyday.jpg", 
     },
     {
+        name: "How to be an Anti-Capitalist in the 21st Century",
+        author: "Erik Olin Wright",
+        tags: ["nonfiction"],
+        img: "anticapitalist.jpg"
+    },
+    {
+        name: "Care Work: Dreaming Disability Justice",
+        author: "Leah Lakshmi Piepzna-Samarasinha",
+        tags: ["nonfiction", "queer"],
+        img: "care.jpg"
+    },
+    {
         name: "Let's Get Physical",
         author: "Danielle Friedman",
         tags: ["nonfiction"],
