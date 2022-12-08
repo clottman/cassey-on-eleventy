@@ -18,6 +18,12 @@ module.exports = [
         img: "prayer.jpg", 
     },
     {
+        name: "Gender Queer: a Memoir",
+        author: "Maia Kobabe",
+        tags: ["nonfiction", "queer", "favorites", "graphical"],
+        img: "gender-queer.jpg"
+    },
+    {
         name: "When Women Were Dragons",
         author: "Kelly Barnhill",
         tags: ["sci fi/fantasy", "fiction", "queer", "favorites"],
@@ -82,6 +88,12 @@ module.exports = [
         author: "Alix Harrow",
         tags: ["sci fi/fantasy", "fiction"],
         img: "spindle.jpg",
+    },
+    {
+        name: "Search",
+        author: "Michelle Huneven",
+        tags: ["fiction"],
+        img: "search.jpg",
     },
     {
         name: "Matrix",
