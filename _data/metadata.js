@@ -18,7 +18,7 @@ module.exports = async function () {
     url: "https://cassey.dev/",
     baseurl: site,
     description:
-      'Cassey is a software developer who likes building for the Web most of all. She [ran for City Council](http://casseyforcouncil.com) in Lincoln, Nebraska in 2019 and, according to Councilman Bennie Shobe, "is not going to go away."',
+      'Cassey is a software developer who likes building for the Web most of all. She [ran for City Council](https://web.archive.org/web/20190809135734/http://casseyforcouncil.com/) in Lincoln, Nebraska.',
     social_description: "One person is typing.",
     feed: {
       subtitle: "One person is typing.",
