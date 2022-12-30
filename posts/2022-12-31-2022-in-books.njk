@@ -52,6 +52,10 @@ social_description: "My (virtual) bookshelf"
     }
 </style>
 
+<p>I read a lot of books this year. I had phases of wanting to read graphical things - graphical memoirs and nonfiction, and am currently in a phase of bringing home big stacks of cookbooks from the library which I sometimes peruse but often read cover to cover-- unless I don't touch them at all (ones in this category not included here).</p>
+
+<p>Some books really opened my eyes to new-to-me ideas, especially about queerness - "Queer: A Graphic History", "Genderqueer", and "Ace" fall into this category. I nodded a lot while reading "How to be Anti-Capitalist in the 21st Century", though not all the ideas landed for me. "Snacking Cakes" opened my eyes to how good cake can be and the idea that I can just eat it all the time if I want, and "I Dream of Dinner" gave me all sorts of ideas for improvising dinner out of what's in our fridge at any given time. "Hench" and "A Prayer for the Crown Shy" are the books I can't stop recommending to friends. (Though for the latter, read "A Psalm for the Wild Built" first).</p>
+
 <p>Click to filter:</p>
 {% for bookTag in books_2022_tags %}
     <button onClick="filterToTag('{{bookTag | classifyTag}}')" class="tag {{bookTag | classifyTag}}">{{ bookTag }}</button>
