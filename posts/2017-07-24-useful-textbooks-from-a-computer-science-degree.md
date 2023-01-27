@@ -7,6 +7,8 @@ tags:
 - code for non-coders
 - education
 - posts
+- books
+- recommendations
 - resources
 ---
 <p>In my time as an undergraduate studying Computer Science, I came across several textbooks that were really useful. (This may be a surprise to you; it was to me when I finally started finding them.) I share them here for others who may know how to program, but are not yet confident in their grasp of the things one would learn in a formal Computer Science (CS) curriculum.</p>

@@ -2,7 +2,7 @@
 layout: post
 title: "Great Housing Reads"
 date: 2019-06-15 2:32:31.000000000 -08:00
-tags: [housing, justice, posts, resources]
+tags: [housing, justice, posts, resources, books, recommendations]
 social_description: Books, articles, and satire that has informed my thinking on housing policy over the years, and put my intuitions into words.
 ---
 

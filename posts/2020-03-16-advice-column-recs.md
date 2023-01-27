@@ -2,7 +2,7 @@
 layout: post
 title: Advice Columns for the Apocalypse
 date: 2020-03-16
-tags: [posts, coronavirus]
+tags: [posts, coronavirus, recommendations]
 social_description: "You aren't going out. Here's what I recommend doing instead."
 social_image: "https://img.icons8.com/dusk/256/000000/news.png"
 social_image_alt: "Newspaper"
