@@ -20,6 +20,7 @@
   },
   "dependencies": {
     "@11ty/eleventy-img": "^0.9.0",
+    "@11ty/eleventy-upgrade-help": "^2.0.5",
     "@sanity/client": "^3.3.0",
     "@sanity/image-url": "^1.0.1",
     "dotenv": "^16.0.0",
@@ -30,7 +31,7 @@
     "xml2js": "^0.4.23"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^0.11.1",
+    "@11ty/eleventy": "^2.0.0",
     "@11ty/eleventy-plugin-rss": "^1.0.9",
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.4",
     "autoprefixer": "^10.0.2",
