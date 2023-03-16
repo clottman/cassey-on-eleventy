@@ -46,8 +46,7 @@ function strToSlug(str) {
   return slugify(str, options);
 }
 
-
 module.exports = {
   getAllKeyValues,
-  strToSlug
+  strToSlug,
 };

@@ -1,4 +1,4 @@
-const { getAllKeyValues, strToSlug } = require("./helpers.js")
+const { getAllKeyValues, strToSlug } = require("./helpers.js");
 
 const tilGlob = "til/*.*";
 

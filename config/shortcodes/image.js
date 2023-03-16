@@ -38,5 +38,5 @@ async function imgShortcode(src, alt, width, classes) {
 
 module.exports = {
   imageShortcode,
-  imgShortcode
-}
+  imgShortcode,
+};

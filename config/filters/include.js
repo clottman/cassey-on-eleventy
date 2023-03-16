@@ -1,4 +1,4 @@
-// from: https://www.webstoemp.com/blog/basic-custom-taxonomies-with-eleventy/ 
+// from: https://www.webstoemp.com/blog/basic-custom-taxonomies-with-eleventy/
 
 const lodash = require("lodash");
 
