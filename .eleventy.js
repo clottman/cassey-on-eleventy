@@ -1,13 +1,10 @@
 const { DateTime } = require("luxon");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
-const fs = require("fs-extra");
 const getTagList = require("./config/getTagList");
 const MarkdownIt = require("markdown-it");
-const sass = require("sass");
-const postcss = require("postcss");
-const autoprefixer = require("autoprefixer");
 const Image = require("@11ty/eleventy-img");
+const buildCss = require('./config/buildCss');
 require("dotenv").config();
 
 const {
@@ -133,26 +130,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addNunjucksAsyncShortcode("img", imgShortcode);
 
   // compile sass and optimize it https://www.d-hagemeier.com/en/articles/sass-compile-11ty/
-  eleventyConfig.on("beforeBuild", () => {
-    // Compile Sass
-    let result = sass.renderSync({
-      file: "_sass/main.scss",
-      sourceMap: false,
-      outputStyle: "compressed",
-    });
-    console.log("SCSS compiled");
-
-    // Optimize and write file with PostCSS
-    let css = result.css.toString();
-    postcss([autoprefixer])
-      .process(css, { from: "main.css", to: "css/main.css" })
-      .then((result) => {
-        fs.outputFile("_site/css/main.css", result.css, (err) => {
-          if (err) throw err;
-          console.log("CSS optimized");
-        });
-      });
-  });
+  eleventyConfig.on("beforeBuild", buildCss);
 
   // trigger a rebuild if sass changes
   eleventyConfig.addWatchTarget("_sass/");
