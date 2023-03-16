@@ -1,54 +1,27 @@
-const { DateTime } = require("luxon");
 const MarkdownIt = require("markdown-it");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
-const Image = require("@11ty/eleventy-img");
-const buildCss = require('./config/buildCss');
-const markdown = require('./config/markdown');
+const buildCss = require("./config/buildCss");
+const markdown = require("./config/markdown");
 require("dotenv").config();
+
 
 const {
   tilCollection,
   rssCollection,
   tilTagsCollection,
   sortedNavCollection,
-} = require("./config/collections/index.js");
+} = require("./config/collections");
 
-async function imageShortcode(src, alt, sizes, extraImgClasses) {
-  let metadata = await Image(src, {
-    widths: [300, 600],
-    formats: ["webp", "jpeg"],
-    outputDir: "./_site/img/",
-  });
-
-  let imageAttributes = {
-    alt,
-    sizes,
-    class: extraImgClasses,
-    loading: "lazy",
-    decoding: "async",
-  };
-
-  // You bet we throw an error on missing alt in `imageAttributes` (alt="" works okay)
-  return Image.generateHTML(metadata, imageAttributes);
-}
-
-async function imgShortcode(src, alt, width, classes) {
-  if (alt === undefined) {
-    // You bet we throw an error on missing alt (alt="" works okay)
-    throw new Error(`Missing \`alt\` on myImage from: ${src}`);
-  }
-
-  let metadata = await Image(src, {
-    widths: [width],
-    formats: ["jpeg"],
-    outputDir: "./_site/img/",
-  });
-
-  let data = metadata.jpeg[metadata.jpeg.length - 1];
-
-  return `<img class="${classes}" src="${data.url}" width="${data.width}" height="${data.height}" alt="${alt}" loading="lazy" decoding="async">`;
-}
+const {
+  stripPs,
+  classifyTagFilter,
+  readableDateFilter,
+  htmlDateStringFilter,
+  headFilter,
+} = require("./config/filters");
+const includeFilter = require("./config/filters/include.js");
+const { imgShortcode, imageShortcode } = require("./config/shortcodes/image");
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
@@ -57,52 +30,29 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addLayoutAlias("post", "layouts/post.njk");
   eleventyConfig.addLayoutAlias("base", "layouts/base.njk");
+
   const md = new MarkdownIt();
   eleventyConfig.addFilter("markdownify", (value) => {
     return md.render(value);
   });
 
-  eleventyConfig.addFilter("stripPs", (value) => {
-    const firstPass = value.replace("<p>", "");
-    return firstPass.replace("</p>", "");
-  });
-
-  eleventyConfig.addFilter("readableDate", (dateObj) => {
-    const dateFormat = "dd LLL yyyy";
-    const dateToUse = dateObj instanceof Date ? dateObj : new Date(dateObj);
-    return DateTime.fromJSDate(dateToUse, { zone: "utc" }).toFormat(dateFormat);
-  });
+  eleventyConfig.addFilter("stripPs", stripPs);
+  eleventyConfig.addFilter("readableDate", readableDateFilter);
 
   // replaces whitespace with _ and removes slashes
-  eleventyConfig.addFilter("classifyTag", (str) => {
-    const noSpaces = str.replace(" ", "_");
-    return noSpaces.replace("/", "_");
-  });
+  eleventyConfig.addFilter("classifyTag", classifyTagFilter);
 
   // https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
-  eleventyConfig.addFilter("htmlDateString", (dateObj) => {
-    return DateTime.fromJSDate(dateObj).toFormat("yyyy-LL-dd");
-  });
+  eleventyConfig.addFilter("htmlDateString", htmlDateStringFilter);
 
   // Get the first `n` elements of a collection.
-  eleventyConfig.addFilter("head", (array, n) => {
-    if (n < 0) {
-      return array.slice(n);
-    }
-
-    return array.slice(0, n);
-  });
+  eleventyConfig.addFilter("head", headFilter);
 
   eleventyConfig.addPassthroughCopy("img");
   eleventyConfig.addPassthroughCopy("css");
   eleventyConfig.addPassthroughCopy("files");
 
-
-
-  eleventyConfig.setLibrary(
-    "md",
-    markdown
-  );
+  eleventyConfig.setLibrary("md", markdown);
 
   eleventyConfig.addCollection("sortedNav", sortedNavCollection);
   eleventyConfig.addCollection("tagList", require("./config/getTagList"));
@@ -110,7 +60,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addCollection("rss", rssCollection);
   eleventyConfig.addCollection("tilTags", tilTagsCollection);
 
-  eleventyConfig.addFilter("include", require("./filters/include.js"));
+  eleventyConfig.addFilter("include", includeFilter);
 
   eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode);
   eleventyConfig.addNunjucksAsyncShortcode("img", imgShortcode);
