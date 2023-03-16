@@ -4,58 +4,13 @@ const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const fs = require("fs-extra");
 const getTagList = require("./config/getTagList");
 const MarkdownIt = require("markdown-it");
-const lodash = require("lodash");
-const slugify = require("slugify");
 const sass = require("sass");
 const postcss = require("postcss");
 const autoprefixer = require("autoprefixer");
 const Image = require("@11ty/eleventy-img");
 require('dotenv').config();
 
-/**
- * Get all unique key values from a collection
- *
- * @param {Array} collectionArray - collection to loop through
- * @param {String} key - key to get values from
- * https://www.webstoemp.com/blog/basic-custom-taxonomies-with-eleventy/
- */
-function getAllKeyValues(collectionArray, key) {
-  // get all values from collection
-  let allValues = collectionArray.map((item) => {
-    let values = item.data[key] ? item.data[key] : [];
-    return values;
-  });
-
-  // flatten values array
-  allValues = lodash.flattenDeep(allValues);
-  // to lowercase
-  allValues = allValues.map((item) => item.toLowerCase());
-  // remove duplicates
-  allValues = [...new Set(allValues)];
-  // order alphabetically
-  allValues = allValues.sort(function (a, b) {
-    return a.localeCompare(b, "en", { sensitivity: "base" });
-  });
-  // return
-  return allValues;
-}
-
-/**
- * Transform a string into a slug
- * Uses slugify package
- *
- * @param {String} str - string to slugify
- * https://www.webstoemp.com/blog/basic-custom-taxonomies-with-eleventy/
- */
-function strToSlug(str) {
-  const options = {
-    replacement: "-",
-    remove: /[&,+()$~%.'":*?<>{}]/g,
-    lower: true,
-  };
-
-  return slugify(str, options);
-}
+const { tilCollection, rssCollection, tilTagsCollection, sortedNavCollection } = require('./config/collections/index.js');
 
 async function imageShortcode(src, alt, sizes, extraImgClasses) {
   let metadata = await Image(src, {
@@ -136,7 +91,6 @@ module.exports = function (eleventyConfig) {
     return array.slice(0, n);
   });
 
-  eleventyConfig.addCollection("tagList", require("./config/getTagList"));
 
   eleventyConfig.addJavaScriptFunction("getTagList", getTagList);
 
@@ -163,35 +117,11 @@ module.exports = function (eleventyConfig) {
     MarkdownIt(options).use(markdownItAnchor, markDownItAnchorOpts)
   );
 
-  eleventyConfig.addCollection("sortedNav", (collection) =>
-    collection
-      .getAllSorted()
-      .filter((item) => item.data.navtitle)
-      .sort(function (a, b) {
-        if (a.data.navorder < b.data.navorder) return -1;
-        else if (a.data.navorder > b.data.navorder) return 1;
-        else return 0;
-      })
-  );
-  const tilGlob = "til/*.*";
-  eleventyConfig.addCollection("til", function (collectionApi) {
-    return collectionApi.getFilteredByGlob(tilGlob);
-  });
-
-  eleventyConfig.addCollection("rss", function (collectionApi) {
-    return collectionApi.getFilteredByGlob([tilGlob, "posts/*.*"]);
-  });
-
-  // create til-tags collection
-  eleventyConfig.addCollection("tilTags", function (collection) {
-    let allTilTags = getAllKeyValues(
-      collection.getFilteredByGlob(tilGlob),
-      "til-tags"
-    );
-
-    let tilTags = allTilTags.map((tilTag) => strToSlug(tilTag));
-    return tilTags;
-  });
+  eleventyConfig.addCollection("sortedNav", sortedNavCollection);
+  eleventyConfig.addCollection("tagList", require("./config/getTagList"));
+  eleventyConfig.addCollection("til", tilCollection);
+  eleventyConfig.addCollection("rss", rssCollection);
+  eleventyConfig.addCollection("tilTags", tilTagsCollection);
 
   eleventyConfig.addFilter("include", require("./filters/include.js"));
 
