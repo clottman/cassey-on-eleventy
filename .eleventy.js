@@ -19,6 +19,12 @@ const {
   headFilter,
   markdownifyFilter,
 } = require("./config/filters");
+const {
+  getWebmentionsForUrl,
+  size,
+  webmentionsByType,
+  readableDateFromISO
+} = require("./config/filters/webmentions");
 const includeFilter = require("./config/filters/include.js");
 const { imgShortcode, imageShortcode } = require("./config/shortcodes/image");
 
@@ -34,6 +40,10 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("stripPs", stripPs);
   eleventyConfig.addFilter("readableDate", readableDateFilter);
   eleventyConfig.addFilter("include", includeFilter);
+  eleventyConfig.addFilter("getWebmentionsForUrl", getWebmentionsForUrl);
+  eleventyConfig.addFilter("size", size);
+  eleventyConfig.addFilter("webmentionsByType", webmentionsByType);
+  eleventyConfig.addFilter("readableDateFromISO", readableDateFromISO);
 
   // replaces whitespace with _ and removes slashes
   eleventyConfig.addFilter("classifyTag", classifyTagFilter);
