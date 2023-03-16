@@ -8,15 +8,20 @@ const sass = require("sass");
 const postcss = require("postcss");
 const autoprefixer = require("autoprefixer");
 const Image = require("@11ty/eleventy-img");
-require('dotenv').config();
+require("dotenv").config();
 
-const { tilCollection, rssCollection, tilTagsCollection, sortedNavCollection } = require('./config/collections/index.js');
+const {
+  tilCollection,
+  rssCollection,
+  tilTagsCollection,
+  sortedNavCollection,
+} = require("./config/collections/index.js");
 
 async function imageShortcode(src, alt, sizes, extraImgClasses) {
   let metadata = await Image(src, {
     widths: [300, 600],
     formats: ["webp", "jpeg"],
-    outputDir: './_site/img/'
+    outputDir: "./_site/img/",
   });
 
   let imageAttributes = {
@@ -40,7 +45,7 @@ async function imgShortcode(src, alt, width, classes) {
   let metadata = await Image(src, {
     widths: [width],
     formats: ["jpeg"],
-    outputDir: './_site/img/'
+    outputDir: "./_site/img/",
   });
 
   let data = metadata.jpeg[metadata.jpeg.length - 1];
@@ -75,7 +80,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("classifyTag", (str) => {
     const noSpaces = str.replace(" ", "_");
     return noSpaces.replace("/", "_");
-  })
+  });
 
   // https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
   eleventyConfig.addFilter("htmlDateString", (dateObj) => {
@@ -90,7 +95,6 @@ module.exports = function (eleventyConfig) {
 
     return array.slice(0, n);
   });
-
 
   eleventyConfig.addJavaScriptFunction("getTagList", getTagList);
 
@@ -128,8 +132,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode);
   eleventyConfig.addNunjucksAsyncShortcode("img", imgShortcode);
 
-
-  // compile sass and optimize it https://www.d-hagemeier.com/en/articles/sass-compile-11ty/ 
+  // compile sass and optimize it https://www.d-hagemeier.com/en/articles/sass-compile-11ty/
   eleventyConfig.on("beforeBuild", () => {
     // Compile Sass
     let result = sass.renderSync({
