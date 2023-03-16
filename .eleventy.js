@@ -1,10 +1,10 @@
 const { DateTime } = require("luxon");
+const MarkdownIt = require("markdown-it");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
-const getTagList = require("./config/getTagList");
-const MarkdownIt = require("markdown-it");
 const Image = require("@11ty/eleventy-img");
 const buildCss = require('./config/buildCss');
+const markdown = require('./config/markdown');
 require("dotenv").config();
 
 const {
@@ -97,23 +97,11 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("css");
   eleventyConfig.addPassthroughCopy("files");
 
-  /* Markdown Plugins */
-  let markdownItAnchor = require("markdown-it-anchor");
-  let options = {
-    html: true,
-    breaks: true,
-    linkify: true,
-  };
-  let markDownItAnchorOpts = {
-    permalink: true,
-    permalinkClass: "direct-link",
-    permalinkSymbol: "#",
-    permalinkBefore: true,
-  };
+
 
   eleventyConfig.setLibrary(
     "md",
-    MarkdownIt(options).use(markdownItAnchor, markDownItAnchorOpts)
+    markdown
   );
 
   eleventyConfig.addCollection("sortedNav", sortedNavCollection);
