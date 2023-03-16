@@ -17,7 +17,7 @@ const {
   readableDateFilter,
   htmlDateStringFilter,
   headFilter,
-  markdownifyFilter
+  markdownifyFilter,
 } = require("./config/filters");
 const includeFilter = require("./config/filters/include.js");
 const { imgShortcode, imageShortcode } = require("./config/shortcodes/image");
@@ -44,7 +44,9 @@ module.exports = function (eleventyConfig) {
   // Get the first `n` elements of a collection.
   eleventyConfig.addFilter("head", headFilter);
 
-  ["img", "css", "files"].forEach(path => eleventyConfig.addPassthroughCopy(path));
+  ["img", "css", "files"].forEach((path) =>
+    eleventyConfig.addPassthroughCopy(path)
+  );
 
   eleventyConfig.setLibrary("md", markdown);
 
