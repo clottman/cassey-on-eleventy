@@ -3,7 +3,7 @@ const pluginRss = require("@11ty/eleventy-plugin-rss");
 const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const fs = require("fs-extra");
 const path = require("path");
-const getTagList = require("./_11ty/getTagList");
+const getTagList = require("./config/getTagList");
 const MarkdownIt = require("markdown-it");
 const lodash = require("lodash");
 const slugify = require("slugify");
@@ -137,7 +137,7 @@ module.exports = function (eleventyConfig) {
     return array.slice(0, n);
   });
 
-  eleventyConfig.addCollection("tagList", require("./_11ty/getTagList"));
+  eleventyConfig.addCollection("tagList", require("./config/getTagList"));
 
   eleventyConfig.addJavaScriptFunction("getTagList", getTagList);
 
