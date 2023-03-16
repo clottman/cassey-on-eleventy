@@ -102,13 +102,13 @@ If you want to put your helper functions in another file, or use any JS from you
 
 ```javascript
 // here I am importing a function I wrote, that lives in a file called getTagList.js
-const getTagList = require("./_11ty/getTagList");
+const getTagList = require("./config/getTagList");
 
 // here I am importing a package I got from the npm registry, called markdown-it
 const MarkdownIt = require("markdown-it");
 ```
 
-Functions you write yourself that live in another file, and which you want to use elsewhere, need to be exported. The basic structure of `./_11ty/getTagList` would look like this:
+Functions you write yourself that live in another file, and which you want to use elsewhere, need to be exported. The basic structure of `./config/getTagList` would look like this:
 
 ```javascript
 module.exports = function(collection) {
