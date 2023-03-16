@@ -1,4 +1,5 @@
 const { DateTime } = require("luxon");
+const MarkdownIt = require("markdown-it");
 
 const stripPs = (value) => {
   const firstPass = value.replace("<p>", "");
@@ -30,10 +31,16 @@ const headFilter = (array, n) => {
   return array.slice(0, n);
 }
 
+const md = new MarkdownIt();
+const markdownifyFilter = (value) => {
+  return md.render(value);
+}
+
 module.exports = {
   stripPs,
   classifyTagFilter,
   readableDateFilter,
   htmlDateStringFilter,
-  headFilter
+  headFilter,
+  markdownifyFilter,
 }

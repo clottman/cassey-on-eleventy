@@ -1,10 +1,8 @@
-const MarkdownIt = require("markdown-it");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const buildCss = require("./config/buildCss");
 const markdown = require("./config/markdown");
 require("dotenv").config();
-
 
 const {
   tilCollection,
@@ -19,6 +17,7 @@ const {
   readableDateFilter,
   htmlDateStringFilter,
   headFilter,
+  markdownifyFilter
 } = require("./config/filters");
 const includeFilter = require("./config/filters/include.js");
 const { imgShortcode, imageShortcode } = require("./config/shortcodes/image");
@@ -31,13 +30,10 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addLayoutAlias("post", "layouts/post.njk");
   eleventyConfig.addLayoutAlias("base", "layouts/base.njk");
 
-  const md = new MarkdownIt();
-  eleventyConfig.addFilter("markdownify", (value) => {
-    return md.render(value);
-  });
-
+  eleventyConfig.addFilter("markdownify", markdownifyFilter);
   eleventyConfig.addFilter("stripPs", stripPs);
   eleventyConfig.addFilter("readableDate", readableDateFilter);
+  eleventyConfig.addFilter("include", includeFilter);
 
   // replaces whitespace with _ and removes slashes
   eleventyConfig.addFilter("classifyTag", classifyTagFilter);
@@ -48,9 +44,7 @@ module.exports = function (eleventyConfig) {
   // Get the first `n` elements of a collection.
   eleventyConfig.addFilter("head", headFilter);
 
-  eleventyConfig.addPassthroughCopy("img");
-  eleventyConfig.addPassthroughCopy("css");
-  eleventyConfig.addPassthroughCopy("files");
+  ["img", "css", "files"].forEach(path => eleventyConfig.addPassthroughCopy(path));
 
   eleventyConfig.setLibrary("md", markdown);
 
@@ -59,8 +53,6 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addCollection("til", tilCollection);
   eleventyConfig.addCollection("rss", rssCollection);
   eleventyConfig.addCollection("tilTags", tilTagsCollection);
-
-  eleventyConfig.addFilter("include", includeFilter);
 
   eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode);
   eleventyConfig.addNunjucksAsyncShortcode("img", imgShortcode);
@@ -73,13 +65,7 @@ module.exports = function (eleventyConfig) {
 
   return {
     templateFormats: ["md", "njk", "html", "liquid", "hbs"],
-
-    // If your site lives in a different subdirectory, change this.
-    // Leading or trailing slashes are all normalized away, so don’t worry about it.
-    // If you don’t have a subdirectory, use "" or "/" (they do the same thing)
-    // This is only used for URLs (it does not affect your file structure)
     pathPrefix: "/",
-
     markdownTemplateEngine: "njk",
     htmlTemplateEngine: "njk",
     dataTemplateEngine: "njk",
