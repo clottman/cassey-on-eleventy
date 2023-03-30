@@ -1,6 +1,7 @@
 ---
 til-tags: ["ruby", "rails"]
 title: "Manual change tracking in Ruby on Rails"
+social_description: "AKA no Paperclip"
 date: 2023-03-30
 ---
 
