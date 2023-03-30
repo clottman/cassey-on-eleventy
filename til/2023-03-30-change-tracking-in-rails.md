@@ -9,7 +9,7 @@ This week I was working on a project where the users need to see the history of 
 
 Let's say we're working with a model like this: 
 
-```
+```ruby
 # == Schema Information
 #
 # Table name: bicycles
@@ -34,7 +34,7 @@ Now, we could use a gem like Papertrail, but today we aren't doing that for what
 
 We'll add a migration and a new model: 
 
-```
+```ruby
 class CreateBicycleHistories < ActiveRecord::Migration[7.0]
   def change
     create_table :bicycle_histories do |t|
@@ -52,7 +52,7 @@ class CreateBicycleHistories < ActiveRecord::Migration[7.0]
 end
 ```
 
-```
+```ruby
 class BicycleHistory < ApplicationRecord
   belongs_to :bicycle, inverse_of: :bicycle_histories
 
@@ -66,7 +66,7 @@ class BicycleHistory < ApplicationRecord
 
 Our first pass at writing a method to save the history might look something like this, on the Bicycle model class: 
 
-```
+```ruby
 class Bicycle < ApplicationRecord
   after_update :create_bicycle_history
 
@@ -90,7 +90,7 @@ In an Active Record model, thanks to ActiveRecord::Dirty, `saved_changes()` retu
 
 That's great! This is working well. We can write a test using Minitest conventions and Fabricator (I usually prefer factories but this project has a Fabricator convention) ensuring each of our attributes were saved correctly, that might look something like this: 
 
-```
+```ruby
   test "creates bicycle history after update of bicycle location" do
     bicycle = Fabricate.create(:bicycle)
     bicycle.location = Location.create
@@ -107,7 +107,7 @@ But! We forgot to save who the user is that made the change. And unfortunately, 
 That method is also using a lot of code that looks quite similar, with just the attribute names changing. We can use a bit of metaprogramming (writing code that produces other code that gets executed) to simplify it. 
 
 Let's add some `TRACKED_FIELDS` to our BicycleHistory model: 
-```
+```ruby
   TRACKED_FIELDS = [
     :location_id,
     :brand_id,
@@ -117,7 +117,7 @@ Let's add some `TRACKED_FIELDS` to our BicycleHistory model:
   ]    
 ```
 and use them like this in our method on Bicycle: 
-```
+```ruby
   def create_bicycle_history(updater)
     return unless saved_changes?
 
@@ -129,7 +129,7 @@ and use them like this in our method on Bicycle:
 
     bicycle_history.save
   end
-  ```
+```
 
 Here we're calling the assignment method provided by ActiveRecord automatically for each attribute we want to track, and giving it the current value of the attribute if there were any changes the last time the attribute got saved.
 
@@ -139,10 +139,10 @@ This is looking great! Our tests, after being updated to explicitly call the cre
 
 Let's say we now want to display the changes in a table for our users on our site. But, we don't want to have a lot of repetition in our frontend code, either. So let's use some metaprogramming again. 
 
-We'll put this on the InstrumentHistory model: 
-```
+We'll put this on the BicycleHistory model: 
+```ruby
   def change_information
-    InstrumentHistory::TRACKED_FIELDS.map do |field|
+    BicycleHistory::TRACKED_FIELDS.map do |field|
       "#{field.to_s.titleize}: " + public_send(field.to_s.sub("_id", "")).to_s if public_send(field).present?
     end.compact
   end
@@ -152,7 +152,7 @@ Our fields are stored as symbols, so we need to call `to_s` before we can use st
 
 We don't want to display the location id in our UI; we want to display the location name. So, here: `public_send(field.to_s.sub("_id", "")).to_s` we're stripping the `_id` portion of the attribute name off, so that Active Record will give us the actual model, not just the id. Then we're calling to_s on the model to give us back the user-relevant model info, which we can support by adding a `to_s` override on the models we care about like this: 
 
-```
+```ruby
 class Location
   def to_s
     name
@@ -164,12 +164,34 @@ If the attribute is already a string or can be converted to one, or doesn't have
 
 Yay! Pretty code. 
 
+## Backfilling a history previously tracked with Paperclip to my new model: 
+The model I'm tracking manually now was previously tracked with Paperclip. I don't want to lose that history, so I wrote this rake task to backfill the history from Paperclip to my new model: 
 
+```ruby
+  task backfill_history: :environment do
+    Bicycle.find_each do |bicycle|
+      bicycle.versions.where(event: "update").order(created_at: :desc).each do |bicycle_version|
+        b_history = BicycleHistory.new(bicycle: bicycle)
+        b_history.user_id = bicycle_version.whodunnit if bicycle_version.whodunnit.present?
+        bicycle_version.changeset.each do |co|
+          flattened_change = co.flatten
+          co_key = flattened_change[0]
+          next if co_key == "created_at" || co_key == "updated_at"
+
+          co_new_value = flattened_change[2]
+          b_history.public_send("#{co_key}=", co_new_value)
+        end
+        b_history.created_at = bicycle_version.created_at
+        b_history.save!
+      end
+    end
+  end
+```
 ### A weird rabbit hole about saving changes to associated records
 
 Something I noticed while writing my tests, after updating my code to _not_ use a callback and instead call my change tracking method explictly, is that my test failed if the model my history `belongs_to` wasn't already saved.
 
-```
+```ruby
   test "creates bicycle history after update of bicycle location" do
     bicycle = Fabricate.create(:bicycle)
     bicycle.location = Location.create   # Location.new doesn't work!
