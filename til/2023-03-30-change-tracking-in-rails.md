@@ -1,7 +1,7 @@
 ---
 til-tags: ["ruby", "rails"]
 title: "Manual change tracking in Ruby on Rails"
-social_description: "AKA no Paperclip"
+social_description: "AKA no Papertrail"
 date: 2023-03-30
 ---
 
@@ -164,8 +164,8 @@ If the attribute is already a string or can be converted to one, or doesn't have
 
 Yay! Pretty code. 
 
-## Backfilling a history previously tracked with Paperclip to my new model: 
-The model I'm tracking manually now was previously tracked with Paperclip. I don't want to lose that history, so I wrote this rake task to backfill the history from Paperclip to my new model: 
+## Backfilling a history previously tracked with Papertrail to my new model: 
+The model I'm tracking manually now was previously tracked with Papertrail. I don't want to lose that history, so I wrote this rake task to backfill the history from Papertrail to my new model: 
 
 ```ruby
   task backfill_history: :environment do
