@@ -13,9 +13,13 @@ module.exports = async function() {
   };
   const asset = new AssetCache("airtable_books_read");
 
+  if(asset.isCacheValid("1d")) {
+    // return cached data.
+    return asset.getCachedValue();
+  }
+
   try {
     await base('Antilibrary').select({
-      view: "Antilibrary",
       filterByFormula: "{read or in progress}"
     }).eachPage(function page(records, fetchNextPage) {
       // This function (`page`) will get called for each page of records.
