@@ -14,14 +14,123 @@ There are two tools that are going to be really helpful for this project: [Eleve
 ## Authenticating with Airtable
 You'll need a personal access token for Airtable - see [personal access token instructions](https://airtable.com/developers/web/guides/personal-access-tokens) here. 
 
-You'll want to keep that value safe and private, aka out of your front-end code and out of your git history. I put it in an .env file, making sure my .env is gitignored, and also in the secure environment variables section of my host (Netlify, in my case).
+You'll want to keep that value safe and private, aka out of your front-end code and out of your git history. I put it in an [.env file](https://www.11ty.dev/docs/environment-vars/#via-.env-file) and also in the secure environment variables section of my host (Netlify, in my case). 
+
+If you are creating a `.env` file for the first time, take these steps: 
+1. Make sure to install `dotenv` with `npm install dotenv --save`
+2. Add `require('dotenv').config()` at the top of your .eleventy.js config file. 
+3. Add `.env` to your `.gitignore`, creating a file with the name `.gitignore` if needed. The gigitnore file should be committed, but `.env` is for your secrets and should _never_ be committed to your git repository. 
+
+Setting up dotenv means you can access variables in your `.env` in your Eleventy code using `process.env.MY_VARIABLE_NAME` (all caps for environment variable names is a convention).
+
+## Airtable Table ID
+Airtable refers to its tables as "bases". But the docs refers to bases as tables! In the interactive docs (see above docs section), find the header on the left that says "[YOUR TABLE NAME] TABLE". In that section, you'll see "The id for [your table name] is [blah blah blah]." You can hardcode that value into your code, but I put mine in my .env file for safe-keeping. You can also use the base name in your code instead, but the id won't change even if you change the base name in Airtable. 
+
+## Setting Up Dependencies
+
+First we're going to install Eleventy Fetch and the Airtable.js library. 
+
+```bash
+npm install @11ty/eleventy-fetch
+npm install airtable
+```
+
+I read the [important security & privacy notice on the Eleventy Fetch docs](https://www.11ty.dev/docs/plugins/fetch/#installation) and next added `.cache` to my `.gitignore`. 
+
+## Importing my reading list as Eleventy Data
+
+Create a new file under `_data` and give it a `.js` extension. The data exported from this file we'll be available to your template files using the name of the file (minus the `.js`). We'll use Eleventy Fetch to cache the data, so even if a subsequent request fails because the Airtable API is down, we'll be able to build the site anyways using the last cached value. 
+
+The data I want to get for my reading list is a JSON object with a key for "current" (books I'm currently reading) and a key for each year, for books I've marked as finished. The value of each key in the returned object will be an array of objects representing books, with a name and author stored for now. 
+
+I keep books I've read and books I want to read in the same Airtable base, so I'm filtering the records I ask for from Airtable to just the ones that are already read or are in progress. That's the `filterByFormula` value in my code below. 
+
+An interesting thing about the Airtable API is that it assumes that you might have lots of data, and thus need to get the data back one page (segment of records) at a time. The Airtable docs for fetching a list of records using recursive callbacks to get each page of records, and call a `done` function you provide when finished. I converted the code to an async/await style so that it would fit better with the control flow of my async export for the data file. 
+
+## Saving cached records
+
+Eleventy Fetch is usually used by providing the Fetch library a URL, and the results returned by calling that URL are what's cached. Here, we want to do things a little differently- in part because we're transforming the data we get back, and that's what we want to save rather than the Airtable raw results, but mainly, because the records are paginated, and not returned all at once. If you have less than 100 records (and know that will always be the case), you could use 11ty Fetch the traditional way. Instead, we'll be [manually storing our data in the cache](https://www.11ty.dev/docs/plugins/fetch/#manually-store-your-own-data-in-the-cache), which is officially supported, but is listed in the docs as an Advanced use case that most people won't need. We have a good reason though so it's okay. 😊
 
 
+### A note on debugging
+If you're not sure your cache is working, you might try running Eleventy in debug mode. Woe! You might then say. There's nothing related to caching in the debug output! This actually isn't a sign that something is wrong - as of writing (May 8, 2023), the code I'm using here isn't actually going to show any debug output. I [opened an issue](https://github.com/11ty/eleventy-fetch/issues/31) hoping for more debug output, but in the mean time, look in that `.cache` folder generated by Eleventy and see if your data is showing up there or not. 
 
-First we're going to install Eleventy Fetch. 
-`npm install @11ty/eleventy-fetch`
+While debugging your Airtable field names and formulas (if you're using any), you'll probably want to refresh your data on every run. Make sure to comment out these lines or change the duration to `0s`: 
 
-I read the important security & privacy notice and next added `.cache` to my `.gitignore`. 
+```javascript
+if(asset.isCacheValid("1d")) {
+  return asset.getCachedValue();
+}
+  ```
 
-`npm install airtable`
+## Okay show me the code
+
+Here's the code I'm using: 
+
+```javascript
+const Airtable = require('airtable');
+const { AssetCache } = require("@11ty/eleventy-fetch");
+
+// takes an airtable record and returns a javascript object with the fields I want
+const createBookFromRecord = (record) => ({
+    name: record.get('Name'),
+    author: record.get('Author')
+  });
+
+module.exports = async function() {
+  // create a connection to your airtable base
+  var base = new Airtable({apiKey: process.env.AIRTABLE_API_KEY}).base(process.env.AIRTABLE_BOOKS_BASE_ID);
+
+  // set up an object we'll populate with data.
+  const books = {
+    current: [],
+  };
+
+  // any unique-to-our-app key will work as the argument to the AssetCache constructor
+  const asset = new AssetCache("airtable_books_read");
+  
+  // check if the cache is fresh within the last day
+  if(asset.isCacheValid("1d")) {
+    // return cached data.
+    return asset.getCachedValue();
+  }
+
+  try {
+    await base(process.env.AIRTABLE_BOOKS_BASE_ID).select({
+      // https://support.airtable.com/docs/formula-field-reference
+      filterByFormula: "{read or in progress}"
+    }).eachPage(function page(records, fetchNextPage) {
+      // This function (`page`) will get called for each page of records.
+      try {
+        // sometimes a page comes back with no records, hence the optional chaining (?) operator
+        records?.forEach(function(record) {
+          // "I finished reading it" is a multi-select field containing zero or more years
+          const yearsRead = record.get("I finished reading it")
+          yearsRead?.forEach(year => {
+            books[year] = books[year] || [];
+            books[year].push(createBookFromRecord(record));
+          });
+  
+          if (record.get("Started") && !record.get("I finished reading it")) {
+            books.current.push(createBookFromRecord(record));
+          }
+        });
+      } catch (error) {
+        console.log(error);
+      }
+        // To fetch the next page of records, call `fetchNextPage`.
+        // If there are more records, `page` will get called again.
+        // If there are no more records, the promise will resolve.
+        fetchNextPage();
+    });
+    console.log("saving");
+    await asset.save(books, "json");
+    return books;
+  } catch (err) {
+    console.log(err);
+    console.log("returning cached");
+    return asset.getCachedValue();
+  }
+};
+```
 
