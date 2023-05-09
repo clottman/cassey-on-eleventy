@@ -8,7 +8,7 @@ const metadata = require('./metadata.js')
 // Load .env variables with dotenv
 require('dotenv').config()
 // Define Cache Location and API Endpoint
-const CACHE_FILE_PATH = '_cache/webmentions.json'
+const CACHE_FILE_PATH = '.cache/webmentions.json'
 const API = 'https://webmention.io/api'
 const TOKEN = process.env.WEBMENTION_IO_TOKEN
 async function fetchWebmentions(since, perPage = 10000) {
@@ -36,7 +36,7 @@ function mergeWebmentions(a, b) {
 }
 // save combined webmentions in cache file
 function writeToCache(data) {
-  const dir = '_cache'
+  const dir = '.cache'
   const fileContent = JSON.stringify(data, null, 2)
   // create cache folder if it doesnt exist already
   if (!fs.existsSync(dir)) {
