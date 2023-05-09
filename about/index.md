@@ -15,7 +15,7 @@ I'm currently reading:
 {% if reading_list.current|length %}
 <ul>
 {% for book in reading_list.current %}
-  <li>{{ book["name"]}} {% if book.author %}by {% endif %} {{book.author}}
+  <li><u>{{ book["name"]}}</u> {% if book.author %}by {% endif %} {{book.author}}
 {% endfor %}
 </ul>
 {% endif %}
