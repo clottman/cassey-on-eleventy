@@ -2,7 +2,7 @@
 layout: post
 title: "Fetching & caching data from Airtable in my 11ty site"
 date: 2023-05-09
-tags: [posts]
+tags: [posts, code, eleventy]
 social_description: "Using the Airtable.js library and Eleventy Fetch"
 ---
 
