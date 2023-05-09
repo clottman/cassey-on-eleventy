@@ -45,6 +45,11 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("webmentionsByType", webmentionsByType);
   eleventyConfig.addFilter("readableDateFromISO", readableDateFromISO);
 
+  // for use with the log filter when you want to dump an object to string on the page
+  eleventyConfig.addFilter("stringifyObject", (obj) => {
+    return JSON.stringify(obj);
+  });
+
   // replaces whitespace with _ and removes slashes
   eleventyConfig.addFilter("classifyTag", classifyTagFilter);
 
