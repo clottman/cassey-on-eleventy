@@ -13,7 +13,7 @@ module.exports = async function() {
   };
   const asset = new AssetCache("airtable_books_read");
 
-  if(asset.isCacheValid("1d")) {
+  if(asset.isCacheValid("1h")) {
     // return cached data.
     return asset.getCachedValue();
   }

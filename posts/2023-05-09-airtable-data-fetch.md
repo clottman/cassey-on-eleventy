@@ -1,3 +1,10 @@
+---
+layout: post
+title: "Fetching & caching data from Airtable in my 11ty site"
+date: 2023-05-09
+tags: [posts]
+social_description: "Using the Airtable.js library and Eleventy Fetch"
+---
 
 I've been seeing a lot of people blog about setting up a [now page](https://nownownow.com/about) on their website. Kind of like an about page, a now page is a page on a personal website that tells you what that person is up to in their life. Some people blog on that page, while others use APIs from services that track their media consumption or daily habits to fill the page with interesting little snippets of what's going on in their life.
 
@@ -39,23 +46,31 @@ I read the [important security & privacy notice on the Eleventy Fetch docs](http
 
 ## Importing my reading list as Eleventy Data
 
-Create a new file under `_data` and give it a `.js` extension. The data exported from this file we'll be available to your template files using the name of the file (minus the `.js`). We'll use Eleventy Fetch to cache the data, so even if a subsequent request fails because the Airtable API is down, we'll be able to build the site anyways using the last cached value. 
+Create a new file under `_data` and give it a `.js` extension. The data exported from this file we'll be available to your template files using the name of the file (minus the `.js`). We'll use Eleventy Fetch to cache the data, so even if a subsequent request fails because the Airtable API is down, we'll be able to build the site anyways using the last cached value. It will also help with limiting our requests to Airtable when you're working on your site - unless you're working on this feature, you probably don't want to hit the Airtable API every single time your site rebuilds as you're working on something else!
 
-The data I want to get for my reading list is a JSON object with a key for "current" (books I'm currently reading) and a key for each year, for books I've marked as finished. The value of each key in the returned object will be an array of objects representing books, with a name and author stored for now. 
+The Airtable base I'm using is a list of books with at least these fields: 
+ - "Name" - text
+ - "Author" - text
+ - "Started" - single select, containing the current year or nothing. This could easily also be a checkbox!
+ - "Finished Reading" - a multi-select (maybe I read it multiple times), containing zero or more years
+ - "read?" - a formula field that checks if "Finished Reading" has any values. The formula is `NOT({Finished Reading}=BLANK())`
+ - "read or in progress" - a formula field that results in a 0 or 1 for if the book should go to my Eleventy site at all - I want to exclude the books that I am interested in but haven't started or finished yet. The formula here is `OR({read?},{Started})`. 
 
-I keep books I've read and books I want to read in the same Airtable base, so I'm filtering the records I ask for from Airtable to just the ones that are already read or are in progress. That's the `filterByFormula` value in my code below. 
+The data I want to get for my reading list in my 11ty site is a JSON object with a key for "current" (books I'm currently reading) and a key for each year for books I've marked as finished. The value of each key in the returned object will be an array of objects representing books, with a name and author stored for now. 
+
+I keep books I've read and books I want to read in the same Airtable base, so I'm filtering the records I ask for from Airtable to just the ones that are already read or are in progress. That's the `filterByFormula` value in my code below. Note that the `read or in progress` field is what I'm using to filter my response from Airtable in the code down below, and I could easily put that formula directly in my code as the `filterByFormula` instead of as a column in Airtable. But, it's easier to test that your formulas work by adjusting columns in Airtable first and seeing the response dynamically rather than with every build. 
 
 An interesting thing about the Airtable API is that it assumes that you might have lots of data, and thus need to get the data back one page (segment of records) at a time. The Airtable docs for fetching a list of records using recursive callbacks to get each page of records, and call a `done` function you provide when finished. I converted the code to an async/await style so that it would fit better with the control flow of my async export for the data file. 
 
 ## Saving cached records
 
-Eleventy Fetch is usually used by providing the Fetch library a URL, and the results returned by calling that URL are what's cached. Here, we want to do things a little differently- in part because we're transforming the data we get back, and that's what we want to save rather than the Airtable raw results, but mainly, because the records are paginated, and not returned all at once. If you have less than 100 records (and know that will always be the case), you could use 11ty Fetch the traditional way. Instead, we'll be [manually storing our data in the cache](https://www.11ty.dev/docs/plugins/fetch/#manually-store-your-own-data-in-the-cache), which is officially supported, but is listed in the docs as an Advanced use case that most people won't need. We have a good reason though so it's okay. 😊
+Eleventy Fetch is usually used by providing the Fetch library a URL, and the results returned by calling that URL are what's cached. Here, we want to do things a little differently- in part because we're transforming the data we get back, and that's what we want to save rather than the Airtable raw results, but mainly because the records are paginated, and not returned all at once. If you have less than 100 records (and know that will always be the case), you could use 11ty Fetch the traditional way. Instead, we'll be [manually storing our data in the cache](https://www.11ty.dev/docs/plugins/fetch/#manually-store-your-own-data-in-the-cache), which is officially supported, but is listed in the docs as an Advanced use case that most people won't need. We have a good reason though so it's okay. 😊
 
 
 ### A note on debugging
 If you're not sure your cache is working, you might try running Eleventy in debug mode. Woe! You might then say. There's nothing related to caching in the debug output! This actually isn't a sign that something is wrong - as of writing (May 8, 2023), the code I'm using here isn't actually going to show any debug output. I [opened an issue](https://github.com/11ty/eleventy-fetch/issues/31) hoping for more debug output, but in the mean time, look in that `.cache` folder generated by Eleventy and see if your data is showing up there or not. 
 
-While debugging your Airtable field names and formulas (if you're using any), you'll probably want to refresh your data on every run. Make sure to comment out these lines or change the duration to `0s`: 
+While debugging your Airtable field names and formulas (if you're using any), you'll probably want to refresh your data on every run. Make sure to comment out these lines or change the duration (the argument to `isCacheValid`) to `0s`: 
 
 ```javascript
 if(asset.isCacheValid("1d")) {
@@ -104,14 +119,14 @@ module.exports = async function() {
       try {
         // sometimes a page comes back with no records, hence the optional chaining (?) operator
         records?.forEach(function(record) {
-          // "I finished reading it" is a multi-select field containing zero or more years
-          const yearsRead = record.get("I finished reading it")
+          // "Finished Reading" is a multi-select field containing zero or more years
+          const yearsRead = record.get("Finished Reading")
           yearsRead?.forEach(year => {
             books[year] = books[year] || [];
             books[year].push(createBookFromRecord(record));
           });
   
-          if (record.get("Started") && !record.get("I finished reading it")) {
+          if (record.get("Started") && !record.get("Finished Reading")) {
             books.current.push(createBookFromRecord(record));
           }
         });
@@ -133,4 +148,28 @@ module.exports = async function() {
   }
 };
 ```
+
+## Displaying the Data
+
+I'm using some Nunjucks code like this to display my in-progress books on my [about page](/about) for right now. I'm using the Nunjucks length filter to check if there are any books I'm currently reading.
+
+```html
+{% raw %}{% if reading_list.current|length %}
+  <ul>
+    {% for book in reading_list.current %}
+      <li>{{ book["name"]}} {% if book.author %}by {% endif %} {{book.author}}
+    {% endfor %}
+  </ul>
+{% endif %}
+
+{% if not reading_list.current|length %}
+  Nothing! Check back soon to see what I've started.
+{% endif %}
+{% endraw %}
+```
+
+## Great but I don't commit to my site every day
+
+Static sites like Eleventy only update at build time. And if you're not pushing code or new blog posts as frequently as you're updating your book list in Airtable, your reading list might get stale! We'll set up a GitHub action to run  every day and tell Netlify to build our site. I've been putting off any changes that would require me to have to do this for a long time, but it's really not that much work to set up. I followed [this blog on setting up a Github Action for triggering Netlify builds](https://www.voorhoede.nl/en/blog/scheduling-netlify-deploys-with-github-actions/).
+
 
