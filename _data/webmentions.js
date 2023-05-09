@@ -8,7 +8,7 @@ const metadata = require('./metadata.js')
 // Load .env variables with dotenv
 require('dotenv').config()
 // Define Cache Location and API Endpoint
-const CACHE_FILE_PATH = '_cache/webmentions.json'
+const CACHE_FILE_PATH = '.cache/webmentions.json'
 const API = 'https://webmention.io/api'
 const TOKEN = process.env.WEBMENTION_IO_TOKEN
 async function fetchWebmentions(since, perPage = 10000) {
@@ -19,7 +19,8 @@ async function fetchWebmentions(since, perPage = 10000) {
     console.warn('>>> unable to fetch webmentions: missing domain or token')
     return false
   }
-  let url = `${API}/mentions.jf2?domain=${domain}&token=${TOKEN}&per-page=${perPage}`
+  // removed domain=${domain} because no webmentions show up if it's there, but the api supports just using the token to get all webmentions for all sites
+  let url = `${API}/mentions.jf2?&token=${TOKEN}&per-page=${perPage}`
   if (since) url += `&since=${since}` // only fetch new mentions
   const response = await fetch(url)
   if (response.ok) {
@@ -35,7 +36,7 @@ function mergeWebmentions(a, b) {
 }
 // save combined webmentions in cache file
 function writeToCache(data) {
-  const dir = '_cache'
+  const dir = '.cache'
   const fileContent = JSON.stringify(data, null, 2)
   // create cache folder if it doesnt exist already
   if (!fs.existsSync(dir)) {

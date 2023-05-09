@@ -1,0 +1,36 @@
+    {% set mentions = webmentions | getWebmentionsForUrl(metadata.domain + webmentionUrl) %}
+    {% set reposts = mentions | webmentionsByType('repost-of') %}
+    {% set repostsSize = reposts | size %}
+    {% set likes = mentions | webmentionsByType('like-of') %}
+    {% set likesSize = likes | size %}
+    {% set replies = mentions | webmentionsByType('in-reply-to')  %}
+    {% set repliesSize = replies | size  %}
+
+<section>
+  <h2 class="webmention-heading">
+    Webmentions:
+    {% if likesSize > 0 %}
+      {{ likesSize }} Like{% if likesSize != 1 %}s{% endif %}
+    {% endif %}
+    {% if repostsSize > 0 %}
+      {{ repostsSize }} Retweet{% if repostsSize != 1 %}s{% endif %}
+    {% endif %}
+    {% if likesSize == 0 %} 
+      {% if repliesSize == 0 %}
+        None yet!
+      {% endif %}
+    {% endif %}
+  </h2>
+
+  {% if repliesSize > 0 %}
+  <div class="webmention-replies">
+    <h3 class="replies-heading">{{ repliesSize }} {% if repliesSize == "1" %}Reply{% else %}Replies{% endif %}</h3>
+
+    {% for webmention in replies %}
+      {% include 'webmention.njk' %}
+    {% endfor %}
+  </div>
+  {% endif %}
+
+  <p>These are <a href="https://indieweb.org/Webmention">webmentions</a> via the <a href="https://indieweb.org/">IndieWeb</a> and <a href="https://webmention.io/">webmention.io</a>.
+</section>
