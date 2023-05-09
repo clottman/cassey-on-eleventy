@@ -7,3 +7,5 @@ report*
 # Local Netlify folder
 .netlify
 .cache
+.netlify_cache
+_cache
