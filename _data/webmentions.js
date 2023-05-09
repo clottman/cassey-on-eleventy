@@ -19,7 +19,8 @@ async function fetchWebmentions(since, perPage = 10000) {
     console.warn('>>> unable to fetch webmentions: missing domain or token')
     return false
   }
-  let url = `${API}/mentions.jf2?domain=${domain}&token=${TOKEN}&per-page=${perPage}`
+  // removed domain=${domain} because no webmentions show up if it's there, but the api supports just using the token to get all webmentions for all sites
+  let url = `${API}/mentions.jf2?&token=${TOKEN}&per-page=${perPage}`
   if (since) url += `&since=${since}` // only fetch new mentions
   const response = await fetch(url)
   if (response.ok) {
