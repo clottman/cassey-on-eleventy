@@ -67,7 +67,7 @@ module.exports = async function () {
     console.log(`>>> ${cache.children.length} webmentions loaded from cache`)
   }
   // Only fetch new mentions in production
-  if (process.env.NODE_ENV === 'production') {
+  if (process.env.NODE_ENV === 'local') {
     console.log('>>> Checking for new webmentions...');
     const feed = await fetchWebmentions(cache.lastFetched)
     if (feed) {
