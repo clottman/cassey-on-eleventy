@@ -13,3 +13,6 @@ layout: layouts/base.njk
 </article>
 
 <p><a href="/til"><span aria-hidden="true">← </span>See all Today I Learned posts</a></p>
+
+{% set webmentionUrl %}{{ page.url | url | absoluteUrl(site.url) }}{% endset %}
+{% include 'webmentions.njk' %}

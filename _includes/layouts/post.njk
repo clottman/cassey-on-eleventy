@@ -12,3 +12,7 @@ layout: layouts/base.njk
   </div>
 </article>
 <p><a href="{{ '/' | url }}"><span aria-hidden="true">← </span>Home</a></p>
+
+{% set webmentionUrl %}{{ page.url | url | absoluteUrl(site.url) }}{% endset %}
+{% include 'webmentions.njk' %}
+
