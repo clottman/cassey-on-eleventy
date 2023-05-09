@@ -2,6 +2,7 @@
 const { DateTime } = require("luxon");
 module.exports = {
   getWebmentionsForUrl: (webmentions, url) => {
+    console.log({url: url});
     return webmentions.children.filter(entry => entry['wm-target'] === url)
   },
   size: (mentions) => {

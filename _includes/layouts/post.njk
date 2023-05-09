@@ -1,7 +1,6 @@
 ---
 layout: layouts/page.njk
 ---
-
 {{ content | safe }}
 
 {% set webmentionUrl %}{{ page.url | url | absoluteUrl(site.url) }}{% endset %}
