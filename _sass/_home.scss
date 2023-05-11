@@ -16,6 +16,10 @@
 
     ul {
         list-style: none;
+        > li {
+            background: url(../img/dinosaur.png) left top no-repeat; 
+            padding-left: 30px;
+        }
         a {
             text-decoration: none;
         }

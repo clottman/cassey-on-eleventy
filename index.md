@@ -10,8 +10,7 @@ eleventyExcludeFromCollections: true
 
 ## Code
 
-- [A website for my cat, Soul Patch.](https://soulpatch.info)
-- [A website for my other cat, Tally](https://tally-cat.info)
+- [My Github](https://github.com/clottman)
 - [A collection of many small Javascript projects I built on Glitch](https://glitch.com/@cassey/my-preciouses)
 
 
@@ -23,7 +22,7 @@ eleventyExcludeFromCollections: true
 - [Today I Learned - casual, short posts on things I've learned as I learn them](/til)
 
 ## Talks
-
+- [Diving into an existing 11ty project for the Eleventy Meetup](https://www.youtube.com/watch?v=bGDA1Lh-PeU)
 - ["Octopus Deploy: Automating .NET Deployments" at Erie Day of Code](https://www.youtube.com/watch?v=TIjBHZ6McAg)
     - also [presented at Nebraska.Code()](https://www.slideshare.net/CasseyLottman/octopus-deploy-automating-net-deployments) on May 18, 2017; no video available. 
 - Presentations on Web accessibility to Software Engineering students at the University of Nebraska-Lincoln; no recordings available.
