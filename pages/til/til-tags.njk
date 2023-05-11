@@ -13,4 +13,11 @@ permalink: /til/tags/{{ category }}/
 {% set postslist = collections.til | include("data.til-tags", category) %}
 {% include "postslist.njk" %}
 
-<p>See <a href="{{ '/til/tags/' | url }}">all tags</a>.</p>
+
+{% set postslist = collections[ category ] %}
+{% if postslist | length %}
+  You're looking at my "Today I Learned" blog, a collection of shorter pieces on things I learned, as I learn them. Here are some longer, more polished posts from my regular blog that match this tag:
+  {% include "postslist.njk" %}
+{% endif %}
+
+<p>See <a href="{{ '/til/tags/' | url }}">all TIL tags</a>.</p>
