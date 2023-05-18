@@ -22,3 +22,8 @@
   status = 301
   force = false
 
+[[redirects]]
+  from = "/11ty-airtable-fetch"
+  to = "/posts/2023-05-09-airtable-data-fetch/"
+  status = 301
+  force = false
