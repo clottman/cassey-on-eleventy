@@ -19,7 +19,7 @@ module.exports = async function() {
   }
 
   try {
-    await base('Antilibrary').select({
+    await base("My Library").select({
       filterByFormula: "{read or in progress}"
     }).eachPage(function page(records, fetchNextPage) {
       // This function (`page`) will get called for each page of records.
