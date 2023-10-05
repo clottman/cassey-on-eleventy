@@ -2,7 +2,7 @@
 layout: post
 title: "Notes on Your Money or Your Life"
 date: 2023-05-02
-tags: [posts]
+tags: [posts, books]
 social_description: "financial independence through no longer chasing consumption"
 ---
 
