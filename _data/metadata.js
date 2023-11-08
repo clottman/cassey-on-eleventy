@@ -16,7 +16,7 @@ module.exports = async function () {
   return {
     title: "Cassey Lottman",
     url: "https://cassey.dev/",
-    domain: "cassey.dev",
+    domain: "https://www.cassey.dev",
     baseurl: site,
     description:
       'Cassey is a software developer who likes building for the Web most of all. She [ran for City Council](https://web.archive.org/web/20190809135734/http://casseyforcouncil.com/) in Lincoln, Nebraska.',

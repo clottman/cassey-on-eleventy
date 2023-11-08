@@ -19,7 +19,8 @@ async function fetchWebmentions(since, perPage = 10000) {
     console.warn('>>> unable to fetch webmentions: missing domain or token')
     return false
   }
-  let url = `${API}/mentions.jf2?domain=${domain}&token=${TOKEN}&per-page=${perPage}`
+  // removed domain=${domain} because no webmentions show up if it's there, but the api supports just using the token to get all webmentions for all sites
+  let url = `${API}/mentions.jf2?&token=${TOKEN}&per-page=${perPage}`
   if (since) url += `&since=${since}` // only fetch new mentions
   const response = await fetch(url)
   if (response.ok) {
@@ -66,7 +67,7 @@ module.exports = async function () {
     console.log(`>>> ${cache.children.length} webmentions loaded from cache`)
   }
   // Only fetch new mentions in production
-  if (process.env.NODE_ENV === 'production') {
+  if (process.env.NODE_ENV !== 'local') {
     console.log('>>> Checking for new webmentions...');
     const feed = await fetchWebmentions(cache.lastFetched)
     if (feed) {

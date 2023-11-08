@@ -2,7 +2,7 @@
 layout: post
 title: "Notes on Your Money or Your Life"
 date: 2023-05-02
-tags: [posts]
+tags: [posts, books]
 social_description: "financial independence through no longer chasing consumption"
 ---
 
@@ -12,7 +12,7 @@ While it does contain a little bit of that, investing and collecting a huge sum 
 
 > "Financial Independence has nothing to do with rich. It is the experience of having enough-- and then some."
 
-The book walks you through a nine step process of re-orienting yourself towards money, first by taking stock of how much money you've earned over the years and what you have to show for it, going through looking closely at how you spend your income each month and whether you're getting true fulfillment and satisfaction in proportion to the amount of "lief energy" you've spent to earn that money. Through this process, the authors claim that your spending is likely to decrease as you become more conscious of what you truly value, but they also admit that your spending might increase - it might be that you find you really value convenience or time with friends and family, and paying extra to have a house cleaner come so you can prioritize your free time would be the right move for you. Only at the very end do we come to any info on what to do with your extra cash (invest it).
+The book walks you through a nine step process of re-orienting yourself towards money, first by taking stock of how much money you've earned over the years and what you have to show for it, going through looking closely at how you spend your income each month and whether you're getting true fulfillment and satisfaction in proportion to the amount of "life energy" you've spent to earn that money. Through this process, the authors claim that your spending is likely to decrease as you become more conscious of what you truly value, but they also admit that your spending might increase - it might be that you find you really value convenience or time with friends and family, and paying extra to have a house cleaner come so you can prioritize your free time would be the right move for you. Only at the very end do we come to any info on what to do with your extra cash (invest it).
 
 > "The affluence that surrounds us has been called the American Dream, and with good reason: We've been asleep. We wake up by questioning the dream."
 

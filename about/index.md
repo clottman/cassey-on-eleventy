@@ -1,10 +1,26 @@
 ---
-layout: layouts/post.njk
+layout: layouts/page.njk
 title: About Me
 navtitle: About
 navorder: 2
 ---
 
-I'm a web developer, but first and foremost, I'm a community member. My communities include women-in-tech-on-Twitter, progressives fighting for change in a red state, [advocates for renters' rights and affordable housing](https://facebook.com/RentersTogetherLNK/), my book club, people making cool stuff on [Glitch](https://www.glitch.com), and so many more. My communities are what drive me - coding is my job but not my life, even though some of those community memberships only make sense _because_ I code.
+I'm a web developer mainly working in full stack Ruby on Rails and static sites with Eleventy these days. I'm also a parent to a very cute kid, and a person fighting alongside my community to keep my home (Lincoln, Nebraska) a place I want to raise said kid. A place that's safe for all kinds of people to thrive.
 
-Recently, I [ran for City Council](http://casseyforcouncil.com) in Lincoln, Nebraska. I ran to draw attention to the importance of ensuring adequate and affordable housing for people of all income levels in Lincoln, and to be an advocate for neighborhoods that have been neglected by city officials for too long.
+A few years back, I [ran for City Council](https://web.archive.org/web/20190809135734/http://casseyforcouncil.com/) in Lincoln. I ran to draw attention to the importance of ensuring adequate and affordable housing for people of all income levels in Lincoln, and to be an advocate for neighborhoods that have been neglected by city officials for too long.
+<br/>
+<hr/>
+<br/>
+<h2>Now</h2>
+I'm currently reading: 
+{% if reading_list.current|length %}
+<ul>
+{% for book in reading_list.current %}
+  <li><u>{{ book["name"]}}</u> {% if book.author %}by {% endif %} {{book.author}}
+{% endfor %}
+</ul>
+{% endif %}
+
+{% if not reading_list.current|length %}
+  Nothing! Check back soon to see what I've started.
+{% endif %}

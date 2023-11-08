@@ -18,4 +18,10 @@ permalink: /blog/tags/{{ tag }}/
 {% set postslist = collections[ tag ] %}
 {% include "postslist.njk" %}
 
+{% set postslist = collections.til | include("data.til-tags", tag) %}
+{% if postslist | length %}
+  You're looking at my blog, a collection of longer, more polished pieces I wrote. I also have a "Today I Learned" blog where I take notes on things I'm learning as I go about working on technical projects. Here are some posts that match this same tag from the TIL side of my site:
+  {% include "postslist.njk" %}
+{% endif %}
+
 <p>See <a href="{{ '/blog/tags/' | url }}">all tags</a>.</p>

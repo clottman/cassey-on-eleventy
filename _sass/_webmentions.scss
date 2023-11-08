@@ -1,0 +1,20 @@
+.webmention-heading {
+  margin-bottom: 0;
+}
+
+.replies-heading {
+  margin-top: 8px;
+  margin-bottom: 0;
+}
+
+.webmention {
+  margin: 8px;
+  border-bottom: 1px solid black;
+  padding: 8px;
+
+  &__meta {
+    img { 
+      border-radius: 24px;
+    }
+  }
+}
