@@ -32,13 +32,6 @@ module.exports = async function () {
       name: "Cassey Lottman",
       site: "https://cassey.dev",
       github_username: "clottman",
-      glitch_username: "Cassey",
-      twitters: [
-        {
-          username: "CasseyLottman",
-          display: "Twitter",
-        },
-      ],
       til: "https://cassey.dev/til",
     },
     favicon: "/img/favicon.ico",
