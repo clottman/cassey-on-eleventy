@@ -14,7 +14,6 @@ One app that I've tried in the last few months and really liked is called Obsidi
 ### a way to write lots of Markdown files
 Obsidian is a note-taking or knowledge management app where your files are all stored in Markdown, meaning if you decide you don't want to use Obsidian any more, you can easily use your files anywhere else - it's not a custom format that is going to be a pain to import into some other tool, or cause you to lose data if you do. 
 
-
 ### it's private
 Privacy is emphasized - by default, your files are stored only on your device, not in the company's cloud. (You can use their paid cloud sync service to sync your files between devices- in those cases the files are end-to-end encrypted.) 
 
