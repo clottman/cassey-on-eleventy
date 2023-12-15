@@ -23,6 +23,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Open+Sans&display=swap" rel="stylesheet"> 
 
     <link rel="webmention" href="https://webmention.io/www.cassey.dev/webmention" />
+    <script defer type="module" src="https://unpkg.com/@zachleat/snow-fall@1.0.1/snow-fall.js"></script>
   </head>
   <body>
     <header class='site-header'>
@@ -69,6 +70,7 @@
         </ul>
       <p>{{ metadata.description | markdownify | stripPs | safe  }}</p>
     </div>
+    <p>Want to make it snow on your site too? <a href="https://paste.lol/bw/omg.lol-snowfall">Get the code</a> from <a href="https://www.zachleat.com/">Zach Leatherman</a>.
   </div>
 </footer>
     <script>
@@ -79,6 +81,10 @@
           nav.classList.toggle('visible');
         });
       })();
+    </script>
+    <script type="module" defer>
+        const snow = document.createElement('snow-fall');
+        document.body.prepend(snow)
     </script>
   </body>
 </html>
