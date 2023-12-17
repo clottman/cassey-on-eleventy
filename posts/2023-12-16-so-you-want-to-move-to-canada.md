@@ -207,6 +207,24 @@ Want to move to a different US state? [This is a fun map](https://www.movemap.io
 ### How can I learn French?
 That's a big question - but [this French resource guide](https://fussfreefrench.com/) I found recently has a really big answer that is worth a visit. 
 
+### How long did this whole process take?
+There are a lot of steps that take different amounts of time!
+- Passport applications can take a while.
+- Our ECAs took maybe 6-8 weeks; it seems like wait time might be less now.
+- Language tests depends on the testing center schedule - we booked ours a couple months out based around the time I needed to brush up on French and needing to get English and French test schedules to line up in Chicago. Test results took maybe a month.
+- Proof of employment letter took a couple weeks of slow back and forths over email.
+- Proof of funds took a couple weeks of back & forth with my bank.
+- Our profile was in the pool for a couple weeks before we got an invitation to apply. This can be _really_ variable and depends entirely on your score and the draw categories. I knew that with our score, we'd be part of a draw very quickly once we were in the pool. 
+- Filling out the profile took maybe on the scale of 2-3 hours; filling out the application took a lot longer though a lot of that was figuring out my travel and address history.
+- We received an Invitation to Apply at the end of May 2023, submitted the application mid July, and received COPR in September or early October.
+
+### How long will you have before you need to move, after getting COPR?
+You'll need to enter Canada & activate your PR status before your medical exams expire, or else retake them (I'm not sure on the details around this; if you're considering letting your medicals expire, do some research!) Medical exams are good for a year, and will happen sometime after your invitation to apply is received but before the final decision is made. So, that gives you something less than a year for sure before you need to go to Canada for the first time. (If your profile has been in the pool for a while, or is delayed for administrative reasons, you may have even less time.)
+
+To maintain the status once you have it, you'll only need to have 730 days of each 5 years in Canada. That is, you can land in Canada and then go back to your home country and get your affairs in order before you'll need to truly move if you intend to make use of your PR status.
+
+Once/if you become a citizen (a minimum of 3 years after becoming a PR & living in Canada), these limits don't matter any more, and you will be able to live in Canada or in your home country without any big to-do.
+
 ### What are some other random hidden costs?
  - Photos in the perfect size when they're ready to issue a visa- Staples will do these for $20 or so a person. 
  - Courier shipping for your final document copies when they're ready to issue a visa, and return shipping. Why courier shipping and not USPS? I don't know, but if you have learned one thing from this post, it is to _do exactly what IRCC says_. This was annoyingly expensive for me; maybe you can get a deal. (I paid ~$50 the first time and then another ~$50 for the second round when my first one I sent was wrong.)
