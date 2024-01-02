@@ -2,7 +2,7 @@
 layout: layouts/post.njk
 title: Static Site Generator Cheat Sheet & FAQ
 templateEngineOverride: md
-permalink: ssg-faq
+permalink: /ssg-faq/index.html
 ---
 Questions I Frequently Ask Myself When Working With Static Sites (like my fave, [11ty](https://11ty.dev)):
 
