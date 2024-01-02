@@ -79,6 +79,11 @@ figure > img {
 
 figcaption {
   font-size: $small-font-size;
+  text-align: center;
+  @media screen and (min-width: $on-laptop) {
+    max-width: 60%;
+    margin: auto auto;
+  }
 }
 
 /**
