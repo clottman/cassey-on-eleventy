@@ -27,3 +27,8 @@
   to = "/posts/2023-05-09-airtable-data-fetch/"
   status = 301
   force = false
+
+[[redirects]]
+  from = "/bye-2023"
+  to = "/posts/2024-01-01-new-years-reflections/"
+  status = 301
