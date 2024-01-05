@@ -1,0 +1,107 @@
+---
+layout: post
+title: "2022 in Books"
+date: 2022-12-31
+tags: [posts, reflection, year-in-review, books]
+social_description: "My (virtual) bookshelf"
+redirectsFrom: "/posts/2022-12-31-2022-in-books/"
+---
+
+<style>
+    .bookGrid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .bookGrid > div {
+        max-width: 31%;
+        margin-right: 10px;
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    @media screen and (max-width: 600px) {
+        .bookGrid > div {
+            max-width: unset;
+        }
+    }
+    .bookGrid h3 {
+        margin-bottom: 5px;
+        font-weight: bold;
+        text-align: center;
+    }
+    .tag:not(.token):not(.clear):not(.favorites) {
+        background-color: var(--primary100);
+    }
+    .tag:not(.token) {
+        display: inline-block;
+    }
+    .tagSection {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .tagSection span {
+        margin-bottom: 10px;
+    }
+    button.tag {
+        margin-bottom: 10px;
+    }
+    .book.hidden {
+        display: none;
+    }
+</style>
+
+<p>I read a lot of books this year. I had phases of wanting to read graphical things - graphical memoirs and nonfiction, and am currently in a phase of bringing home big stacks of cookbooks from the library which I sometimes peruse but often read cover to cover-- unless I don't touch them at all (ones in this category not included here).</p>
+
+<p>Some books really opened my eyes to new-to-me ideas, especially about queerness - "Queer: A Graphic History", "Genderqueer", and "Ace" fall into this category. I nodded a lot while reading "How to be Anti-Capitalist in the 21st Century", though not all the ideas landed for me. "Snacking Cakes" opened my eyes to how good cake can be and the idea that I can just eat it all the time if I want, and "I Dream of Dinner" gave me all sorts of ideas for improvising dinner out of what's in our fridge at any given time. "Hench" and "A Prayer for the Crown Shy" are the books I can't stop recommending to friends. (Though for the latter, read "A Psalm for the Wild Built" first).</p>
+
+<p>Click to filter:</p>
+{% for bookTag in books_2022_tags %}
+    <button onClick="filterToTag('{{bookTag | classifyTag}}')" class="tag {{bookTag | classifyTag}}">{{ bookTag }}</button>
+{% endfor %}
+    <button onClick="clearFilters()" class="tag clear">Clear Filters</button>
+<div class="bookGrid">
+    {% for book in books_2022 %}
+    {% set tags = "" %}
+    {% for bookTag in book.tags %}
+        {% set bookTagSlug = bookTag | classifyTag %}
+        {% set tags = tags + " " + bookTagSlug %}
+    {% endfor %}
+    <div class="book {{tags}}">
+        {% set alt = "Cover of " + book.name %}
+        {% set imgKey = "raw_img/books_2022/" + book.img %}
+        {% if book.img %}
+            {% img imgKey, alt, 180, tags %} 
+        {% endif %}
+        <h3>{{ book.name }}</h3>
+        <p>{{book.author}}</p>
+        <div class="tagSection">
+            {% for bookTag in book.tags %}
+                <span class="tag">{{bookTag}}</span>
+            {% endfor %}
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+<script type="text/javascript">
+    function filterToTag(tagName) {
+        const allBooks = document.querySelectorAll('.book');
+        for (book of allBooks) {
+            book.classList.add('hidden');
+        }
+        const tagBooks = document.querySelectorAll('.book.' + tagName);
+        for (taggedBook of tagBooks) {
+            taggedBook.classList.remove('hidden');
+        }
+    }
+
+    function clearFilters() {
+        const allBooks = document.querySelectorAll('.book');
+        for (book of allBooks) {
+            book.classList.remove('hidden');
+        }
+    }
+</script>

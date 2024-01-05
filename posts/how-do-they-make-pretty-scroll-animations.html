@@ -1,0 +1,27 @@
+---
+layout: post
+title: Pretty Scroll Animations - How do they do that?
+date: 2014-12-22
+redirectsFrom: "/posts/2014-12-22-pretty-scroll-animations/"
+tags:
+- code
+- code for non-coders
+---
+<p>I've been looking at a lot of Node.js tutorials lately, and <a href="http://scotch.io/tutorials/creating-a-single-page-todo-app-with-node-and-angular">this</a> one from Scotch.io really stood out. While the content was also quite helpful, the first thing I noticed was how the social icons rotated as you scrolled down the page. (Hop on over to <a href="http://scotch.io/tutorials/creating-a-single-page-todo-app-with-node-and-angular">the tutorial</a> to check it out, I'll be here when you get back!)</p>
+<p>The heart-shaped icons look really nice, and the rotation really makes them stand out. Doing something like this must be really hard, right?</p>
+<p>Wrong!</p>
+<pre style="text-align:justify;"> 1  $(window).scroll(function() {
+ 2   var offset = $(window).scrollTop();
+ 3   $('.share-links a').css({
+ 4    '-moz-transform': 'rotate(' + offset + 'deg)',
+ 5    '-webkit-transform': 'rotate(' + offset + 'deg)',
+ 6    '-o-transform': 'rotate(' + offset + 'deg)',
+ 7    '-ms-transform': 'rotate(' + offset + 'deg)',
+ 8    'transform': 'rotate(' + offset + 'deg)',
+ 9    });
+ 10  });
+
+</pre>
+<p style="text-align:justify;">The block of code above is all it takes. (Almost - this also requires JQuery, a popular library for Javascript that developers can use for free. The whole JQuery file is a lot longer than ten lines, but these are about the only parts that an average Web developer would have to write themselves.) You can see for yourself by pressing F12 with the Scotch.io page open to show the developer tools, then clicking on Sources. This code is located in the folder Scotch.io -&gt; wp-content -&gt; themes/thirty -&gt; js -&gt; power.js.</p>
+<p style="text-align:justify;">The first line of Javascript tells the browser that what follows should be executed whenever the page scrolls. The next page gets the scrollbar position and saves it to a variable called offset. Lines 3-9 changes the CSS (markup that describes how the content should look) of all of the links inside an element with the class 'share-links'. A class is like a label that you can use to apply the same formatting to several different HTML elements. All of those lines that say 'transform' set the rotate property in CSS to the value of the offset variable we saved earlier.</p>
+<p style="text-align:justify;">

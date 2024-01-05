@@ -21,8 +21,3 @@ One thing you might overlook is the filename - this doesn't go in your `.elevent
 ## How to access your variable in a template
 
 Once you have an object exported from a Javascript file in `_data`, that object is available in your templates as `filename.variablename`. So in my Liquid (markdown) templates, I write: `{% raw %}{{ processEnv.myVariable }}{% endraw %}` to display the value stored at `process.env.MY_VARIABLE`. 
-
-## See it in action
-
-I'm using this technique in [the source code of another post on this site](https://glitch.com/edit/#!/{{processEnv.values.PROJECT_DOMAIN}}?path=posts/2019-06-24-project-domain-as-env.md:1:0), so check it out! You should be able to poke around the full source of my project to see how it's configured. The variable I'm using there is called 
-`{% raw %}{{ processEnv.values.PROJECT_DOMAIN }}{% endraw %}`.
