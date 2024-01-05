@@ -4,7 +4,7 @@ eleventyExcludeFromCollections: true
 ---
 
 {%- for page in collections.all -%}
-  {%- if page.url and page.data.redirectFrom %}
+  {%- if page.url and page.data.redirectsFrom %}
 {{ page.data.redirectsFrom }}  {{ page.url }}
   {%- endif -%}
 {%- endfor -%}

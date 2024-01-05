@@ -9,26 +9,3 @@
   to = "/blog"
   status = 301
   force = false
-
-[[redirects]]
-  from = "/2019/04/23/veg-recipes.html"
-  to = "/posts/2019-04-23-veg-recipes/"
-  status = 301
-  force = false
-
-[[redirects]]
-  from = "/2019/07/06/nifa-report.html"
-  to = "/posts/2019-07-05-nifa-report/"
-  status = 301
-  force = false
-
-[[redirects]]
-  from = "/11ty-airtable-fetch"
-  to = "/posts/2023-05-09-airtable-data-fetch/"
-  status = 301
-  force = false
-
-[[redirects]]
-  from = "/bye-2023"
-  to = "/posts/2024-01-01-new-years-reflections/"
-  status = 301

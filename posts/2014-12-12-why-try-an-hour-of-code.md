@@ -2,11 +2,10 @@
 layout: post
 title: Why try an hour of code?
 date: '2014-12-12'
-categories: []
+redirectsFrom: "/posts/2014-12-12-why-try-an-hour-of-code/"
 tags:
 - code for non-coders
 - posts
-published: true
 ---
 <p>This week is the Hour of Code, a big push by the nonprofit Code.org to get as many people as possible to set aside an hour to learn the basics of code. Some people argue that everyone, of all ages, should learn to code. As a college student who has this not-so-magical ability, looking at a career in software development, I'd like to share why I think you (yes, you!) should spend an hour seeing what this code thing is all about.</p>
 

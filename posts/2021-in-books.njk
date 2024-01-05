@@ -1,0 +1,107 @@
+---
+layout: post
+title: "2021 in Books"
+date: 2021-12-28
+tags: [posts, reflection, year-in-review, books]
+social_description: "My (virtual) bookshelf"
+redirectsFrom: "/posts/2021-12-28-best-books-2021/"
+---
+
+<style>
+    .bookGrid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .bookGrid > div {
+        max-width: 31%;
+        margin-right: 10px;
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    @media screen and (max-width: 600px) {
+        .bookGrid > div {
+            max-width: unset;
+        }
+    }
+    .bookGrid h3 {
+        margin-bottom: 5px;
+        font-weight: bold;
+        text-align: center;
+    }
+    .tag:not(.token):not(.clear):not(.favorites) {
+        background-color: var(--primary100);
+    }
+    .tag:not(.token) {
+        display: inline-block;
+    }
+    .tagSection {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .tagSection span {
+        margin-bottom: 10px;
+    }
+    button.tag {
+        margin-bottom: 10px;
+    }
+    .book.hidden {
+        display: none;
+    }
+</style>
+
+<p>I read a lot of books in 2021! 34 in total, not counting a few that I read partially but didn't finish. (Books I didn't finish don't appear on this page.) Pregnancy and parenting was a big theme, as I am preparing for my first baby to enter the world in the early 2022. To my surprise even the fiction I read frequently drew on parenthood as a theme; <u>Outlawed</u>, <u>The Once and Future Witches</u>, and <u>Detransition, Baby</u> being a few examples.</p>
+
+<p>Getting a dedicated e-reader sometime in the early-mid pandemic of 2020 helped me read a lot more. This year I also found myself reading books on my phone sometimes using the Kindle app. Quite a few of the books I read came from the library - mostly e-books through the Overdrive system. I did purchase hard copies of some of the parenting books I read, especially if I thought my spouse might want to read them, too.</p>
+
+<p>Click to filter:</p>
+{% for bookTag in books_2021_tags %}
+    <button onClick="filterToTag('{{bookTag | classifyTag}}')" class="tag {{bookTag | classifyTag}}">{{ bookTag }}</button>
+{% endfor %}
+    <button onClick="clearFilters()" class="tag clear">Clear Filters</button>
+<div class="bookGrid">
+    {% for book in books_2021 %}
+    {% set tags = "" %}
+    {% for bookTag in book.tags %}
+        {% set bookTagSlug = bookTag | classifyTag %}
+        {% set tags = tags + " " + bookTagSlug %}
+    {% endfor %}
+    <div class="book {{tags}}">
+        {% set alt = "Cover of " + book.name %}
+        {% set imgKey = "raw_img/books_2021/" + book.img %}
+        {% if book.img %}
+            {% img imgKey, alt, 180, tags %} 
+        {% endif %}
+        <h3>{{ book.name }}</h3>
+        <p>{{book.author}}</p>
+        <div class="tagSection">
+            {% for bookTag in book.tags %}
+                <span class="tag">{{bookTag}}</span>
+            {% endfor %}
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+<script type="text/javascript">
+    function filterToTag(tagName) {
+        const allBooks = document.querySelectorAll('.book');
+        for (book of allBooks) {
+            book.classList.add('hidden');
+        }
+        const tagBooks = document.querySelectorAll('.book.' + tagName);
+        for (taggedBook of tagBooks) {
+            taggedBook.classList.remove('hidden');
+        }
+    }
+
+    function clearFilters() {
+        const allBooks = document.querySelectorAll('.book');
+        for (book of allBooks) {
+            book.classList.remove('hidden');
+        }
+    }
+</script>
