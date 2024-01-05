@@ -9,3 +9,4 @@ report*
 .cache
 .netlify_cache
 _cache
+.obsidian
