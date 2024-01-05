@@ -1,50 +1,7 @@
-# eleventy-base-blog
-
-A starter repository showing how to build a blog with the [Eleventy](https://github.com/11ty/eleventy) static site generator.
-
-[![Build Status](https://travis-ci.org/11ty/eleventy-base-blog.svg?branch=master)](https://travis-ci.org/11ty/eleventy-base-blog)
-
-## Demos
-
-* [On Glitch](https://11ty-eleventy-base-blog.glitch.me/)
-
-## Getting Started
-
-### 1. Remix this project.
-
-Then have a look at `.eleventy.js` to see if you want to configure any Eleventy options differently.
-
-This project's config differs from 11ty/eleventy-base-blog git repository by the following config section, which enables 404 pages to work in your remix and when hosting your site using `eleventy --serve`. 
-```
-  eleventyConfig.setBrowserSyncConfig({
-    callbacks: {
-     ready: function(err, bs) {
-       const content_404 = fs.readFileSync('_site/404.html');
-       bs.addMiddleware("*", (req, res) => {
-        // Provides the 404 content without redirect.
-        res.write(content_404);
-        res.end();
-      });
-     }
-    }
-  });
-```
-
-### 2. Installing dependencies happens automatically - thanks, Glitch!
-
-### 3. Edit _data/metadata.json
-
-### 4. Press 'Show' to view your new site
-
-The site will reload automatically when something changes. In a normal Glitch project, you would be able to turn this off by unchecking 'Refresh App on Changes', but `eleventy --serve` is what we're using to serve files, and it always `--watch`es.  
 
 ### Implementation Notes
+This started long ago as a fork of eleventy-base-blog; I've been working on it for a long time now and it's grown and morphed in many ways! 
 
-#### Glitch-specific
-* On Glitch, image files should be stored in `assets`. After uploading a new image, you can use the CDN link the assets drawer provides in your pages.
-  * This means you can remove `png` from `templateFormats`, because Glitch won't allow you to store a `png` outside of `assets`. 
-* `watch.json` controls when Glitch refreshes the server, but since Eleventy is watching for us, we can safely tell it to ignore most of our files. Instead, Eleventy will rebuild and restart BrowserSync when you make changes. 
-   
 #### General Eleventy Help
 * `about/index.md` shows how to add a content page.
 * `posts/` has the blog posts but really they can live in any directory. They need only the `post` tag to be added to this collection.
