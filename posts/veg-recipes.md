@@ -10,7 +10,7 @@ A friend asked today what they can eat if they want to avoid meat, but also can'
 
 - Roasted vegetables. Yum, yum, yum. Search the web for "how to roast" + a vegetable of choice and you'll find how long and what temperature to use. The basic idea is to toss some chopped up raw vegetables with oil and some spices (my go-tos are thyme, basil, garlic powder, and salt; you can experiment with your favorite flavors) and spread them out on a pan, then cook in the oven for the recommended amount of time/the vegetables look and smell done. 
 
-- Some of the things I've listed in [Easy Vegetarian Lunches](/posts/2016-03-21-easy-vegetarian-lunches), particularly sweet potatoes & hempseed, chickpea salad, and black bean quesadillas.
+- Some of the things I've listed in [Easy Vegetarian Lunches](/easy-vegetarian-lunches), particularly sweet potatoes & hempseed, chickpea salad, and black bean quesadillas.
 
 - Refried bean & cheese quesadillas. These are best if you have access to an oven. I spread refried beans (from a can) on a tortilla, top with shredded cheese and a bit of garlic powder & onion powder, and then another tortilla on top. Bake in a 400 degree oven for about 15 minutes or until they look as crispy as you like. So simple to prepare, so filling, and so tasty. 
 

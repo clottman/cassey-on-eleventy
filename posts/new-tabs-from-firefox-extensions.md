@@ -7,7 +7,7 @@ social_description: "It's easy, but keep in mind this One Weird Trick!"
 redirectsFrom: "/posts/2020-03-15-new-tabs-from-firefox-extensions/"
 ---
 
-Last year, I made [my first couple browser extensions](https://www.cassey.dev/posts/2019-05-30-glitch-app-to-project-ext/)! Both were built to solve immediate needs I have: one to [go between the various representations of a Glitch project](https://glitch.com/~app-to-project-extension) (the project page at glitch.com/~projectname, the editor, and the running code at projectname.glitch.me), and one to add things to my [Pinboard](https://pinboard.in) bookmarks.
+Last year, I made [my first couple browser extensions](/glitch-app-to-project-ext/)! Both were built to solve immediate needs I have: one to [go between the various representations of a Glitch project](https://glitch.com/~app-to-project-extension) (the project page at glitch.com/~projectname, the editor, and the running code at projectname.glitch.me), and one to add things to my [Pinboard](https://pinboard.in) bookmarks.
 
 The code that opens the Add to Pinboard page originated as [code for a bookmarklet, provided by Pinboard](https://pinboard.in/howto/#saving), but I like extensions better. Bookmarklets show up in my browser's Bookmarks toolbar, which I usually keep hidden. Extensions show up right next to the address bar, in a single line.
 

@@ -6,7 +6,7 @@ social_description: "okay fine, there is a part two"
 redirectsFrom: ["/posts/2024-01-01-2023-in-software-tools/"]
 ---
 
-I have another post on [New Year's Reflections](/posts/2024-01-01-new-years-reflections/) more broadly, but it was getting a bit long so I wanted to move the software & tools section out. Here it is!
+I have another post on [New Year's Reflections](/bye-2023/) more broadly, but it was getting a bit long so I wanted to move the software & tools section out. Here it is!
 
 ## Code Stuff
 As of today, [cassey.dev](https://cassey.dev) is still built with [Eleventy](https://www.11ty.dev/). I'm happy with this choice, and happy with the Eleventy community. I even gave [a talk at the Eleventy meetup](https://11tymeetup.dev/events/ep-14-community-and-caching/) this year!
@@ -19,7 +19,7 @@ I am increasingly using Notion to organize my personal life. At the start of the
 
 I'm still using Airtable for some other stuff - mainly, my list of books that I've read or want to read someday. Airtable and Notion have a lot of overlapping abilities, at least for what I need from a personal book database, and now that I'm paying for Notion, it feels silly to have some data in Airtable (where I am only on the free plan anyways). So, maybe I'll move my books list to Notion someday? But that sounds like work and right now, it's not bothering me too much.
 
-I've also been using Obsidian, which annoyingly (because I'm paying for Notion now), I like better for personal note-taking (separate from tracking info about household stuff; more like notes on books or ideas or creative projects) than Notion. I [wrote about using Obsidian](/posts/2023-11-22-notes-on-obsidian/) in November. Obsidian is kind of annoying to sync between Android & Mac unless you pay them money for Obsidian Sync, and due to all the other subscriptions mentioned in this section, I am quite hesitant to that, but I think if I _did_ start paying for Sync (which I did for a few months earlier this year to try it out), I'd like it.
+I've also been using Obsidian, which annoyingly (because I'm paying for Notion now), I like better for personal note-taking (separate from tracking info about household stuff; more like notes on books or ideas or creative projects) than Notion. I [wrote about using Obsidian](/notes-on-obsidian/) in November. Obsidian is kind of annoying to sync between Android & Mac unless you pay them money for Obsidian Sync, and due to all the other subscriptions mentioned in this section, I am quite hesitant to that, but I think if I _did_ start paying for Sync (which I did for a few months earlier this year to try it out), I'd like it.
 
 Historically my partner and I kept our list of recipes we like to eat together in an Airtable, and those are still there, but we are now doing our day-to-day meal planning and grocery listing in the [Paprika 3](https://www.paprikaapp.com/) app, and so slowly moving our favorite recipes into that. It doesn't have a subscription cost, which I like, though you will have to pay for it separately on each device you want it on. (So in our household - I paid once, and my spouse paid once, though we access the same account/sync across devices.) I'm happy with Paprika, though not always the most consistent about meal planning, and intend to keep using it.
 

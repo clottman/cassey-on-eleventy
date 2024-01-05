@@ -10,7 +10,7 @@ twitter_card_style: "summary"
 redirectsFrom: "/posts/2020-03-31-pandemic-advice/"
 ---
 
-As I have mentioned before, I [read a lot of advice columns](https://www.cassey.dev/posts/2020-03-16-advice-column-recs/). Here are a few I've read that are especially useful right now.
+As I have mentioned before, I [read a lot of advice columns](/advice-column-recs/). Here are a few I've read that are especially useful right now.
 
 ## Feelings
 

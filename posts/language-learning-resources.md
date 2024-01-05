@@ -6,7 +6,7 @@ social_description: "Maybe you'll like them, too"
 redirectsFrom: "/posts/2023-12-21-language-learning-resources/"
 ---
 
-I still stand by all the posts in my 2018 [French resources post](/posts/2018-11-04-french-resources/), but there are a few other things I've used since then for languages including French, Spanish, and German (and some that are for other languages, too!). So here's a list!
+I still stand by all the posts in my 2018 [French resources post](/french-resources/), but there are a few other things I've used since then for languages including French, Spanish, and German (and some that are for other languages, too!). So here's a list!
 
 ## Lots of Languages
 
