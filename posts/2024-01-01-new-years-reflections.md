@@ -19,7 +19,7 @@ My values _are_ Nebraska values. And I see Nebraska values when I think about th
 
 In the [improv meetup](https://www.improvlnk.org/) where after laughing and playing for a while, we talked about how the tools of improv can help us de-escalate conflict in real-life situations. In the [Lincoln Tour for Rewilding Urban Environments](https://journalstar.com/news/community/neighborhood-extra/tour-for-rewilding-urban-environments-june-11/article_1429bc30-ff55-11ed-92a8-4f6de56a820e.html). In the research I did for a bit on the history of activist efforts - the [early 70s-era Lincoln City-Wide Tenants Association](/posts/2023-04-29-lincoln-tenant-assn/) which held a "Tent City" direct action for housing justice, and the long history of [Nebraskans for Peace](https://www.nebraskansforpeace.org/nfp-history.html), which formed from Rural Nebraskans for Peace, founded in 1968. 
 
-We are Nebraska, too. We are [stronger together](http://localhost:8080/posts/2023-03-26-my-queer-community/), though sometimes I am still so afraid it won't be enough. 
+We are Nebraska, too. We are [stronger together](/posts/2023-03-26-my-queer-community/), though sometimes I am still so afraid it won't be enough. 
 
 <figure>
 {% img "raw_img/2023-in-review/daffodil.jpg", "an older woman with greying dark hair pulled back into a bun serves meat and veggies in thick colorful sauces  from big roasting pans", 250, "center-block margin-bottom" %}
