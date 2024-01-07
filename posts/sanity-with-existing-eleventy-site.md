@@ -1,6 +1,6 @@
 ---
 layout: post
-tags: ["posts", "eleventy"]
+tags: ["posts", "eleventy", "code"]
 title: "Using Sanity CMS to host an image gallery for an existing 11ty site"
 description: "Sometimes it's too late for a starter project"
 date: 2022-03-27

@@ -1,6 +1,6 @@
 ---
 layout: post
-tags: ["posts", "eleventy"]
+tags: ["posts", "eleventy", "code"]
 title: "Converting a simple HTML site to use Eleventy"
 description: "For when you're ready for a little templating fun"
 date: 2021-10-23

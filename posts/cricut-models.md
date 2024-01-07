@@ -1,6 +1,6 @@
 ---
 layout: post
-tags: ["posts", "art"]
+tags: ["posts", "art", "resources"]
 title: "Simple Guide to Cricut Models (with no ads)"
 description: "because no one needs autoplay video when reading text about craft supplies"
 date: 2022-12-09

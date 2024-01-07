@@ -1,7 +1,7 @@
 ---
 title: "Language Learning Resources I Like"
 date: 2023-12-21
-tags: [posts, resources, language-learning]
+tags: [posts, resources, language-learning, recommendations]
 social_description: "Maybe you'll like them, too"
 redirectsFrom: "/posts/2023-12-21-language-learning-resources/"
 ---

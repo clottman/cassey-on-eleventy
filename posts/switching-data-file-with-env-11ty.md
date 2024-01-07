@@ -1,6 +1,6 @@
 ---
 layout: post
-tags: ["posts", "eleventy"]
+tags: ["posts", "eleventy", "code"]
 title: "Dynamically choosing a data file to use in Eleventy templates"
 description: "What if I need _data/stuff.json sometimes and _data/thing.json other times?"
 date: 2021-11-17

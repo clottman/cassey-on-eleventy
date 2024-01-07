@@ -1,6 +1,6 @@
 ---
 layout: post
-tags: ["posts", "eleventy"]
+tags: ["posts", "eleventy", "code"]
 title: "Just Enough JavaScript for Eleventy"
 description: "Want to try Eleventy, but not very experienced in JavaScript yet? You're in the right place."
 date: 2021-12-25

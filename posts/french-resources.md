@@ -9,6 +9,7 @@ tags:
     - posts
     - resources
     - language-learning
+    - recommendations
 ---
 
 I learned French in high school by taking classes online from the <a href="https://highschool.nebraska.edu/">UNL Independent Study High School</a>, then spending 10 months in France as a foreign exchange student with <a href="https://www.yfuusa.org/">Youth for Understanding</a>.

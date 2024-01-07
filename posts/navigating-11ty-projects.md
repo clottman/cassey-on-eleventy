@@ -1,6 +1,6 @@
 ---
 layout: post
-tags: ["posts", "eleventy"]
+tags: ["posts", "eleventy", "code"]
 title: "Getting your bearings in an existing Eleventy project"
 description: "Questions to ask to start making changes quickly"
 date: 2021-07-26

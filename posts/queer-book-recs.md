@@ -1,6 +1,6 @@
 ---
 layout: post
-tags: ["posts", "books", "resources"]
+tags: ["posts", "books", "recommendations"]
 title: "Queer Book Recommendations"
 description: "so much to read"
 date: 2023-03-16

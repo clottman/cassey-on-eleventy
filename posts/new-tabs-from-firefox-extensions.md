@@ -2,7 +2,7 @@
 layout: post
 title: Opening a new window from a Firefox Add-On
 date: 2020-03-15
-tags: [posts, extension, firefox, javascript]
+tags: [posts, firefox, javascript]
 social_description: "It's easy, but keep in mind this One Weird Trick!"
 redirectsFrom: "/posts/2020-03-15-new-tabs-from-firefox-extensions/"
 ---
