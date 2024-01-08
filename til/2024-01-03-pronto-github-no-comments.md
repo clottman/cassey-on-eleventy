@@ -34,3 +34,21 @@ puts `bundle exec pronto run -f github_status text -c origin/main`
 ```
 
 This was a bit tricky to track down; hope it helps if you have landed here!
+
+
+## Using a Github Action instead?
+
+You might have a section that looks like this in your Github Action config if you want **status checks on the PR, text you can read, but no comments on individual lines**. 
+
+Note here we're adding the `--exit-code` flag to make sure we get a nice red X telling us to check our Pronto output before merge. 
+
+```yml
+- name: Run Pronto
+  run: bundle exec pronto run -f github_status text -c origin/${{ github.base_ref }} --exit-code
+  env:
+    PRONTO_PULL_REQUEST_ID: ${{ github.event.pull_request.number }}
+    PRONTO_GITHUB_ACCESS_TOKEN: "${{ github.token }}"
+```
+
+{% img "raw_img/til/pronto-github-action.png", "A Github Action status output line showing the Pronto runner has failed", 450, "center-block" %}
+
