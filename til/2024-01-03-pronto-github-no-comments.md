@@ -35,6 +35,17 @@ puts `bundle exec pronto run -f github_status text -c origin/main`
 
 This was a bit tricky to track down; hope it helps if you have landed here!
 
+### What if I also want the Pronto task to fail, not the individual Pronto runners?
+We need to have Pronto return an exit code using the `--exit-code` flag, then we need to make sure the bin script exits using that code, too. 
+
+We can do that with `Process.laststatus`
+
+```rb
+#!/usr/bin/env ruby
+# imagine some setup code here...
+puts `bundle exec pronto run -f github_status text --exit-code -c origin/main`
+exit Process.last_status.exitstatus
+```
 
 ## Using a Github Action instead?
 
