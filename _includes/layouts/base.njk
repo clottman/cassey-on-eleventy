@@ -24,6 +24,7 @@
 
     <link rel="webmention" href="https://webmention.io/www.cassey.dev/webmention" />
     <script defer type="module" src="https://unpkg.com/@zachleat/snow-fall@1.0.1/snow-fall.js"></script>
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   </head>
   <body>
     <header class='site-header'>
@@ -85,6 +86,17 @@
     <script type="module" defer>
         const snow = document.createElement('snow-fall');
         document.body.prepend(snow)
+    </script>
+    <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", user => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => {
+              document.location.href = "/admin/";
+            });
+          }
+        });
+      }
     </script>
   </body>
 </html>

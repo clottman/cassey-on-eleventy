@@ -59,7 +59,7 @@ module.exports = function (eleventyConfig) {
   // Get the first `n` elements of a collection.
   eleventyConfig.addFilter("head", headFilter);
 
-  ["img", "css", "files"].forEach((path) =>
+  ["img", "css", "files", "admin"].forEach((path) =>
     eleventyConfig.addPassthroughCopy(path)
   );
 
