@@ -10,4 +10,4 @@ This is a nice post, I am publishing it from the World Wide Web!
 \
 It also has an image.
 
-![ a cozy blob emoji wrapped in a blanket](/raw_img/uploads/blob_cozy.png)
+![ a cozy blob emoji wrapped in a blanket](raw_img/uploads/blob_cozy.png)
