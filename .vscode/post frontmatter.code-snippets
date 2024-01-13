@@ -17,6 +17,7 @@
 	// }
 	"add post frontmatter": {
 		"prefix": "frontmatter",
+		"scope": "plaintext,markdown,html",
 		"body": [
 			"---",
 			"layout: post",
