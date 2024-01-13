@@ -40,6 +40,5 @@ Here are a few that have come up a lot, so we can link this post when someone as
 - The Art of Gathering by Priya Parker, on considerations and approaches to having really meaningful and fun get togethers from work retreats to dinner parties to whatever
 
 
-
-
-
+## Contributing
+Have additions or corrections for this list? Tell Cassey or [make a pull request directly](https://github.com/clottman/cassey-on-eleventy/blob/main/posts/wit-cozy-reads-recs.md).
