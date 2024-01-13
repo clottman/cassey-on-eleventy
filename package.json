@@ -8,6 +8,9 @@
     "start": "NODE_ENV=local npx @11ty/eleventy --serve",
     "debug": "DEBUG=* npx @11ty/eleventy"
   },
+  "engines": {
+    "node": "16"
+  },
   "repository": {
     "type": "git",
     "url": "git://github.com/clottman/cassey-on-eleventy.git"
@@ -29,13 +32,14 @@
     "dotenv": "^16.0.0",
     "groq": "^2.15.0",
     "lodash": "^4.17.20",
+    "markdown-it-eleventy-img": "^0.10.1",
     "nunjucks": "^3.2.2",
     "slugify": "^1.4.6",
     "xml2js": "^0.4.23"
   },
   "devDependencies": {
     "@11ty/eleventy": "^2.0.0",
-    "@11ty/eleventy-plugin-rss": "^1.0.9",
+    "@11ty/eleventy-plugin-rss": "^1.2.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.4",
     "autoprefixer": "^10.0.2",
     "fs-extra": "^9.0.1",
