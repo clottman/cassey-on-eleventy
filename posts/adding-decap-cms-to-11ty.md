@@ -150,3 +150,8 @@ On Mastodon [people tell me](https://hcommons.social/@ryanrandall/11175089040153
 Overall, adding Decap CMS to my 11ty site was way easier than I expected it would be, and since I've known about Decap/Netlify CMS for a long time and work with it with some regularity at work, I'm not sure why it didn't come to mind before as a solution to this problem!
 
 I am hopeful this is going to be a really good workflow for me to keep adding new posts to my site. May 2024 be (another) year of the blog!
+
+
+## Update 1-14-23: Better Mobile Responsiveness
+
+Decap's CMS UI is not particularly optimized for mobile, but with a lot of horizontal scrolling, it does the job. Someone in the 11ty discord pointed me to a [long-standing GitHub issue](https://github.com/decaporg/decap-cms/issues/441) where this has been discussed. Until the Decap team releases a UI update they've been promising is coming for years now, some folks are using a [CSS override script](https://github.com/hithismani/responsive-decap) to clean things up just enough on mobile. I added it to my `index.html` using the JSDeliver link, tested it out, and it seems to be doing the job!
