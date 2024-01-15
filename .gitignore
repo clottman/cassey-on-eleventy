@@ -9,4 +9,4 @@ report*
 .cache
 .netlify_cache
 _cache
-.obsidian
+*/.obsidian/workspace.json
