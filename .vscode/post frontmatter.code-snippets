@@ -21,7 +21,7 @@
 		"body": [
 			"---",
 			"layout: post",
-			"title: $TM_FILENAME_BASE"
+			"title: ${TM_FILENAME_BASE/^([^-]*)-([^.]*).*/${1:/pascalcase} ${2:/downcase}/}",
 			"tags: ['posts']",
 			"description: ''",
 			"date: $CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE",
