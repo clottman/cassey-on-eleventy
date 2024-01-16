@@ -42,7 +42,9 @@ The [Surly Bill Trailer](https://surlybikes.com/parts/bill_trailer) comes in at 
 
 EXCEPT maybe the hitch won't work with my Tern bike? I don't know all the words here, but this Q&A answer seems like no. 
 
-> I'm sorry to say but our trailer hitch is not compatible with thru axles. The mounting options include a 135 - 141 mm QR with our axle, our axle nuts that bolt directly to our dedicated dropouts such as the Troll, Ogre and ECR, or could also be used with a bolt-on / solid axle hub. 
+> I'm sorry to say but our trailer hitch is not compatible with thru axles. The mounting options include a 135 - 141 mm QR with our axle, our axle nuts that bolt directly to our dedicated dropouts such as the Troll, Ogre and ECR, or could also be used with a bolt-on / solid axle hub.
+
+A [mastodon user](https://octodon.social/@kg6gfq/111762579622875105) points out the Surly trailers are sold without a hitch, and the hitch assembly (an additional $325) is perhaps less universal than the Bikes at Work hitches. 
 ## [Carla Cargo](https://www.stileproducts.com/collections/carla-cargo)
 
 
