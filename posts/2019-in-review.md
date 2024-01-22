@@ -13,15 +13,15 @@ It is very cliche to say that this year, no matter what year it was, was a big y
 
 ### Running for Office
 
-Let's just get this out of the way: in 2019, [my run for Lincoln City Council](http://casseyforcouncil.com/) came to an end. [I earned 1,289 votes](https://ballotpedia.org/Cassey_Lottman), just 407 votes shy of making it through the primary. I think that's great! I learned a lot about the political process - what is expected of a candidate for office, what issues voters care about, and how the local Democratic machine (yes, we have one of those in Lincoln!) works. My campaign was one of the first big challenges that my husband (at the time, fiance) and I faced as a couple, and I'm so proud of how we got through it together. I'm thankful to Josh for spending so many evenings walking with me as I knocked doors in the cold and dark, and thankful for my friends, family, and local activists I'd never even met before who offered me so much support. I'm proud that the earlier work I did alongside other members of Renters Together, as well as my campaign, made affordable housing an issue in this year's city elections in an unprecedented way.
+Let's just get this out of the way: in 2019, [my run for Lincoln City Council](http://casseyforcouncil.com/) came to an end. [I earned 1,289 votes](https://ballotpedia.org/Cassey_Lottman), just 407 votes shy of making it through the primary. I think that's great! I learned a lot about the political process - what is expected of a candidate for office, what issues voters care about, and how the local Democratic machine (yes, we have one of those in Lincoln!) works. My campaign was one of the first big challenges that my husband (at the time, fiance) and I faced as a couple, and I'm so proud of how we got through it together. I'm thankful to Wren for spending so many evenings walking with me as I knocked doors in the cold and dark, and thankful for my friends, family, and local activists I'd never even met before who offered me so much support. I'm proud that the earlier work I did alongside other members of Renters Together, as well as my campaign, made affordable housing an issue in this year's city elections in an unprecedented way.
 
 <img width="141" height="250" class="center-block" src="/img/ballot.jpg" alt="A close-up of Cassey's very excited face. She's holding a ballot with her own name on it, with the bubble filled in.">
 
 ### Getting Married
 
-I got married this year! Though we had a secular wedding, Josh & I went through several sessions of pre-marital counseling with my pastor from college. We gained a deeper perspective on our relationship and practiced resolving conflicts constructively. Then, we had a beautiful ceremony on a perfect October day, and a rockin' party with all our loved ones. I love the way Josh & I support each other and push each other to be our best selves. I love the walks we take, our shared love of Carhenge, Bon Apetit and Brian David Gilbert videos, and our [cute](http://soulpatch.glitch.me/) [cats](https://tally-cat.glitch.me/).
+I got married this year! Though we had a secular wedding, Wren & I went through several sessions of pre-marital counseling with my pastor from college. We gained a deeper perspective on our relationship and practiced resolving conflicts constructively. Then, we had a beautiful ceremony on a perfect October day, and a rockin' party with all our loved ones. I love the way Wren & I support each other and push each other to be our best selves. I love the walks we take, our shared love of Carhenge, Bon Apetit and Brian David Gilbert videos, and our [cute](http://soulpatch.glitch.me/) [cats](https://tally-cat.glitch.me/).
 
-<img width="300" height="200" class="center-block" style="margin-bottom: 20px" src="/img/wedding.jpg" alt="Cassey and Josh in their wedding finery">
+<img width="300" height="200" class="center-block" style="margin-bottom: 20px" src="/img/wedding.jpg" alt="Cassey and Wren in their wedding finery">
 
 <img width="200" height="300" class="center-block" src="/img/soulpatch.jpg" alt="A crinkly-eared grey cat with a white patch on his chin">
 
@@ -59,7 +59,7 @@ I am in a book club that has attributes that I believe are very rare among book 
 
 ### Kayak Polo
 
-Josh & I took a break from kayak polo last year while my campaign was going on, but we're back at it this year! We both became members of the [Lincoln Kayak Club](https://www.facebook.com/LNKayak/) and played in a 10 week season this fall.
+Wren & I took a break from kayak polo last year while my campaign was going on, but we're back at it this year! We both became members of the [Lincoln Kayak Club](https://www.facebook.com/LNKayak/) and played in a 10 week season this fall.
 
 ### Carhenge
 

@@ -16,7 +16,7 @@ redirectsFrom: "/posts/2021-01-01-2020-in-lists/"
 ## The music that kept me going
 
 1. The Mountain Goats
-   - according to Spotify this is what I played the absolute most - all 5 of my top 5 songs came from The Mountain Goats. It was the music I played most of the time in the car, when Josh & I were listening together, when cooking, when working... all the time.
+   - according to Spotify this is what I played the absolute most - all 5 of my top 5 songs came from The Mountain Goats. It was the music I played most of the time in the car, when Wren & I were listening together, when cooking, when working... all the time.
 2. Taylor Swift's new albums: _Folklore_ and _evermore_
    - Also some selected older songs that approach the same level of moodiness
 3. The Chicks's new album _Gaslighter_ 

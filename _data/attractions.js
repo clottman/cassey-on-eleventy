@@ -22,7 +22,7 @@ module.exports = [
     width: "600",
   },
   {
-    filename: "raw_img/attractions/carhenge_josh.jpg",
+    filename: "raw_img/attractions/carhenge_wren.jpg",
     alt: "a person with a beard and short pink hair, wearing sunglasses, looks away from the camera. they're sitting on a grey-painted car, and Carhenge appears in the background",
     rowSpan: 2,
     colSpan: 1,
