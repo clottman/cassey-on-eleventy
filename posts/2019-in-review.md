@@ -63,15 +63,15 @@ Wren & I took a break from kayak polo last year while my campaign was going on, 
 
 ### Carhenge
 
-Josh & I made our second pilgrimage to [Carhenge](http://carhenge.com/), one of my favorite places in the world. On a camping trip there with friends on the Summer Solstice, we read poetry to one another at dusk in the center of the circle of cars. When I woke up in our tent thinking my appendix was bursting (it wasn't), we made an unexpected detour to the hospital in Alliance where the doctor wondered why the heck we had come all the way out there just to see Carhenge. Our visit was filmed by a documentary crew who came to capture this weird little slice of roadside Americana. They were quite interested to hear the story of how Josh & I got engaged just after our last trip. Carhenge continued to usher in big changes in my life: I learned sitting around the campfire that two of my best friends would be moving far away at the end of summer.
+Wren & I made our second pilgrimage to [Carhenge](http://carhenge.com/), one of my favorite places in the world. On a camping trip there with friends on the Summer Solstice, we read poetry to one another at dusk in the center of the circle of cars. When I woke up in our tent thinking my appendix was bursting (it wasn't), we made an unexpected detour to the hospital in Alliance where the doctor wondered why the heck we had come all the way out there just to see Carhenge. Our visit was filmed by a documentary crew who came to capture this weird little slice of roadside Americana. They were quite interested to hear the story of how Wren & I got engaged just after our last trip. Carhenge continued to usher in big changes in my life: I learned sitting around the campfire that two of my best friends would be moving far away at the end of summer.
 
-<img width="300" height="200" class="center-block" src="/img/carhenge_love.jpg" alt="Josh and Cassey in front of some grey-painted cars stood up on their bumpers, surrounded by a camera crew">
+<img width="300" height="200" class="center-block" src="/img/carhenge_love.jpg" alt="Wren and Cassey in front of some grey-painted cars stood up on their bumpers, surrounded by a camera crew">
 
 ## Things I Explored, with Mixed Results
 
 ### Gardening
 
-Josh & I built a 4" x 8" raised garden bed, and planted it full of vegetables in May and again in late summer. We grew, in total, two heads of lettuce, a sickly broccoli that never bore fruit, and a majestic weed of some sort that we watered diligently until we realized it was not, in fact, a broccoli.
+Wren & I built a 4" x 8" raised garden bed, and planted it full of vegetables in May and again in late summer. We grew, in total, two heads of lettuce, a sickly broccoli that never bore fruit, and a majestic weed of some sort that we watered diligently until we realized it was not, in fact, a broccoli.
 
 We also hired a local consultant to help replace our front lawn with a native prairie garden. At planting time, he advised us to keep the weeds under control. That was a bit concerning; at planting time the ground (which had been stripped of grass weeks earlier by some other work) was already rather covered in weeds. Two weeks later, our consultant returned and said we had the worst weed infestation he'd ever seen. He advised killing everything we'd planted (and the weeds) and starting over from scratch in the fall, so we did. I'm still very excited to have a prairie garden full of nice habitat and food for birds, small animals, and bugs. I'm sure it will look nicer once all the plants have filled in a bit.
 
