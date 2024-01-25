@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Adding Decap CMS to 11ty
-tags: ['posts', 'code']
+tags: ['posts', 'code', 'eleventy']
 description: ''
 date: 2024-01-13
 ---
