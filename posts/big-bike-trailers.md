@@ -52,5 +52,7 @@ These [Main Carla Cargo page](https://www.carlacargo.de/products/) trailers are 
 
 The Carla Cargo trailers have 3 wheels - you can unhitch and use the trailer as a hand truck, then hitch back up and go home. That's neat! 
 
+Here's some photos of [Tern HSDs in NYC towing Carla trailers](https://ohai.social/@dr2chase/111762564940960717), operated by Dutch Express. 
+
 ## What am I missing?
 Know any big trailers I should know about that aren't listed here? Give me a shout on Mastodon or however else you usually contact me & let me know! 

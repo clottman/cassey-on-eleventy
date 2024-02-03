@@ -5,6 +5,7 @@ date: 2024-01-06
 tags: [posts, consuming-less, abundance, definitions]
 social_description: "deciding it is enough"
 ---
+Check out [all the posts tagged 'abundance' on my site](/blog/tags/abundance/). 
 
 A word that has felt particularly resonant for me lately is "abundance", and particularly, the practice of cultivating a mindset that seeks abundance rather than clings to scarcity. It's not necessarily about the physical amount of whatever; it's about feeling a sense of "enoughness" with whatever you find yourself to have.
 

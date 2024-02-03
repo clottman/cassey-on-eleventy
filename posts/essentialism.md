@@ -1,10 +1,13 @@
 ---
 layout: post
-title: "Notes on Essentialism"
+title: Notes on Essentialism
 date: 2023-11-08
-tags: [posts, books]
-social_description: "do less, but better"
-redirectsFrom: "/posts/2023-11-08-essentialism/"
+tags:
+  - posts
+  - books
+  - abundance
+social_description: do less, but better
+redirectsFrom: /posts/2023-11-08-essentialism/
 ---
 I just finished reading the book _Essentialism: The Disciplined Pursuit of Less_, by Greg McKeown.
 
