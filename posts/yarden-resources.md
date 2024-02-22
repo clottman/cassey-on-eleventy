@@ -1,6 +1,6 @@
 ---
 layout: post
-tags: ["posts", "resources", "recommendations"]
+tags: ["posts", "resources", "recommendations", "books"]
 title: "Resources for a native plant meadow yarden"
 description: "Lawns are over."
 date: 2022-05-29

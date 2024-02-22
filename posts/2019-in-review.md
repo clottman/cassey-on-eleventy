@@ -2,7 +2,7 @@
 layout: post
 title: "My 2019 In Review"
 date: 2020-01-01
-tags: [posts, reflection, year-in-review]
+tags: [posts, reflection, year-in-review, books]
 social_description: "2019: A big year"
 redirectsFrom: "/posts/2020-01-01-2019-recap/"
 ---
