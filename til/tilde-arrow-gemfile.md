@@ -3,6 +3,7 @@ til-tags: ["ruby", "rails"]
 title: "What's this tilde arrow thing in my Gemfile?"
 description: "A lesson in pessimistic versioning"
 date: 2021-10-04
+redirectsFrom: 'til/2021-10-04-tilde-arrow-gemfile/'
 ---
 
 Today I learned two new concept-phrases: "pessimistic versioning" and "twiddle-wakka" (yes really). I learned them via a PR review comment that sent me to [the RubyGems patterns documentation](https://guides.rubygems.org/patterns/).
