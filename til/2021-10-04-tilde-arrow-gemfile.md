@@ -19,3 +19,16 @@ gem 'library', '~> 2.2'
 # is equivalent to 
 gem 'library', '>= 2.2.0', '< 3.0'
 ```
+
+## A Gotcha
+[Added 2-28-2024]
+
+**Note**! The squiggly bit here is pinning to the range using the second most specific number. 
+
+If you want any minor or patch updates, but not the next major version, make sure to only include the major and minor versions in your version number with the tilde, _not_ the patch version. 
+
+`gem 'library', '~> 2.2'` would allow me to receive 2.3 or 2.2.1, but not 3.0. 
+
+`gem 'library', '~> 2.2.1'` would allow me to receive 2.2.2, but not 2.3. This may be what you want sometimes, but probably not most of the time.  
+
+
