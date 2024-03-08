@@ -3,8 +3,9 @@ layout: post
 title: Taking an old sewing machine in for repair
 tags:
   - posts
+  - art
 description: in which a skilled technician teaches me lots of stuff
-date: 2024-03-01
+date: 2024-03-08
 ---
 
 I have been wanting to (re)learn to sew, and specifically to sew my own clothing, which I have never done before. I have a machine that I claimed from my mom long ago, but I haven't used it in years. 
