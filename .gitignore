@@ -1,6 +1,5 @@
 _site/
 node_modules/
-package-lock.json
 report*
 .DS_Store
 .env
