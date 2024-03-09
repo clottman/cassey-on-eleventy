@@ -9,7 +9,7 @@
     "debug": "DEBUG=* npx @11ty/eleventy"
   },
   "engines": {
-    "node": "16"
+    "node": "18"
   },
   "repository": {
     "type": "git",
