@@ -24,7 +24,7 @@
   },
   "dependencies": {
     "@11ty/eleventy-fetch": "^4.0.0",
-    "@11ty/eleventy-img": "^1.1.0",
+    "@11ty/eleventy-img": "^4.0.2",
     "@11ty/eleventy-upgrade-help": "^2.0.5",
     "@sanity/client": "^3.3.0",
     "@sanity/image-url": "^1.0.1",
