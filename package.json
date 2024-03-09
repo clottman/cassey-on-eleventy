@@ -24,7 +24,7 @@
   },
   "dependencies": {
     "@11ty/eleventy-fetch": "^4.0.0",
-    "@11ty/eleventy-img": "^1.1.0",
+    "@11ty/eleventy-img": "^4.0.2",
     "@11ty/eleventy-upgrade-help": "^2.0.5",
     "@sanity/client": "^3.3.0",
     "@sanity/image-url": "^1.0.1",
@@ -35,7 +35,7 @@
     "markdown-it-eleventy-img": "^0.10.1",
     "nunjucks": "^3.2.2",
     "slugify": "^1.4.6",
-    "xml2js": "^0.4.23"
+    "xml2js": "^0.6.2"
   },
   "devDependencies": {
     "@11ty/eleventy": "^2.0.0",
