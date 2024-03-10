@@ -11,11 +11,48 @@
             "id": "19c15b07f5e000e9",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "image",
+              "state": {
+                "file": "raw_img/thrift_kc/everything.jpg"
+              }
+            }
+          },
+          {
+            "id": "c25a71cbc789b0b3",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "posts/crafty-thrift-stores-kc.md",
+                "mode": "source",
+                "source": false
+              },
+              "pinned": true
+            }
+          },
+          {
+            "id": "5a86c9c82bb0d682",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "raw_img/thrift_kc/readers-digest.jpg"
+              }
+            }
+          },
+          {
+            "id": "2ac97f9d3e561cc7",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "raw_img/thrift_kc/dorothy.jpg"
+              }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -44,7 +81,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "raw_img",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -81,6 +118,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "posts/crafty-thrift-stores-kc.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +135,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "posts/crafty-thrift-stores-kc.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +157,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "posts/crafty-thrift-stores-kc.md"
+              }
             }
           }
         ]
@@ -138,6 +179,31 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5750270a9d5a01a8",
-  "lastOpenFiles": []
+  "active": "c25a71cbc789b0b3",
+  "lastOpenFiles": [
+    "_site/admin/config.yml",
+    "_site/img/world-herald-1964-rotated.jpg",
+    "_site/css/index.css",
+    "_site/css/prism-base16-monokai.dark.css",
+    "_site/img/wrong-eleventy.png",
+    "_site/img/til-icon.png",
+    "_site/img/spotify-2019.png",
+    "_site/img/wedding.jpg",
+    "_site/img/til-favicon.png",
+    "_site/img/soulpatch.jpg",
+    "_site/img/icons8-coronavirus-80.png",
+    "_site/img/mastodon.png",
+    "_site/img/great-gma.jpg",
+    "_site/img/favicon.ico",
+    "_site/files/host-an-event-zine.pdf",
+    "_site/files/ebike-zine.pdf",
+    "_site/files/choose-community.pdf",
+    "_site/files/The_Javascript_Package_Ecosystem.pdf",
+    "_site/admin/index.html",
+    "_site/crafty-thrift-stores-kc/index.html",
+    "posts/crafty-thrift-stores-kc.md",
+    "posts/2022-in-review.md",
+    "posts/adding-decap-cms-to-11ty.md",
+    "til/2024-01-03-pronto-github-no-comments.md"
+  ]
 }
