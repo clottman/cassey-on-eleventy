@@ -26,7 +26,7 @@ const {
   readableDateFromISO
 } = require("./config/filters/webmentions");
 const includeFilter = require("./config/filters/include.js");
-const { imgShortcode, imageShortcode } = require("./config/shortcodes/image");
+const { imgShortcode, imageShortcode, imgFullUrl } = require("./config/shortcodes/image");
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
@@ -73,6 +73,7 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode);
   eleventyConfig.addNunjucksAsyncShortcode("img", imgShortcode);
+  eleventyConfig.addNunjucksAsyncShortcode("imgFullUrl", imgFullUrl);
 
   // compile sass and optimize it https://www.d-hagemeier.com/en/articles/sass-compile-11ty/
   eleventyConfig.on("beforeBuild", buildCss);

@@ -1,4 +1,5 @@
 const Image = require("@11ty/eleventy-img");
+const imgUrlShortcode = require("../../imageHelpers").imgUrlShortcode;
 
 async function imageShortcode(src, alt, sizes, extraImgClasses) {
   let metadata = await Image(src, {
@@ -36,7 +37,22 @@ async function imgShortcode(src, alt, width, classes) {
   return `<img class="${classes}" src="${data.url}" width="${data.width}" height="${data.height}" alt="${alt}" loading="lazy" decoding="async">`;
 }
 
+// gets the full url path for use in ie social preview images
+async function imgFullUrl (src, width = 1600) {
+  site = process.env.CONTEXT === "deploy-preview"
+      ? process.env.DEPLOY_PRIME_URL
+      : process.env.URL;
+
+  let social_image = await imgUrlShortcode(
+    src,
+    [width],
+    ["png"]
+  );
+  return site + social_image;
+}
+
 module.exports = {
   imageShortcode,
   imgShortcode,
+  imgFullUrl
 };

@@ -12,6 +12,6 @@ async function imgUrlShortcode(src, widths = [300]) {
     return data.url;
   }
 
-  module.exports = {
-      imgUrlShortcode
-    };
+module.exports = {
+  imgUrlShortcode
+};

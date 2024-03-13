@@ -1,0 +1,154 @@
+{
+  "main": {
+    "id": "d537895615c7d504",
+    "type": "split",
+    "children": [
+      {
+        "id": "1371497c8cf1905d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9b28ed6b0accb962",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "great-wolf-lodge.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "f8256411252d761b",
+    "type": "split",
+    "children": [
+      {
+        "id": "4b7454e286802733",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "280a7eddb2b03f90",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "4927ad1c2e1ee7f3",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "75d9858b33e369af",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "0b0ef97e107d576b",
+    "type": "split",
+    "children": [
+      {
+        "id": "8f846d040c37ecb0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "44450ed0b4f3a267",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "great-wolf-lodge.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "386ed2c0ae88d443",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "great-wolf-lodge.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "edd1fa6d845c2e64",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "a4a620427b165093",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "great-wolf-lodge.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "9b28ed6b0accb962",
+  "lastOpenFiles": [
+    "great-wolf-lodge.md",
+    "sewing-machine-repair.md"
+  ]
+}

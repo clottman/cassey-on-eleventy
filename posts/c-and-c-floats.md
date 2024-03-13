@@ -4,6 +4,7 @@ title: C&C Processing Parade Floats
 tags: ['posts', 'art']
 description: "or, the Weinermobile isn't the primary hotdog-themed novelty vehicle in my life"
 date: 2024-03-12
+raw_social_img: "raw_img/cc-floats/hippie-van-cropped.jpg"
 ---
 <style>
  figure {
