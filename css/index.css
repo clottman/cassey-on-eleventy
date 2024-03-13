@@ -123,3 +123,8 @@ a[href].direct-link:focus:visited,
 .margin-bottom {
   margin-bottom: 10px;
 }
+
+img { 
+  max-inline-size: 100%;
+  block-size: auto;
+}
