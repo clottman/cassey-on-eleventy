@@ -46,7 +46,7 @@ After my parents started making hotdogs (dyed bright red, in southeast Nebraska 
 
 <figure>
   {% img "raw_img/cc-floats/trailer.png", "a bright yellow truck pulls a pretty bare-bones trailer that has a slingshot contraption mounted on the back, with a guy riding the contraption with feet on the pedals, about to launch a hot dog", 600, "center-block margin-bottom" %}
-  <figcaption>An early float (maybe actually 2001, as the photo shows?) was not very thematically interesting, but was perhaps the first proof of concept of the homemade hot dog schlinger.</figcaption>
+  <figcaption>An early float (maybe actually 2001, as the photo shows?) was not very thematically interesting, but was perhaps the first proof of concept of the homemade hot dog schlinger. My mom says this one was so boring because the locker was under construction that year, in one of many expansions. She thinks the plywood part probably said "Under construction -- again!"</figcaption>
 </figure>
 
 <figure>
