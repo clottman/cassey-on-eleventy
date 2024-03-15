@@ -1,12 +1,13 @@
 ---
 layout: post
 title: Crafty Thrift Stores & More in the Kansas City Metro
-tags: ['posts', 'art']
-description: 'In which I am inspired by my (somewhat figurative) sewist ancestor, Dorothy'
+tags:
+  - posts
+  - art
+description: In which I am inspired by my (somewhat figurative) sewist ancestor, Dorothy
 date: 2024-03-09
 ---
-
-While we were in Kansas City recently primarily to visit Great Wolf Lodge (read [my review](/great-wolf-lodge)!), we did some shopping. 
+While we were in Kansas City recently primarily to visit Great Wolf Lodge (read [my review](/great-wolf-lodge)!), we did some shopping. Yay shopping.
 
 We hit some of our usual spots: IKEA, [Retro Vixen](https://www.retrovixenkc.com/) where my partner likes to shop for cute dresses, [Prospero's Books](https://prosperosbookstore.com/) just down the street. My toddler met a dog and learned its name, which is somehow also becoming a Kansas City tradition for her. 
 
@@ -22,7 +23,7 @@ The Sirocco jumpsuit has been my goal since 2018 or so when I first learned abou
 
 {% img "raw_img/thrift_kc/everything.jpg", "a pile of stuff including some knit fabric in various colors and a roll of baby shark patterned cotton, some swedish tracing paper in a plastic bag, and the Readers Digest Complete Guide to Sewing book", 450, "center-block margin-bottom" %}
 
-While I got a lot of fabric at Fabric Recycles, including lots of knits to practice on and some Baby Shark fabric to make something for the toddler out of, my big win there was this vintage copy of the _Reader's Digest Complete Guide to Sewing_, printed in 1976. And signed by someone named Dorothy then, too!! I've decided Dorothy who once owned the book is going to be my spiritual guide in sewing- like how the guy in the song "Riding with Private Malone" always has the ghost soldier riding shotgun in that '66 Corvette, keeping him safe; that's going to be me and Dorothy as I learn to sew, guided by this book that maybe once she learned so much from, too.
+While I got a lot of fabric at Fabric Recycles, including lots of knits to practice on and some Baby Shark fabric to make something for the toddler out of, my big win there was this vintage copy of the *Reader's Digest Complete Guide to Sewing*, printed in 1976. And signed by someone named Dorothy then, too!! I've decided Dorothy who once owned the book is going to be my spiritual guide in sewing- like how the guy in the song "Riding with Private Malone" always has the ghost soldier riding shotgun in that '66 Corvette, keeping him safe; that's going to be me and Dorothy as I learn to sew, guided by this book that maybe once she learned so much from, too.
 
 {% img "raw_img/thrift_kc/readers-digest.jpg", "the vintage cover of Readers Digest Complete Guide to Sewing, showing faded photos of sewing tools", 450, "center-block margin-bottom" %}
 
