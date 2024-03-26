@@ -13,9 +13,9 @@ const classifyTagFilter = (str) => {
 };
 
 const readableDateFilter = (dateObj) => {
-  const dateFormat = "dd LLL yyyy";
   const dateToUse = dateObj instanceof Date ? dateObj : new Date(dateObj);
-  return DateTime.fromJSDate(dateToUse, { zone: "utc" }).toFormat(dateFormat);
+
+  return DateTime.fromJSDate(dateToUse, { zone: "America/Chicago" }).toLocaleString(DateTime.DATE_FULL)
 };
 
 // https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
