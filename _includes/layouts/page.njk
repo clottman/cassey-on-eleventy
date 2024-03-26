@@ -6,6 +6,7 @@ layout: layouts/base.njk
   <header class="post-header">
     <h1 class="post-title">{{ title }}</h1>
     {% if date %}<h2 class="post-date">{{ date | readableDate }}</h2>{% endif %}
+    {% if originally_posted %}<p class="post-date">First posted: {{ originally_posted | readableDate }}</p>{% endif %}
   </header>
   <div class="post-content">
   {{ content | safe }}
