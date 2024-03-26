@@ -24,7 +24,7 @@
 			"title: ${TM_FILENAME_BASE/^([^-]*)-([^.]*).*/${1:/pascalcase} ${2:/downcase}/}",
 			"tags: ['posts']",
 			"description: ''",
-			"date: $CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE",
+			"date: $CURRENT_YEAR-$CURRENT_MONTH-${CURRENT_DATE}T$CURRENT_HOUR:$CURRENT_MINUTE:00-05:00",
 			"---",
 			"$2"
 		],
@@ -38,7 +38,7 @@
 			"title: $TM_FILENAME_BASE"
 			"til-tags: []",
 			"description: ''",
-			"date: $CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE",
+			"date: $CURRENT_YEAR-$CURRENT_MONTH-${CURRENT_DATE}T$CURRENT_HOUR:$CURRENT_MINUTE:00-05:00",
 			"---",
 			"$2"
 		],
