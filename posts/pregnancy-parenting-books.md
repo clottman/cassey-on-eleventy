@@ -2,7 +2,7 @@
 layout: post
 title: "Book Recs for a Parent-to-Be"
 date: 2023-01-26
-tags: [posts, recommendations, books]
+tags: [posts, recommendations, books, parenting]
 social_description: "Books on pregnancy and parenting recommended by me"
 redirectsFrom: "/posts/2023-01-26-pregnancy-parenting-books/"
 ---

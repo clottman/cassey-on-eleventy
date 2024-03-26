@@ -2,7 +2,7 @@
 layout: post
 title: "Items I loved for my new baby"
 date: 2023-01-31
-tags: [posts, recommendations]
+tags: [posts, recommendations, parenting]
 social_description: ""
 redirectsFrom: "/posts/2023-01-31-new-baby-fave-items/"
 ---
