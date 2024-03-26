@@ -3,5 +3,6 @@
     "editor.detectIndentation": false,
     "editor.autoClosingBrackets": "always",
     "editor.wordWrap": "on",
-    "workbench.editor.wrapTabs": true
+    "workbench.editor.wrapTabs": true,
+    "workbench.editor.tabSizing": "fit"
 }
