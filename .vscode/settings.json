@@ -1,7 +1,7 @@
 {
     "editor.tabSize": 2,
     "editor.detectIndentation": false,
-    "editor.autoClosingBrackets": "always",
+    "editor.autoClosingBrackets": "languageDefined",
     "editor.wordWrap": "on",
     "workbench.editor.wrapTabs": true,
     "workbench.editor.tabSizing": "fit"
