@@ -18,7 +18,7 @@ Speaking of queer music, Orville Peck and Willie Nelson released a collaboration
 
 A not-queer (.. I think?) musical group that I've been digging lately is the Swedish group [Movits](https://www.youtube.com/watch?v=LshiKYPERUo), who I'd never encountered til a friend mentioned them recently. They are so different than the other stuff I listen to most of the time! The way I described my first listens was: "This feels like it makes the wrinkly parts of my brain unfurl in a very pleasant way."
 
-An album I think you should check out if you like folk music: ["Songs Not Bombs Vol. 2"](https://songsnotbombs.bandcamp.com/album/songs-not-bombs-vol-2), by a collection of artists who each donated an orignial song to the album. 100% of proceeds from all sales are being donated to the Palestinian Children's Relief Fund. 
+An album I think you should check out if you like folk music: ["Songs Not Bombs Vol. 2"](https://songsnotbombs.bandcamp.com/album/songs-not-bombs-vol-2), by a collection of artists who each donated an original song to the album. 100% of proceeds from all sales are being donated to the Palestinian Children's Relief Fund. 
 
 ## Other Media
 
@@ -31,6 +31,8 @@ My friend [John Jasa](https://www.youtube.com/@johnjasa) makes very funny videos
 I am not very into podcasts, but came across the Money With Katie blog and read a ton of posts from its archive the other night. I thought the advice was generally sound, and Katie's overall approach (we need systemic change to make people's lives less financially precarious, _and_ in the meantime, there are some individual-level finance things that it can be helpful to know about or think through) was fairly values-aligned with where I'm at these days. I bookmarked [don't live beyond your assets, on avoiding lifestyle creep](https://moneywithkatie.com/blog/a-rule-for-avoiding-lifestyle-creep-dont-live-beyond-your-assets); the [feeling bad for the Joneses economy](https://moneywithkatie.com/blog/the-feeling-bad-for-the-joneses-economy), which pointed out that a statistic I was fairly familiar with (US average household income) is a bit misleading as it includes retirees only receiving defined benefit income, rather than my incorrect assumption that it was the average for households where all adults were working; and one titled ["Consumerism is exhausting: the choresumption phenomenon"](https://moneywithkatie.com/blog/consumerism-is-exhausting-choresumption). But there were so many more that were good, too! 
 
 This [blog post on Spanish tips you maybe didn't learn from your Spanish teacher](https://mackenzie.morgan.name/posts/things-your-spanish-teacher-didnt-tell-you/) is a great resource. I knew some of this, but not all, and a lot of it I'd already forgotten since I learned it! 
+
+I got a book of poetry by local-to-me author Arden Eli Hill recently called [_Bloodwater Parish_](https://sevenkitchens.blogspot.com/2022/06/arden-eli-hill-bloodwater-parish.html). It was a really excellent collection, and I'm excited to hear Arden read some of his work at an event next Monday hosted at the UU church. The published collection focuses on themes like adoption, gender, and growing up in the south.
 
 ## Other stuff
 
