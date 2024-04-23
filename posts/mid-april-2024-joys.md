@@ -34,6 +34,10 @@ This [blog post on Spanish tips you maybe didn't learn from your Spanish teacher
 
 I got a book of poetry by local-to-me author Arden Eli Hill recently called [_Bloodwater Parish_](https://sevenkitchens.blogspot.com/2022/06/arden-eli-hill-bloodwater-parish.html). It was a really excellent collection, and I'm excited to hear Arden read some of his work at an event next Monday hosted at the UU church. The published collection focuses on themes like adoption, gender, and growing up in the south.
 
+## The outside
+
+We've been hitting the park after work/daycare any day that it's nice out and we don't have something else going on. That's a huge source of joy for me. I've been taking lots of walks, too. I can't even say it's my stupid little walks for my stupid mental health; that doesn't ring true for me because I actually absolutely delight in my walks, and yeah, they feel pretty foundational to my sense of wellbeing, but that doesn't feel stupid at all. I've been biking the kiddo to daycare more too, and biking to errands, and that's pretty great, too.
+
 ## Other stuff
 
 I got some [blue mascara](https://www.ulta.com/p/lash-sensational-sky-high-mascara-pimprod2020260?sku=2617938) and have been wearing it whenever it seems to plausibly match with my outfit or how I want to present for where I'm headed. I don't normally wear makeup, but it's so blue! 
