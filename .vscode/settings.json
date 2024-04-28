@@ -4,5 +4,5 @@
     "editor.autoClosingBrackets": "languageDefined",
     "editor.wordWrap": "on",
     "workbench.editor.wrapTabs": true,
-    "workbench.editor.tabSizing": "fit"
+    "workbench.editor.tabSizing": "shrink"
 }
