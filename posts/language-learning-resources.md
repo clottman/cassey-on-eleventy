@@ -30,6 +30,12 @@ Are you learning a language in conjunction with teaching it to your child? This 
 ### [GLOSS - free lessons from the US Defense Language Institute Foreign Language Center](https://gloss.dliflc.edu/)
 These free lessons are available in lots of different languages. Some are audio only, some are video. They were created for use by the US Department of Defense, so, caveat for all that entails. 
 
+ ### [Santa Monica Language Academy](https://santamonicalanguage.com/index.html)
+ California (Pacific Time)-based small group classes happening live with a human teacher, delivered over the web. A friend took Farsi there and enjoyed it!
+
+ ### [Queer ASL](https://www.queerasl.com/)
+ Online classes & resources to introduce queer people and allies to American Sign Language and Deaf culture.
+
 ## French
 
 ### [Fuss Free French](https://fussfreefrench.com/)
@@ -49,7 +55,6 @@ This Spanish podcast for intermediate learners is great; short episodes on rando
 ### [Deutsche Welle German course](https://learngerman.dw.com/en/learn-german/s-9528)
 Free course for German; I haven't spent a lot of time with this.
 
-
 ### [The German Project](https://www.thegermanproject.com/)
 Free lessons on beginner vocab & grammar, but look especially to the [German Children's Stories](https://www.thegermanproject.com/stories). 
 
@@ -68,7 +73,3 @@ From my bookmarks, in no particular order:
  - [Talk in Arabic](https://talkinarabic.com/) is focused on getting you speaking quickly
  - [Mango Languages](https://mangolanguages.com/available-languages/) is a paid product that offers a pretty wide range of languages. I am interested in doing one of the Arabic courses once I get past the alphabet. A lot of libraries offer Mango for card holders; unfortutely the one in my city doesn't, but check your library before signing up to pay individually!
  - [Arabic Workshop](https://arabicworkshop.com/)
-
-
-
-
