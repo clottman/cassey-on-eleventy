@@ -29,6 +29,11 @@ For common materials like paper, vinyl, and faux leather or faux suede, any of t
 ## Buying
 Cricut really wants you to think you need the Air 3 or Maker 3 - they don't even list the Air 2 or non-3 Maker on their main site when I checked today. But, you should be able to find the non-3 versions elsewhere - compare prices/sales at Wal-Mart, Jo-Ann, and Michaels. Machines go on sale pretty regularly, and sometimes come bundled with a starter set of supplies. 
 
+### Buying Used
+
+Be careful on buying a used Cricut machine from someone you do not personally know; the Cricut warranty process is that if you tell them your machine is broken, the company sends you a new one and then remotely bricks (renders unusable, via the software controls) your old machine with the expectation you'll throw it away.
+This can happen even if you saw the machine working when you took possession, but the warranty claim is filed by the original owner later on.
+
 ## Accessories
 For accessories, you don't need to stick with Cricut brand products - often very similar quality can be had for much cheaper by buying off-brand tools. The dollar store can be a surprisingly good source of tools and blanks, though the vinyl may not be the best quality. 
 
