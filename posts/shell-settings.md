@@ -1,12 +1,14 @@
 ---
 layout: post
 title: Settings in My Shell Profile that Just Make Sense
-tags: ['posts']
+tags: ['posts', 'tech-resources', 'code']
 description: 'a variety of useful snippets'
 date: 2024-07-11T16:33:00-05:00
 ---
 
 Here are some useful settings in my Zsh profile and a few other dotfiles. 
+
+See also: [some useful snippets for programming, and keyboard shortcuts I like](/snippets/) and [all my other tech resources posts](/blog/tags/tech-resources/).
 
 ## Docker stuff
 If you have an M-series (Intel) Mac, put this in your .zshrc right now to avoid bad times later on with docker stuff

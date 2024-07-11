@@ -1,7 +1,7 @@
 ---
 title: "2023 in Software Tools"
 date: 2024-01-01
-tags: [posts, reflection, year-in-review, tools]
+tags: [posts, reflection, year-in-review, tools, code]
 social_description: "okay fine, there is a part two"
 redirectsFrom: ["/posts/2024-01-01-2023-in-software-tools/"]
 ---

@@ -1,14 +1,14 @@
 ---
 layout: post
 title: Dev Snippets & Keyboard Shortcuts 
-tags: ['posts']
+tags: ['posts', 'tech-resources', 'code', 'resources']
 description: ''
 templateEngineOverride: md
 date: 2024-04-26T10:54:00-05:00
 permalink: /snippets/index.html
 ---
 
-See also: [my cheat sheet/personal FAQ when working with static site generators](/ssg-faq).
+See also: [my cheat sheet/personal FAQ when working with static site generators](/ssg-faq), and [all my other tech resources posts](/blog/tags/tech-resources/).
 
 Here are some shortcuts or short snippets I often find myself searching for. Expect this page to be updated over time as I think of more useful snippets or shortcuts!
 

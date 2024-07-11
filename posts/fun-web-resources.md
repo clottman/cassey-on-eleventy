@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Resources for the Fun Web
-tags: ['posts', 'resources', 'tools']
+tags: ['posts', 'resources', 'tools', 'tech-resources']
 description: 'Start a blog, read some blogs'
 date: 2024-01-18
 ---

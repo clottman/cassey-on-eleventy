@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Resources To Start a Blog
-tags: ['posts', 'resources', 'tools']
+tags: ['posts', 'resources', 'tools', 'code', 'tech-resources']
 description: 'Just start!'
 date: 2024-02-19
 ---

@@ -15,6 +15,7 @@ module.exports = [
 "abundance",
 "definitions",
 "code",
+"tech-resources",
 "accessibility",
 "resources",
 "coronavirus",

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Places I Might Shop Online for Suits
-tags: ['posts']
+tags: ['posts', 'recommendations', 'shopping']
 description: ''
 date: 2024-04-26T7:55:00-05:00
 ---
