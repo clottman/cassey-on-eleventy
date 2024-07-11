@@ -46,16 +46,19 @@ h2,
 h3,
 h4,
 h5,
-h6,
+h6
+%vertical-rhythm {
+  margin-top: 16px;
+}
+
 p,
 blockquote,
 pre,
 ul,
 ol,
 dl,
-figure,
-%vertical-rhythm {
-  margin-bottom: $spacing-unit / 2;
+figure {
+  margin-bottom: 8px;
 }
 
 li p {
