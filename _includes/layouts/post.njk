@@ -4,6 +4,3 @@ layout: layouts/page.njk
 {{ content | safe }}
 <br/>
 <br/>
-{% set webmentionUrl %}{{ page.url | url | absoluteUrl(site.url) }}{% endset %}
-{% include 'webmentions.njk' %}
-
