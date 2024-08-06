@@ -27,7 +27,7 @@ Here's what I did, so you can try it, too.
 Note that if you use the default configuration with just the `production` dataset, any data you change when you're running Sanity Studio locally will be reflected everywhere - that is, in your production dataset, and eventually, on your site. Keep that in mind once your Eleventy integration is up and running and you come back to make more adjustments - don't add test data you'd rather not see on your real site!
 5. We'll want to add one basic document type and one object to Sanity - an object to represent just an image with alt text, and a document to add some additional fields. To do so, we'll add two files: 
 
-```
+```javascript
 // schemas/documents/imageHolder.js
 
 import {format} from 'date-fns'
@@ -75,7 +75,7 @@ export default {
 }
 ```
 
-```
+```javascript
 // schemas/objects/blogImage.js
 export default {
     name: 'blogImage',
@@ -115,12 +115,12 @@ export default {
 
 The Sanity project initializes itself with a file at schemas/schema.js. We need to import our two new files there, and add the objects exported from those files to the `types` array. 
 
-```
+```javascript
 import blogImage from './objects/blogImage';
 import imageHolder from './documents/imageHolder';
 ```
 
-```
+```javascript
   types: schemaTypes.concat([
     /* Your types here! */
     blogImage,
@@ -147,7 +147,7 @@ Okay, that's the Sanity side.
 
 
 2. Add a .env file if you don't have one. In that file, add these three lines: 
-```
+```yml
 SANITY_PROJECT_ID='your project id'
 SANITY_DATASET=production
 SANITY_READ_TOKEN='your token'
@@ -158,7 +158,7 @@ If you weren't already using dotenv, make sure to initialize it by adding `requi
 
 3. Add a folder called utils/ if you don't have one, and create a file in it called `sanityClient.js`. 
 
-```
+```javascript
 // utils/sanityClient.js
 require('dotenv');
 
@@ -175,7 +175,7 @@ module.exports = sanityClient({...sanity, useCdn: false, token: process.env.SANI
 4. In your `_data` folder (create it if you don't have one), add a file called `images.js`, or whatever you'd like your images from Sanity to be called in Eleventy's global data. 
 
 Put this code in it: 
-```
+```javascript
 // _data/images.js
 const groq = require("groq");
 const client = require("../utils/sanityClient.js");
@@ -221,7 +221,7 @@ Ok! At this point, when you run the build, you should be getting the images from
 
 I want to display all my images in bulk, so I am using [Eleventy's pagination feature](https://www.11ty.dev/docs/pagination/) to create page with 20 images at a time. 
 
-```
+```yml
 ---
 pagination:
     data: images
@@ -246,7 +246,7 @@ The `markdownify` filter converts our Markdown-formatted image tag to HTML. The 
 
 I also want to generate a standalone page for each individual image, which I can also do with pagination, using size=1.
 
-```
+```yml
 {% raw %}
 ---
 pagination: 
