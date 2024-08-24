@@ -8,3 +8,4 @@ report*
 .cache
 .netlify_cache
 _cache
+.obsidian/workspace.json

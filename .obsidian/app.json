@@ -1,4 +1,6 @@
 {
   "focusNewTab": false,
-  "showInlineTitle": false
+  "showInlineTitle": false,
+  "autoPairBrackets": false,
+  "autoPairMarkdown": false
 }
