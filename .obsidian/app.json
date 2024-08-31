@@ -2,5 +2,12 @@
   "focusNewTab": false,
   "showInlineTitle": false,
   "autoPairBrackets": false,
-  "autoPairMarkdown": false
+  "autoPairMarkdown": false,
+  "newFileLocation": "current",
+  "showUnsupportedFiles": true,
+  "attachmentFolderPath": "raw_img",
+  "userIgnoreFilters": [
+    "_site/",
+    "node_modules/"
+  ]
 }
