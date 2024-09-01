@@ -1,0 +1,25 @@
+---
+title: Having a Two Year Old is Great
+description: I'm having fun.
+date: 2024-08-31T12:08:00-05:00
+tags:
+  - posts
+  - parenting
+  - reflection
+layout: post
+---
+Today I would like to sing the praises of parenting a two year old. I am having so much fun, and my kid is such a joy to be around.
+
+Sometimes the narrative around parenting a toddler is all about the Terrible Twos or having a Threenager and how your life is dominated by tantrums. Every kid is different of course, and some kids are more difficult to parent than others. But I think it's also an issue of mindset. My kid has what I'd say is probably the normal amount of meltdowns - they are completely developmentally appropriate and also, from an adult's perspective, often seem totally irrational or like way over the top responses to small inconveniences or preferences not being met. And most of the time, it's basically fine? I wait it out, I offer hugs and talk over what happened when it's over. Sometimes things take longer than expected because we have to spend 15 minutes screaming (well, one of us screams; I tend to refrain) about something pretty minor in the grand scheme of things. It's fine, honestly. We get through it! 
+
+But the rest of the time? Which is really _most_ of the time? It's so fun. I love playing and roughhousing and being silly. I love my kid's burgeoning sense of humor and the hilarious things she says earnestly without even meaning to be funny. She is funny on purpose too, though. She has her own inside jokes that are funny only to her (like saying "wawa" as a replacement for basically any other word she might want to use, and then cracking up when someone asks her what wawa means. "Wawa is my word," she says sometimes when we ask.) She also tries to play the hits - repeating phrases that totally cracked us up in a particular context in the hopes it'll get us going again. When we are recording a video to send to a friend or family member who isn't available for video chat, if we prompt her to say something to that friend, she will without fail say "Happy birthday!!" It might have started as not a bit, but it definitely is now, and it continues to be hilarious to us parents that this is her go-to thing regardless of it being anyone's actual birthday.
+
+We like going on bike rides together, and she requests a story about riding bikes every night at bedtime. I was worried my imagination would not be prepared for the demands of original bedtime stories, but at two, her demands for plot or conflict are quite low. My stories generally take the form of "Once upon a time... we woke up and had some breakfast, then we put on our helmets and got ready to ride our bikes." Then there's a list of each place we rode our bikes to that day which might be: the park, grandma's house (80% of the time at least), _five_ parks, the grocery store, or the farm. We have a snack at some point and drink water to stay hydrated. (She is _very_ into the idea that water helps us be hydrated right now.) Then we ride our bikes home and hang up our helmets and go to bed, The End. 
+
+In the car, she loves to ask each time we stop "Why we stop??" She knows the answer (there was a red light) but she likes to hear us say it anyways. Last night she incorporated stoplights into the bedtime story, taking turns with me to fill in the details of our bike ride. "There was a red light so we stopped. Then green light, [go bikes go](https://www.addieboswell.com/go-bikes-go.html)!" I am less enthused that she knows and expects to get to press the [beg button](https://www.strongtowns.org/journal/2016/3/7/about-those-pesky-pedestrian-crossing-buttons) for busy street crossings on the bike, but that's sadly still part of many of our rides. She likes to give directions while we're in the car, especially if she hears me reading directions off my phone to other Mama who's driving. Mainly the direction she gives is "Turn right at my daycare." 
+
+She loves to sing songs, and I love to hear her sing them. She likes to rock, cuddle, and feed her baby doll, who she has named Baby Shark. (Not to be confused with her giant Ikea shark stuffie, the OG Baby Shark.) She pretty consistently answers "what should we name your baby sibling?" with the same idea: Baby Shark!
+
+I love getting an up close look over time at how she's learning about the world and developing more complex understandings of things. It's so cool to see her puzzle something out, and then get it, and then presumably, run to the other parent (who is perhaps sitting across the same room and has been the entire time) to explain what she has just learned or been taught in her own words. I love her joy in moving her body, running and jumping and swinging and sliding and pushing herself around on her balance bike. 
+
+She notices small things that more experienced residents of the world might take for granted, and they fascinate her, and seeing them through her eyes fascinates me too. She brought so much wonder to my life as a newborn, and that wonder has only grown over time, becoming richer and more varied. 
