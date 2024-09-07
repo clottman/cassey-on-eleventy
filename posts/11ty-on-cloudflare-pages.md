@@ -3,7 +3,7 @@ layout: post
 title: Tips for Running 11ty on Cloudflare Pages
 tags: ['posts', 'eleventy']
 description: 'Decap CMS & Eleventy Auto Cache Buster'
-date: 2024-09-05T14:26:00-05:00
+date: 2024-09-07T14:26:00-05:00
 ---
 
 This week I designed & built a new 11ty site to support an advocacy effort among primarily Canadian zine creators opting out of a major Canadian zine festival due to the founder's genocide denial. It's called [Can't Zine](https://cantzine.ca).
