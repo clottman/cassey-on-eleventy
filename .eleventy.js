@@ -1,4 +1,5 @@
 const pluginRss = require("@11ty/eleventy-plugin-rss");
+const eleventyAutoCacheBuster = require("eleventy-auto-cache-buster");
 const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const buildCss = require("./config/buildCss");
 const markdown = require("./config/markdown");
@@ -25,6 +26,8 @@ const { imgShortcode, imageShortcode, imgFullUrl } = require("./config/shortcode
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
+  eleventyConfig.addPlugin(eleventyAutoCacheBuster);
+  
   eleventyConfig.setDataDeepMerge(true);
 
   eleventyConfig.addLayoutAlias("post", "layouts/post.njk");
