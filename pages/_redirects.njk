@@ -2,6 +2,7 @@
 permalink: /_redirects
 eleventyExcludeFromCollections: true
 ---
+/posts /blog 301
 
 {%- for page in collections.all -%}
   {%- if page.url and page.data.redirectsFrom %}

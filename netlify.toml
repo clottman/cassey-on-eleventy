@@ -3,9 +3,3 @@
 
 [[plugins]]
   package = "netlify-plugin-cache-folder"
-
-[[redirects]]
-  from = "/posts"
-  to = "/blog"
-  status = 301
-  force = false
