@@ -19,12 +19,6 @@ const {
   headFilter,
   markdownifyFilter,
 } = require("./config/filters");
-const {
-  getWebmentionsForUrl,
-  size,
-  webmentionsByType,
-  readableDateFromISO
-} = require("./config/filters/webmentions");
 const includeFilter = require("./config/filters/include.js");
 const { imgShortcode, imageShortcode, imgFullUrl } = require("./config/shortcodes/image");
 
@@ -40,10 +34,6 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("stripPs", stripPs);
   eleventyConfig.addFilter("readableDate", readableDateFilter);
   eleventyConfig.addFilter("include", includeFilter);
-  eleventyConfig.addFilter("getWebmentionsForUrl", getWebmentionsForUrl);
-  eleventyConfig.addFilter("size", size);
-  eleventyConfig.addFilter("webmentionsByType", webmentionsByType);
-  eleventyConfig.addFilter("readableDateFromISO", readableDateFromISO);
 
   // for use with the log filter when you want to dump an object to string on the page
   eleventyConfig.addFilter("stringifyObject", (obj) => {
