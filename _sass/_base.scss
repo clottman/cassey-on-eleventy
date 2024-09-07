@@ -161,7 +161,7 @@ a {
 blockquote {
   color: var(--gray300);
   border-left: 4px solid var(--gray300);
-  padding-left: $spacing-unit / 2;
+  padding-left: calc($spacing-unit / 2);
   font-size: 18px;
   letter-spacing: -1px;
   font-style: italic;
@@ -205,8 +205,8 @@ pre[class*="language-"] {
 
   @include media-query($on-laptop) {
     max-width: calc(100vw - (2* #{$spacing-unit}));
-    padding-right: $spacing-unit / 2;
-    padding-left: $spacing-unit / 2;
+    padding-right:calc($spacing-unit / 2);
+    padding-left:calc($spacing-unit / 2);
   }
 }
 

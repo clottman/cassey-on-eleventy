@@ -140,7 +140,7 @@ main {
 
 .footer-heading {
   font-size: 18px;
-  margin-bottom: $spacing-unit / 2;
+  margin-bottom:calc($spacing-unit / 2);
 }
 
 .contact-list,
