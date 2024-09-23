@@ -27,3 +27,11 @@ I added the plugin [Eleventy Auto Cache Buster](https://www.npmjs.com/package/el
 I've never dealt with this before on Netlify or worried about query strings on assets there for my simple, no-bundler sites, so this was a frustrating surprise! I'm sure it is great for making my site speedy-quick for end users, but I would prefer a miniscule-ly slower site that always looks presentable over a very fast but embarrassing site!
 
 But now that I know about it, I will make sure any other sites I put on Cloudflare use the Auto Cache Buster plugin, and go back to not thinking about this at all, hopefully.
+
+## WWW settings
+
+If you want your blog to be available at both myblog.com and also www.myblog.com, make sure to set it up properly in Cloudflare! I didn't at first and this was broken for a while but no one really noticed apparently.
+
+Make sure to do this under your site's Workers & Pages settings, under "Custom Domains". You should end up with two entries (at least) here, one for myblog.com, and one for www.myblog.com. When you enter the www version, Cloudflare will add the DNS records you need to make it work. 
+
+Note: You _can't_ only add the DNS CNAME or A record yourself, manually, for the www version, and have it work! It needs to be set in the Custom Domains area of the Pages configuration as well.
