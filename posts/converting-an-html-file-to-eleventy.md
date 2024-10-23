@@ -69,8 +69,10 @@ Set a passthrough file copy for your images, CSS, and any other files you need t
 ```javascript
 module.exports = function(eleventyConfig) {
   // call functions on eleventyConfig here
+
+  // let's just pass through whatever is in the css/ or images/ folder for now
   eleventyConfig.addPassthroughCopy("css");
-  eleventyConfig.addPassthroughCopy("**/*.jpg");
+  eleventyConfig.addPassthroughCopy("images");
 
   // return object options in the object starting on the line below
   return {};
