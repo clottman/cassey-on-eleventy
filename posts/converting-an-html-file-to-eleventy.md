@@ -146,7 +146,8 @@ At this point, my Eleventy config looks like this:
 ```javascript
 module.exports = function (eleventyConfig) {
   // call functions on eleventyConfig here
-  eleventyConfig.addPassthroughCopy("*.css");
+
+  eleventyConfig.addPassthroughCopy("css/*.css");
   eleventyConfig.addPassthroughCopy("images");
 
   // return object options in the object starting on the line below
