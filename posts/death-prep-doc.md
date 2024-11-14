@@ -1,9 +1,12 @@
 ---
-title: "My 'If I Die' Doc"
+title: My 'If I Die' Doc
 date: 2023-12-28
-tags: [posts, resources]
-social_description: "Hope no one has to read it. Make their lives easier if they do"
-redirectsFrom: "/posts/2023-12-28-death-prep-doc/"
+tags:
+  - posts
+  - resources
+  - preparedness
+social_description: Hope no one has to read it. Make their lives easier if they do
+redirectsFrom: /posts/2023-12-28-death-prep-doc/
 ---
 
 I think it's really important to be prepared for the unexpected. One of those unexpected outcomes might be that I could die much earlier than I hope to. Maybe even both my spouse and I could die at the same time, leaving my family to take over our affairs and care of our child. 
