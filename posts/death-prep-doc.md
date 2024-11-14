@@ -35,7 +35,3 @@ If you use Facebook, set up your ["legacy preferences"](https://accountscenter.f
 If you have a Google account, you can set up an ["inactive account manager"](https://support.google.com/accounts/answer/3036546?hl=en) so that if your account is inactive for some period (3 months minimum; could be set longer), and you don't respond to Google's attempts to contact you, another person you designate will be able to download an archive/access your account. Consider having that set up, too. 
 
 Do you write code in personal repos on Github that you would want a trusted person to take control of when you die? You can designate a [successor to receive control of your repos](https://github.com/settings/admin).
-
-## Not sure where to start?
-I have heard many people speak highly of [Cake](https://www.joincake.com) but I haven't tried it myself.
-
