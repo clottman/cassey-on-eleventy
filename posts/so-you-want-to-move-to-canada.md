@@ -48,6 +48,13 @@ There are options for inter-company transfers your company might be willing to t
 ### Start a company in Canada
 I know even less about this but here's a page about the [start-up visa program](https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/start-visa.html). 
 
+### CUSMA work permit tied to a skilled job offer
+If you're a citizen of the US or Mexico, and work in certain designated professions, you can qualify for a [work permit under the "Canada–United States–Mexico Agreement" (CUSMA)](https://www.canada.ca/en/immigration-refugees-citizenship/services/work-canada/permit/business-people.html). You will need a job offer in hand already; you can't move to Canada for the purposes of finding a job that will qualify you for the work permit. 
+
+Note the agreement is up for re-negotiation in 2026, so this pathway may change.
+
+In-Canada work experience will add points to the CRS score used by the Express Entry program detailed below, so even though this is not an immediate or guaranteed path to permanent residency, it can be a way to boost your score enough to help you qualify or become a more enticing candidate for a provincial nominee program.
+
 ## Express Entry
 This is a huge topic, and where the rest of this blog post will focus as this is the pathway that my family used to gain Canadian permanent residence. Here is [the main hub for Express Entry info on the IRCC website](https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry.html). 
 
