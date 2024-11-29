@@ -1,9 +1,12 @@
 ---
-title: "So You Want To Move to Canada"
+title: So You Want To Move to Canada
 date: 2023-12-16
-tags: [posts, resources]
-social_description: "Here's how we're doing it and what it cost"
-redirectsFrom: "/posts/2023-12-16-so-you-want-to-move-to-canada/"
+tags:
+  - posts
+  - resources
+  - canada
+social_description: Here's how we're doing it and what it cost
+redirectsFrom: /posts/2023-12-16-so-you-want-to-move-to-canada/
 ---
 
 Have you given serious thought to moving from the US to Canada? Are you not quite sure where to start exploring your options for immigrating to Canada, despite all the search results you've seen from SEO farms with names like VisasNowPlease or Fancy Immigration Lawyers LLC?
