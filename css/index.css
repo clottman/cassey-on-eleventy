@@ -79,7 +79,7 @@ code {
   border-radius: 8px;
   text-decoration: none;
   font-size: 16px;
-  padding: 2px 4px;
+  padding: 2px 6px;
 }
 
 .tagslist {
@@ -110,10 +110,14 @@ a[href].direct-link:focus:visited,
   display: block;
 }
 
-#tagsContainer {
+.flex-row {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+}
+
+ul#tagsContainer {
+  margin-left: 0;
 }
 
 #tagsContainer li {

@@ -1,6 +1,21 @@
 ---
 layout: layouts/page.njk
 ---
+{% if tags.length > 1 %}
+<div class="flex-row">
+  <span>See more posts tagged:</span>
+
+  <ul id="tagsContainer" class="flex-row">
+  {% for tag in tags %}
+  {% if tag != "posts" %}
+    {% set tagUrl %}/blog/tags/{{ tag }}/{% endset %}
+    <li><a href="{{ tagUrl | url }}" class="tag tagslist">{{ tag }}</a></li>
+  {% endif %}
+{% endfor %}
+  </ul>
+</div>
+{% endif %}
+
 {{ content | safe }}
 <br/>
 <br/>
