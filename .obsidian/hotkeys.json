@@ -1,35 +1,36 @@
 {
-    "editor:swap-line-down": [
-      {
-        "modifiers": [
-          "Mod"
-        ],
-        "key": "ArrowDown"
-      }
-    ],
-    "switcher:open": [
-      {
-        "modifiers": [
-          "Mod"
-        ],
-        "key": "P"
-      }
-    ],
-    "command-palette:open": [
-      {
-        "modifiers": [
-          "Mod",
-          "Shift"
-        ],
-        "key": "P"
-      }
-    ],
-    "editor:swap-line-up": [
-      {
-        "modifiers": [
-          "Mod"
-        ],
-        "key": "ArrowUp"
-      }
-    ]
-  }
+  "editor:swap-line-down": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "ArrowDown"
+    }
+  ],
+  "switcher:open": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "P"
+    }
+  ],
+  "command-palette:open": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "P"
+    }
+  ],
+  "editor:swap-line-up": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "ArrowUp"
+    }
+  ],
+  "editor:insert-link": []
+}
