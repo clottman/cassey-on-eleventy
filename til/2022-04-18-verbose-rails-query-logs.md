@@ -1,5 +1,5 @@
 ---
-til-tags: ["ruby", "rails"]
+tilTags: ["ruby", "rails"]
 title: "Verbose Active Record query logs for Rails"
 date: 2022-04-18
 ---

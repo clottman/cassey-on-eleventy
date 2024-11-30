@@ -1,5 +1,5 @@
 ---
-til-tags: ['design', 'accessibility', 'testing']
+tilTags: ['design', 'accessibility', 'testing']
 title: Readings on Accessibility
 description: Articles I learned from today
 date: 2019-07-12

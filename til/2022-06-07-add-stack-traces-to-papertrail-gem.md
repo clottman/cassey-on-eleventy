@@ -1,5 +1,5 @@
 ---
-til-tags: ["ruby", "rails"]
+tilTags: ["ruby", "rails"]
 title: "Adding stack traces to versions stored by the Papertrail Ruby gem"
 date: 2022-06-07
 ---

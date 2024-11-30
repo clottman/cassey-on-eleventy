@@ -1,5 +1,5 @@
 ---
-til-tags: ['csharp', 'EntityFramework']
+tilTags: ['csharp', 'EntityFramework']
 title: Soft Delete with EntityFramework Dynamic Filters
 date: 2017-07-07
 ---

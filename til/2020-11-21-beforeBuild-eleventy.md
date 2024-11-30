@@ -1,5 +1,5 @@
 ---
-til-tags: ["eleventy"]
+tilTags: ["eleventy"]
 title: "Using the beforeBuild hook to render Sass in Eleventy"
 description: "Goodbye, Gulp"
 date: 2020-11-21

@@ -1,5 +1,5 @@
 ---
-til-tags: ["ruby", "rails"]
+tilTags: ["ruby", "rails"]
 title: "Making Rails recognize code in subfolders of default folders"
 description: "In which I learn about autoload paths"
 date: 2022-04-15

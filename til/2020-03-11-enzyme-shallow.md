@@ -1,5 +1,5 @@
 ---
-til-tags: ['react', 'testing']
+tilTags: ['react', 'testing']
 title: 'Testing Modern React with Enzyme Shallow'
 description: 'A Litany of Woes'
 date: 2020-03-11

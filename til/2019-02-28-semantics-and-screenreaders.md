@@ -1,5 +1,5 @@
 ---
-til-tags: ['accessibility']
+tilTags: ['accessibility']
 title: How Screenreaders Use Semantics
 date: 2019-02-28
 ---

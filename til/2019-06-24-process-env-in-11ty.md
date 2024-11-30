@@ -1,5 +1,5 @@
 ---
-til-tags: ['eleventy', 'tools']
+tilTags: ['eleventy', 'tools']
 title: Using process.env variables in Eleventy
 description: "Today I learned!"
 date: 2019-06-24

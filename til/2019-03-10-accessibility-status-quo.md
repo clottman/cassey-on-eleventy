@@ -1,5 +1,5 @@
 ---
-til-tags: ['reading', 'accessibility']
+tilTags: ['reading', 'accessibility']
 title: Accessibility on the Million Most Popular Sites
 date: 2019-03-10
 ---

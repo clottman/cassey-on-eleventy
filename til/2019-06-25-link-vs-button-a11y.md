@@ -1,5 +1,5 @@
 ---
-til-tags: ['html', 'accessibility']
+tilTags: ['html', 'accessibility']
 title: Impact of Accessibility on Link vs Button in HTML
 description: Does it matter? If so, which one to use?
 date: 2019-06-25

@@ -1,5 +1,5 @@
 ---
-til-tags: ["ruby", "rails"]
+tilTags: ["ruby", "rails"]
 title: "Using Pronto for CI on a Rails project without cluttery comments"
 social_description: "a gift to myself and my team in the New Year"
 date: 2024-01-03

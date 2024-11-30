@@ -1,5 +1,5 @@
 ---
-til-tags: ["rails", "ruby"]
+tilTags: ["rails", "ruby"]
 title: "Starting to pick up Ruby & Rails"
 description: ""
 date: 2020-11-03

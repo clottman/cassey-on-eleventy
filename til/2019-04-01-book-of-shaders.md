@@ -1,5 +1,5 @@
 ---
-til-tags: ['reading']
+tilTags: ['reading']
 title: Book of Shaders
 date: 2019-04-02
 ---

@@ -1,5 +1,5 @@
 ---
-til-tags: ['talks', 'design', 'accessibility']
+tilTags: ['talks', 'design', 'accessibility']
 title: "Disruptive Design: Harmful Patterns and Bad Practice"
 description: Notes on Watching a Conference Talk on Inclusive Design
 date: 2019-07-02

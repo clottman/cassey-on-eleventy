@@ -1,5 +1,5 @@
 ---
-til-tags: ["html"]
+tilTags: ["html"]
 title: "Make your twitter cards look nicer"
 description: "summary and summary_large_image are not created equally"
 date: 2020-03-27

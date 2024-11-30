@@ -1,5 +1,5 @@
 ---
-til-tags: ['xamarin']
+tilTags: ['xamarin']
 title: Convert Xamarin PCL Template to use NET Standard
 date: 2017-07-19
 ---

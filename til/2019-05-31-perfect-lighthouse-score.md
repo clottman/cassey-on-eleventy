@@ -1,5 +1,5 @@
 ---
-til-tags: ['accessibility']
+tilTags: ['accessibility']
 title: A perfect Lighthouse Score on a perfectly inaccessible website
 date: 2019-05-31
 ---

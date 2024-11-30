@@ -1,5 +1,5 @@
 ---
-til-tags: ['talks']
+tilTags: ['talks']
 title: "'Making Badass Developers' by Kathy Sierra"
 date: 2019-05-31
 ---

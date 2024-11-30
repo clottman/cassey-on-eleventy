@@ -1,5 +1,5 @@
 ---
-til-tags: ["html"]
+tilTags: ["html"]
 title: "Deep dive into img attributes"
 description: "What are they all really for?"
 date: 2021-08-12

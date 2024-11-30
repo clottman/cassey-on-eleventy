@@ -1,5 +1,5 @@
 ---
-til-tags: ["firefox", "devtools"]
+tilTags: ["firefox", "devtools"]
 title: "Firefox Responsive Design Mode and Hover Events"
 description: "Where's my hover styles??"
 date: 2020-11-01

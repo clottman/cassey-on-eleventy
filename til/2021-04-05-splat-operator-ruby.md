@@ -1,5 +1,5 @@
 ---
-til-tags: ["ruby"]
+tilTags: ["ruby"]
 title: "The Ruby splat operator can destructure arrays"
 description: "An exploration into what a strange star was doing"
 date: 2021-04-05

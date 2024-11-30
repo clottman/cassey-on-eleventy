@@ -1,5 +1,5 @@
 ---
-til-tags: ['talks', 'accessibility']
+tilTags: ['talks', 'accessibility']
 title: 'The effects of Neuro and Muscular Disabilities with Dr. Neil Matthiessen'
 description: A Nebraska Digital Accessibility Meetup talk
 date: 2019-07-16

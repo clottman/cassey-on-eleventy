@@ -1,5 +1,5 @@
 ---
-til-tags: ["design", "css", "accessibility"]
+tilTags: ["design", "css", "accessibility"]
 title: "Adjusting site colors for better contrast"
 description: ""
 date: 2020-11-07

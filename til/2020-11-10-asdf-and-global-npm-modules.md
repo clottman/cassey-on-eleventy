@@ -1,5 +1,5 @@
 ---
-til-tags: ["tools"]
+tilTags: ["tools"]
 title: "How to make asdf recognize globally installed npm modules"
 description: ""
 date: 2020-11-10

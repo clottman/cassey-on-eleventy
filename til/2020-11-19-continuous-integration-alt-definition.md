@@ -1,5 +1,5 @@
 ---
-til-tags: ["devops"]
+tilTags: ["devops"]
 title: "Continuous Integration: another definition"
 description: "What if every developer merged into the main branch multiple times per day?"
 date: 2020-11-19

@@ -1,5 +1,5 @@
 ---
-til-tags: ["ruby", "rails"]
+tilTags: ["ruby", "rails"]
 title: "Rails controller params can be accessed by string or symbol (with indifferent access!)"
 social_description: "so when you're writing controller tests, use hash with_indifferent_access"
 date: 2023-07-24

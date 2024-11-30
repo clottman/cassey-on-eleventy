@@ -1,5 +1,5 @@
 ---
-til-tags: ['reading', 'learning']
+tilTags: ['reading', 'learning']
 title: Learning to Learn
 date: 2019-03-04
 ---

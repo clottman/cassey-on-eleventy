@@ -1,5 +1,5 @@
 ---
-til-tags: ['accessibility', 'html']
+tilTags: ['accessibility', 'html']
 title: The HTML Element Specification and Accessibility
 date: 2019-06-18
 ---

@@ -1,5 +1,5 @@
 ---
-til-tags: ['css', 'accessibility']
+tilTags: ['css', 'accessibility']
 title: 'Elements with overflow: scroll become focusable'
 date: 2019-11-19
 ---

@@ -1,5 +1,5 @@
 ---
-til-tags: ["ruby", "rails"]
+tilTags: ["ruby", "rails"]
 title: "Getting all the records of a model created today in Rails"
 description: "Time.current.all_day ftw"
 date: 2022-04-12

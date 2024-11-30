@@ -1,5 +1,5 @@
 ---
-til-tags: ["tools"]
+tilTags: ["tools"]
 title: "What is that percent sign doing in my `cat` output?"
 description: "The answer is: it's zsh, not cat"
 date: 2020-11-09

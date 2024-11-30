@@ -1,5 +1,5 @@
 ---
-til-tags: ["ruby", "rails"]
+tilTags: ["ruby", "rails"]
 title: "Debugging strategies using binding.pry in Rails"
 date: 2022-05-19
 ---

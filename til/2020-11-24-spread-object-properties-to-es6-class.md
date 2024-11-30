@@ -1,5 +1,5 @@
 ---
-til-tags: ["javascript"]
+tilTags: ["javascript"]
 title: "How to make your Javascript class instance have all the properties of some other object"
 description: "Call Object.assign(this, yourObject) from within the class"
 date: 2020-11-24

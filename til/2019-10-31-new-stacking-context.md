@@ -1,5 +1,5 @@
 ---
-til-tags: ['css']
+tilTags: ['css']
 title: 'CSS properties that create an implicit stacking context'
 date: 2019-10-31
 ---

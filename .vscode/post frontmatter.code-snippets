@@ -36,7 +36,7 @@
 			"---",
 			"layout: post",
 			"title: $TM_FILENAME_BASE"
-			"til-tags: []",
+			"tilTags: []",
 			"description: ''",
 			"date: $CURRENT_YEAR-$CURRENT_MONTH-${CURRENT_DATE}T$CURRENT_HOUR:$CURRENT_MINUTE:00-05:00",
 			"---",

@@ -1,5 +1,5 @@
 ---
-til-tags: ["react"]
+tilTags: ["react"]
 title: "I'm reading: 'A (Mostly) Complete Guide to React Rendering Behavior'"
 description: "I wish I had this a year ago..."
 date: 2020-11-25

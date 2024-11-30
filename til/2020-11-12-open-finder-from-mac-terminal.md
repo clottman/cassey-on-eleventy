@@ -1,5 +1,5 @@
 ---
-til-tags: ["tools"]
+tilTags: ["tools"]
 title: "How to open the current directory in finder from terminal on a mac"
 description: "run 'open .'"
 date: 2020-11-12

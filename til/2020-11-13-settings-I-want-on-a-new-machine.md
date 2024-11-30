@@ -1,5 +1,5 @@
 ---
-til-tags: ["tools"]
+tilTags: ["tools"]
 title: "Settings I want on a new machine"
 description: "Change the git pager, and make sure VS Code doesn't collapse empty files"
 date: 2020-11-13

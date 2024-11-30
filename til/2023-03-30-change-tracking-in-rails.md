@@ -1,5 +1,5 @@
 ---
-til-tags: ["ruby", "rails"]
+tilTags: ["ruby", "rails"]
 title: "Manual change tracking in Ruby on Rails"
 social_description: "AKA no Papertrail"
 date: 2023-03-30

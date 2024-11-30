@@ -1,5 +1,5 @@
 ---
-til-tags: ["tools", "eleventy"]
+tilTags: ["tools", "eleventy"]
 title: "How can I see my new blog post rendered before I deploy, if I don't have my whole dev environment?"
 description: "Draft a PR on Github & use Netlify Deployment Previews"
 date: 2020-11-09

@@ -1,5 +1,5 @@
 ---
-til-tags: ["ruby", "rails"]
+tilTags: ["ruby", "rails"]
 title: "CSV.generate behavior change in Ruby 3 vs Ruby 2.7"
 social_description: "because of changes in StringIO's init method"
 date: 2023-03-31

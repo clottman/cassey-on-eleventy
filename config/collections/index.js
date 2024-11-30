@@ -13,7 +13,7 @@ const rssCollection = (collectionApi) => {
 const tilTagsCollection = (collection) => {
   let allTilTags = getAllKeyValues(
     collection.getFilteredByGlob(tilGlob),
-    "til-tags"
+    "tilTags"
   );
 
   let tilTags = allTilTags.map((tilTag) => strToSlug(tilTag));

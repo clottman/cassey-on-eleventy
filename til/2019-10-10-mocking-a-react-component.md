@@ -1,5 +1,5 @@
 ---
-til-tags: ['react', 'testing']
+tilTags: ['react', 'testing']
 title: 'Mocking a React Component with Sinon'
 date: 2019-10-10
 ---

@@ -10,7 +10,7 @@ permalink: /til/tags/{{ category }}/
 ---
 <h1>Tagged “{{ category }}”</h1>
 
-{% set postslist = collections.til | include("data.til-tags", category) %}
+{% set postslist = collections.til | include("data.tilTags", category) %}
 {% include "postslist.njk" %}
 
 

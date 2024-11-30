@@ -1,5 +1,5 @@
 ---
-til-tags: ["eleventy"]
+tilTags: ["eleventy"]
 title: "Setting a layout for every page generated from a particular folder in Eleventy"
 description: "What's in your directory data file?"
 date: 2020-10-31

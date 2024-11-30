@@ -1,5 +1,5 @@
 ---
-til-tags: ["ruby", "rails"]
+tilTags: ["ruby", "rails"]
 title: "What's this tilde arrow thing in my Gemfile?"
 description: "A lesson in pessimistic versioning"
 date: 2021-10-04

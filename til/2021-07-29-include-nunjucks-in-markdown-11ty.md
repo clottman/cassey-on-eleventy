@@ -1,5 +1,5 @@
 ---
-til-tags: ["eleventy"]
+tilTags: ["eleventy"]
 title: "Using Nunjucks shortcodes in Markdown files in Eleventy"
 description: "Unlock the power of Eleventy Image in your md posts"
 date: 2021-07-29

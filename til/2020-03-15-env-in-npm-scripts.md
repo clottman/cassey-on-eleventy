@@ -1,5 +1,5 @@
 ---
-til-tags: ['javascript']
+tilTags: ['javascript']
 title: 'Referencing an .env value in an NPM script'
 description: 'The more you $KNOW!'
 date: 2020-03-15
