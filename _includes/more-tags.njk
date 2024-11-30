@@ -1,0 +1,14 @@
+{% if tags.length > 1 %}
+<div class="flex-row post-tagslist">
+  <span>See more posts tagged:</span>
+
+  <ul class="flex-row">
+  {% for tag in tags %}
+    {% if tag != "posts" %}
+      {% set tagUrl %}/blog/tags/{{ tag }}/{% endset %}
+      <li><a href="{{ tagUrl | url }}" class="tag">{{ tag }}</a></li>
+    {% endif %}
+{% endfor %}
+  </ul>
+</div>
+{% endif %}

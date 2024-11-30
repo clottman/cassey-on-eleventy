@@ -6,7 +6,7 @@ title: Today I Learned Tags
 <ul id="tagsContainer" class="flex-row">
   {% for tag in collections.tilTags %}
   {% set tagUrl %}/til/tags/{{ tag }}/{% endset %}
-  <li><a href="{{ tagUrl | url }}" class="tag tagslist">{{ tag }}</a></li>
+  <li><a href="{{ tagUrl | url }}" class="tag">{{ tag }}</a></li>
 {% endfor %}
 </ul>
 

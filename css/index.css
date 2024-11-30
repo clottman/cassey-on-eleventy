@@ -80,16 +80,35 @@ code {
   text-decoration: none;
   font-size: 16px;
   padding: 2px 6px;
-  margin-bottom: 6px;
+}
+
+@media screen and (max-width: 800px) {
+  .tag:not(.token) {
+    margin-left: 0;
+  }
+
+  .postlist-date {
+    margin-left: 0;
+    margin-right: 6px;
+  }
+  
+  .postlist-post {
+    margin-bottom: 24px;
+  }
 }
 
 .tag:not(.token):hover, .tag:not(.token):focus {
   background-color: var(--secondary100);
 }
 
-.tagslist {
-  margin-bottom: 0.8em;
-  padding: 6px 8px;
+.post-tagslist {
+  align-items: center;
+}
+
+.post-tagslist ul {
+  margin-left: 0;
+  margin-bottom: 0;
+  list-style: none;
 }
 
 /* Direct Links / Markdown Headers */
@@ -115,10 +134,12 @@ a[href].direct-link:focus:visited,
   display: block;
 }
 
+
 .flex-row {
-  display: flex;
+  display: inline-flex;
   flex-direction: row;
   flex-wrap: wrap;
+  gap: 6px 2px;
 }
 
 ul#tagsContainer {

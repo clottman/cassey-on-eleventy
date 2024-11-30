@@ -3,19 +3,28 @@
   <li class="postlist-post{% if post.url == url %} postlist-item-active{% endif %}">
     <a href="{{ post.url | url }}" class="postlist-link">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a>
     <time class="postlist-date" datetime="{{ post.data.date | htmlDateString }}">{{ post.data.date | readableDate }}</time>
-    {% for tag in post.data.tags %}
-      {%- if collections.tagList.indexOf(tag) != -1 -%}
-      {% set tagUrl %}/blog/tags/{{ tag }}/{% endset %}
-      <a href="{{ tagUrl | url }}" class="tag">{{ tag }}</a>
-      {%- endif -%}
-    {% endfor %}
 
-    {% for tag in post.data['til-tags'] %}
-      {% if collections.tilTags.indexOf(tag) != -1 %}
-        {% set tagUrl %}/til/tags/{{ tag }}/{% endset %}
-        <a href="{{ tagUrl | url }}" class="tag">{{ tag }}</a>
-      {% endif %}
-    {% endfor %}
+    {% if post.data.tags.length > 1 %}
+      <div class="flex-row">
+        {% for tag in post.data.tags %}
+          {%- if collections.tagList.indexOf(tag) != -1 -%}
+          {% set tagUrl %}/blog/tags/{{ tag }}/{% endset %}
+          <a href="{{ tagUrl | url }}" class="tag">{{ tag }}</a>
+          {%- endif -%}
+        {% endfor %}
+      </div>
+    {% endif %}
+
+    {% if post.data['tilTags'].length > 1 %}
+      <div class="flex-row">
+        {% for tag in post.data['tilTags'] %}
+          {% if collections.tilTags.indexOf(tag) != -1 %}
+            {% set tagUrl %}/til/tags/{{ tag }}/{% endset %}
+            <a href="{{ tagUrl | url }}" class="tag">{{ tag }}</a>
+          {% endif %}
+        {% endfor %}
+      </div>
+    {% endif %}
   </li>
 {% endfor %}
 </ul>
