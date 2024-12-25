@@ -9,7 +9,7 @@ layout: post
 ## Enjoying: Games and Media
 I recently received my new copy of [_The Encyclopedia of Radical Helping_](https://sheerspite.ca/product/an-encyclopedia-of-radical-helping-ed-erin-segal-chris-hoff-julie-cho/), and it's so delightful. I wish I had the budget to gift it to all my most caring friends who are part of movement & activism spaces - the two I have gifted it to so far have enjoyed it, too!  
 ### Games
-- I've still been greatly enjoying [Fallen London](), a web-based game that I [wrote about a few months back](/fallen-london/). There's an Advent event going on now that's been fun over the last month, and I'm also getting in to some of the activities that can be unlocked in the mid-game like the University and Parabola which open up a lot of new things to do and explore. 
+- I've still been greatly enjoying [Fallen London](https://www.fallenlondon.com/), a web-based game that I [wrote about a few months back](/fallen-london/). There's an Advent event going on now that's been fun over the last month, and I'm also getting in to some of the activities that can be unlocked in the mid-game like the University and Parabola which open up a lot of new things to do and explore. 
 - I finally tried Balatro, and it is as good as everyone says! I've been playing on iOS, mainly on ipad. 
 - I've also been enjoying the iOS game Ratropolis, a settlement defense roguelike game where your settlers are anthropomorphic rats. It fills a very different niche for me than Balatro - Balatro I can play casually while my kid is playing nearby, while Ratropolis demands my full attention while playing due to the real-time & fast-paced nature. 
 
