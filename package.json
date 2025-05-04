@@ -1,7 +1,7 @@
 {
-  "name": "eleventy-base-blog",
+  "name": "cassey-on-eleventy",
   "version": "5.0.0",
-  "description": "A starter repository for a blog web site using the Eleventy static site generator.",
+  "description": "Based on Eleventy-Base-Blog v5, long long ago",
   "scripts": {
     "build": "npx @11ty/eleventy",
     "build:local": "netlify build",
@@ -9,7 +9,7 @@
     "debug": "DEBUG=* npx @11ty/eleventy"
   },
   "engines": {
-    "node": "18"
+    "node": "23"
   },
   "repository": {
     "type": "git",
