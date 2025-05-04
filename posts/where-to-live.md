@@ -1,8 +1,13 @@
 ---
 layout: post
 title: "How to Prepare for Climate Change by David Pogue: Where to Live notes"
-tags: ['posts', 'resources', 'housing', 'books']
-description: ''
+tags:
+  - posts
+  - resources
+  - housing
+  - books
+  - preparedness
+description: ""
 date: 2024-05-14T13:41:00-05:00
 ---
 

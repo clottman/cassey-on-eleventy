@@ -1,15 +1,19 @@
 ---
 layout: post
-tags: ["posts", "community", "zines"]
+tags:
+  - posts
+  - community
+  - zines
+  - preparedness
 title: "Choose Community: a zine"
-description: "a manifesto for saving the world"
-social_image: "https://cassey.dev/img/til-icon.png"
-"social_image_height": 256
-"social_image_width": 256
-"social_image_alt": "a stack of books with an apple on top"
-twitter_card_style: "summary"
+description: a manifesto for saving the world
+social_image: https://cassey.dev/img/til-icon.png
+social_image_height: 256
+social_image_width: 256
+social_image_alt: a stack of books with an apple on top
+twitter_card_style: summary
 date: 2022-05-28
-redirectsFrom: "/posts/2022-05-28-choose-community/"
+redirectsFrom: /posts/2022-05-28-choose-community/
 ---
 
 
