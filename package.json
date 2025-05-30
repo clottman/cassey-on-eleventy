@@ -39,7 +39,7 @@
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
     "@11ty/eleventy-plugin-rss": "^1.2.0",
-    "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.4",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^3.2.2",
     "autoprefixer": "^10.0.2",
     "eleventy-auto-cache-buster": "^0.6.0",
     "fs-extra": "^9.0.1",
