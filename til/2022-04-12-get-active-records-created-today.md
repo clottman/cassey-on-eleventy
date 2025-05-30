@@ -9,12 +9,12 @@ My favorite thing I've learned recently is something I learned when needing to r
 
 If you want to get all the records of model `Post` created on the current day, you can do: 
 
-```
+```ruby
 Post.where(created_at: Time.current.all_day)
 ```
 
 An alternative is 
-```
+```ruby
 Post.where(created_at: Time.zone.now.beginning_of_day..Time.zone.now.end_of_day)
 ```
 but the `Time.current.all_day` version is so simple! 

@@ -18,7 +18,7 @@ The answer lies in one of Eleventy's special configuration options, [`markdownTe
 
 Turns out, Markdown files (and markdown files only, though there is also an option for HTML files) are run through another template engine first, before being parsed as Markdown and converted to HTML. By default, this feature uses Liquid as the template engine, but you can easily change it on a [per-file, per-folder](https://www.11ty.dev/docs/languages/#templateengineoverride-examples), or global basis to use Nunjucks instead. 
 
-```
+```js
 // in .eleventy.js
 module.exports = function(eleventyConfig) {
   return {
@@ -28,7 +28,7 @@ module.exports = function(eleventyConfig) {
 ```
 
 In your post's frontmatter, [template data file, or directory data file](https://www.11ty.dev/docs/data-template-dir/):
-```
+```yml
 ---
 templateEngineOverride: njk,md
 ---

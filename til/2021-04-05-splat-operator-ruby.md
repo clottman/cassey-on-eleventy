@@ -8,7 +8,7 @@ date: 2021-04-05
 Today I learned about the splat operator in ruby, aka the `*` or asterisk operator.
 
 I came across some code like this in [the readme for Motion](https://github.com/unabridged/motion): 
-```
+```ruby
 def handle_created(name)
     @todos = [name, *@todos.first(@count - 1)]
 end
@@ -20,7 +20,7 @@ I was most confused about the `*`, but I also wasn't sure why `first` was taking
 
 Okay, so this * thing is operating on an array. I learned from my helpful coworkers that one thing the splat operator can do is destructure the array it's called on, so something like: 
 
-```
+```ruby
 [1, *[2, 3]] 
 => 
 [1, 2, 3]

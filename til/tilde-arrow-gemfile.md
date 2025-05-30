@@ -15,7 +15,7 @@ Pessimistic versioning is contrasted with "optimistic" version constraints, like
 In Ruby Gems you can define that you only want versions above a certain version and below a certain other version, like `gem 'library', '>= 2.2.0', '< 3.0'`. 
 But RubyGems has a shorthand for this, which is called the twiddle-wakka, and uses `~>`, or a tilde and an arrow next to each other. 
 
-```
+```ruby
 gem 'library', '~> 2.2'
 # is equivalent to 
 gem 'library', '>= 2.2.0', '< 3.0'

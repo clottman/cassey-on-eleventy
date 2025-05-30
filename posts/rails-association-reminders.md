@@ -10,7 +10,7 @@ date: 2024-01-08
 For a one-to-one or one-to-many relationship, the side with the `belongs_to` is the one where the database column (`other_model_id`) goes. 
 
 Add the migration on an existing table like this:
-```
+```ruby
 def change
   add_reference :things, :other_thing
 end

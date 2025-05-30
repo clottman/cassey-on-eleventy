@@ -16,7 +16,7 @@ Eventually, I helped them solve the problem by adding a custom filter that retur
 Here's the code we needed to make this work: 
 
 In .eleventy.js:
-```
+```javascript
 eleventyConfig.addFilter('getGlobalData', (data) => {
     // if your global data lives elsewhere, this file path will need to change a bit
     return require(`./src/_data/${data}.json`);
@@ -28,7 +28,7 @@ eleventyConfig.addFilter('getGlobalData', (data) => {
 
 In posts/posts.11tydata.js, a directory data file: 
 Make sure to install the dotenv package if you don't have it yet
-```
+```javascript
 require('dotenv').config();
 
 module.exports = {
@@ -42,7 +42,7 @@ module.exports = {
 <br />
 
 In _data/customName.json:
-```
+```json
 {
   "hello": "hi"
 }
@@ -53,20 +53,22 @@ In _data/customName.json:
 
 In .env:
 
-```
+```yml
 dataFileName=customName
 ```
 
 <hr />
 <br />
-In posts/hello.njk
+In posts/hello.njk:
+<br />
 {% raw %}
-```
+```liquid
 {% for k, v in dataFileName | getGlobalData %}
    {{ k }} {{ v }}
 {% endfor %}
 ```
 {% endraw %}
+
 
 <hr />
 <br />

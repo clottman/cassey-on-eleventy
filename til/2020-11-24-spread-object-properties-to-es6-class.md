@@ -6,7 +6,7 @@ date: 2020-11-24
 ---
 
 ## tl;dr: 
-```
+```js
 class MySpecialClass {
     constructor(objectFromServer) {
         Object.assign(this, objectFromServer);
@@ -27,7 +27,7 @@ The answer relies on `Object.assign` and uses `this` as the first parameter, or 
 ## even more code 
 Here's a code sample I wrote to test it out, which you can head over to [JSFiddle](https://jsfiddle.net/k9bypq85/1/) to test out.
 
-```
+```js
 const serverObj = {
  something_special: 1,
  something_else: 2,
