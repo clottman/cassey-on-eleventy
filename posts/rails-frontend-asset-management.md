@@ -230,7 +230,7 @@ These are my bottom-line recommendations; follow them at your own risk.
 	- want a bundler to do optimizations like tree-shaking and minification
 		- you're using [Tailwind CSS](https://tailwindcss.com/)
 ### Use importmap-rails if:
-- all your users use up-to-date modern browsers. 
+- all your users use up-to-date modern browsers. (See [CanIUse importmap](https://caniuse.com/?search=importmap)). 
 - Your users aren't overly concerned about bandwidth
 - Your code does not require any JS transpiling or bundling
 	- you're writing plain JavaScript or CSS, no TypeScript or React, no Tailwind, no Sass
