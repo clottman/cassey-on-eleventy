@@ -37,7 +37,7 @@ It includes doing stuff to the JS, CSS, and maybe even images:
 
 ## Timeline of Asset Management in Rails 
 
-Thank you to [this blog post with a timeline](www.fastruby.io/blog/the-assets-pipeline-history.html) which helped me start figuring this out, as well as this [7 year old Reddit post asking about webpacker/yarn/npm](https://www.reddit.com/r/rails/comments/9zg7fe/confused_about_the_difference_between_sprockets/) and this one on [Rails before Sprockets](https://www.reddit.com/r/rails/comments/lfbomu/archeology_what_was_there_before_sprockets/). The [Ruby on Rails History section on Wikipedia](https://en.wikipedia.org/wiki/Ruby_on_Rails) was also quite useful. 
+Thank you to [this blog post with a timeline](https://www.fastruby.io/blog/the-assets-pipeline-history.html) which helped me start figuring this out, as well as this [7 year old Reddit post asking about webpacker/yarn/npm](https://www.reddit.com/r/rails/comments/9zg7fe/confused_about_the_difference_between_sprockets/) and this one on [Rails before Sprockets](https://www.reddit.com/r/rails/comments/lfbomu/archeology_what_was_there_before_sprockets/). The [Ruby on Rails History section on Wikipedia](https://en.wikipedia.org/wiki/Ruby_on_Rails) was also quite useful. 
 
 - initial release in 2004: not a lot of JavaScript/css to speak of anyways
 - handwaving & gnashing of teeth as JS & CSS became more common but Rails didn't have anything built in
@@ -52,14 +52,14 @@ Thank you to [this blog post with a timeline](www.fastruby.io/blog/the-assets-pi
 - [Rails 6](https://guides.rubyonrails.org/6_0_release_notes.html#railties-notable-changes) in 2019: webpacker becomes the default JavaScript compiler for new rails projects
 	- Sprockets still used by default for non-JavaScript assets (images and css), and can serve JS if desired
 	- Turbolinks and rails-ujs are both installed by default by `rails g`
-- [Rails 7](https://guides.rubyonrails.org/v7.0/working_with_JavaScript_in_rails.html) in 2021, Webpacker is retired and importmaps becomes the new default, but jsbundling-rails and cssbundling-rails are named as officially sanctioned alternatives if you need things that importmaps don't provide. 
+- [Rails 7](https://guides.rubyonrails.org/v7.0/working_with_javascript_in_rails.html) in 2021, Webpacker is retired and importmaps becomes the new default, but jsbundling-rails and cssbundling-rails are named as officially sanctioned alternatives if you need things that importmaps don't provide. 
 	- [Sprockets becomes an optional dependency](https://guides.rubyonrails.org/v7.0/7_0_release_notes.html#railties-notable-changes) as `gem "sprockets-rails"`, and is not required by the `rails` gem
 	- The [Rails 7 release notes](https://guides.rubyonrails.org/7_0_release_notes.html) in the Rails Guides make no mention of webpacker being dropped in favor of importmaps or the alternatives. Fun!
 	- the [official webpacker gem](https://github.com/rails/webpacker) is retired
 		- v5 of webpacker will receive security updates on the Ruby side, but no changes on the JS side
 		- jsbundling-rails is recommended as a first-choice migration
 		- work that was in-progress for v6 moved to independent development as part of the [shakapacker](https://github.com/shakacode/shakapacker) gem; shakapacker can be used as a drop-in replacement for webpacker that will be actively maintained into the future 
-	- ["Rails 7 will have three great answers to JavaScript in 2021"](https://world.hey.com/dhh/rails-7-will-have-three-great-answers-to-JavaScript-in-2021-8d68191b) post by DHH is an interesting time capsule - import maps + Turbo and Stimulus suggested as the new best choice for most Rails apps.
+	- ["Rails 7 will have three great answers to JavaScript in 2021"](https://world.hey.com/dhh/rails-7-will-have-three-great-answers-to-javascript-in-2021-8d68191b) post by DHH is an interesting time capsule - import maps + Turbo and Stimulus suggested as the new best choice for most Rails apps.
 		- Turbolinks + Rails UJS vs Turbo + Stimulus are similar but not quite the same, watch out! See [my recent post on upgrading from rails-ujs to Turbo](/rails-ujs-to-turbo/). 
 - [Rails 7.1](https://guides.rubyonrails.org/7_1_release_notes.html#railties-notable-changes) in 2023: adds support for [bun](https://bun.sh/), a tool that can be used as an alternative to webpack & npm/yarn for JavaScript & TypeScript
 - [Rails 8](https://guides.rubyonrails.org/8_0_release_notes.html): in November 2024: Asset pipeline via Propshaft instead of Sprockets, and in tandem, use importmap-rails or jsbundling-rails or webpack or esbuilld or rollup.js or ....
@@ -147,7 +147,7 @@ Bookmark this! :) You'll thank me later.
 - [Sprockets 4](https://github.com/rails/sprockets/blob/main/UPGRADING.md#manifestjs) can do Babel transpiling (without webpack being involved)
 	- Look for:
 		- `gem 'babel-transpiler`
-		- js assets with the extension `.es6` like ` app/assets/JavaScript/application.es6` 
+		- js assets with the extension `.es6` like ` app/assets/javascript/application.es6` 
 	- I've never actually seen this in an app, but maybe I will some day! 
 - asset helpers like `image_url('logo.png')` 
 
@@ -162,7 +162,7 @@ Remember:
 	- `app/javascript/packs` has webpack entry files, like application.js and application.css
 	- pack file (application.js) uses `import` or `require` to load the files you want
 - `<%= stylesheet_pack_tag "application" %>
-- `<%= JavaScript_pack_tag "application" %>
+- `<%= javascript_pack_tag "application" %>
 - `package.json` lists the npm packages you are using and might define some scripts you can run with `npm` or `yarn run`
 - `bin/webpack-dev-server` watches for changes & rebuilds while the app is running, during development
 - `bin/webpack` does a single build & exits 
@@ -207,7 +207,7 @@ If you see both of these files, pick one together with your team, delete the fil
 - `gem importmap-rails`
 - `config/importmap.rb`
 	- lines like this: `pin "@rails/actioncable", to: "actioncable.esm.js"` 
-- `<%= JavaScript_importmap_tags %>` as well as `<script type="module">import "application"</script>`
+- `<%= javascript_importmap_tags %>` as well as `<script type="module">import "application"</script>`
 - `app/javascript/application.js` 
 
 ### [Jsbundling-rails](https://github.com/rails/jsbundling-rails) 
@@ -216,7 +216,7 @@ If you see both of these files, pick one together with your team, delete the fil
 - `app/javascript/application.js` as the entrypoint
 - Some other bundler & its config files: may be [Bun](https://bun.sh), [esbuild](https://esbuild.github.io), [rollup.js](https://rollupjs.org), or [Webpack](https://webpack.js.org)
 - `<%= javascript_include_tag "application" %>` if using the asset pipeline 
-- `JavaScript:build` task attached to `assets:precompile` which runs the build script that's defined in package.json
+- `javascript:build` task attached to `assets:precompile` which runs the build script that's defined in package.json
 
 ## So which should I use? 
 
