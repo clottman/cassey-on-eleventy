@@ -10,3 +10,13 @@ report*
 _cache
 .obsidian/workspace.json
 posts/.obsidian/workspace.json
+
+# emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
