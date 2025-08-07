@@ -19,7 +19,7 @@ module.exports = async function () {
     domain: "https://www.cassey.dev",
     baseurl: site,
     description:
-      'Cassey is a software developer who likes building for the Web most of all. She [ran for City Council](https://web.archive.org/web/20190809135734/http://casseyforcouncil.com/) in Lincoln, Nebraska.',
+      'Cassey is a queer parent and member of various communities, currently living in Ottawa,&nbsp;Ontario, previously in Lincoln,&nbsp;Nebraska. She likes bikes.',
     social_description: "One person is typing.",
     feed: {
       subtitle: "One person is typing.",
