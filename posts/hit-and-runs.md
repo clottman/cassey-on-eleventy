@@ -2,7 +2,7 @@
 layout: post
 title: "Driver Hits Person on Bike, Driver Drives Away, Nothing Happens"
 date: 2019-06-18
-tags: [urbanism, justice, posts]
+tags: [urbanism, justice, posts, nebraska]
 social_description: Did you know 15% of *all* crashes between a car and a bike in Lincoln are classified by LPD hit & runs? And that 31% of bicyclists injured in Lincoln are children?
 redirectsFrom: "/posts/2019-06-18-hit-and-runs/"
 ---

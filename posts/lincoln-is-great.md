@@ -5,6 +5,8 @@ tags:
   - posts
   - reflection
   - community
+  - nebraska
+  - urbanism
 description: "I'm proud to have made this place my home"
 date: 2024-07-05T22:24:00-05:00
 ---

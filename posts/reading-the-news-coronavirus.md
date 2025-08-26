@@ -3,7 +3,7 @@ layout: post
 title: Reading the News in This Particular Moment in History
 social_description: "Coronavirus, and the limits of comprehension"
 date: 2020-03-18
-tags: [posts, coronavirus]
+tags: [posts, coronavirus, nebraska]
 social_image: "https://cassey.dev/img/icons8-coronavirus-80.png"
 social_image_alt: "icon of a coronavirus molecule"
 twitter_card_style: "summary"

@@ -2,7 +2,7 @@
 layout: post
 title: "Thoughts on The Commons LNK and 'Transformations'"
 date: 2019-06-30
-tags: [justice, posts]
+tags: [justice, posts, nebraska]
 social_description: A new church-owned thrift shop at 14th & B is being heralded as a huge success. A community space for rebels, misfits, and queer folk used to sit on its location, and still can't find a home despite an empty building on that very corner. Success?
 redirectsFrom: "/posts/2019-06-30-the-commons-and-transformation/"
 ---

@@ -1,6 +1,6 @@
 ---
 layout: post
-tags: ["posts", "reflection"]
+tags: ["posts", "reflection", "nebraska"]
 title: "2022 in Review"
 description: "matrescence and the search for queer community"
 date: 2022-12-30

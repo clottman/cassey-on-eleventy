@@ -2,7 +2,7 @@
 layout: post
 title: "Here for Community"
 date: 2023-03-26
-tags: [posts, reflection, community]
+tags: [posts, reflection, community, nebraska]
 social_description: "what I'm staying in Nebraska for"
 redirectsFrom: "/posts/2023-03-26-my-queer-community/"
 ---

@@ -7,6 +7,7 @@ tags:
   - community
   - resources
   - preparedness
+  - nebraska
 layout: post
 ---
 Over the last several years in the activist and community circles I've been in, people have talked occasionally about getting licensed as amateur or "HAM" radio operators so we would have an alternate means of connecting to one another in an emergency situation when cell or internet networks may not be available.

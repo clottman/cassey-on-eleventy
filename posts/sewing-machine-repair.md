@@ -4,6 +4,7 @@ title: Taking an old sewing machine in for repair
 tags:
   - posts
   - art
+  - nebraska
 description: in which a skilled technician teaches me lots of stuff
 date: 2024-03-08
 ---

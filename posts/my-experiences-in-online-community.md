@@ -6,6 +6,7 @@ redirectsFrom: "/posts/2018-04-11-online-community/"
 tags:
     - relationships
     - posts
+    - community
 ---
 
 As a junior in high school, I spent 10 months living in France with a host family and attending a local <em>lycée</em>. I documented my experiences on <a href="http://dixmois.blogspot.com/">a blog called Dix Mois</a>. Thanks to the magic of the Internet and long-lasting Blogspot hosting, it's still up!

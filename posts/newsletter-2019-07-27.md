@@ -2,7 +2,7 @@
 layout: post
 title: "July 27 Roundup"
 date: 2019-07-27
-tags: [urbanism, housing, posts]
+tags: [urbanism, housing, posts, nebraska]
 social_description: Cassey's Livable Communities Roundup, from July 27, 2019
 redirectsFrom: "/posts/2019-07-27-newsletter/"
 ---

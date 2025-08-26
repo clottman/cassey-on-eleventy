@@ -1,7 +1,7 @@
 ---
 title: "Lincoln Housing Justice History"
 date: 2023-04-29
-tags: [posts, former-tweet, housing, community]
+tags: [posts, former-tweet, housing, community, nebraska]
 social_description: "The 1971 LNK City-Wide Tenants Assn lobbied & did direct action"
 redirectsFrom: "/posts/2023-04-29-lincoln-tenant-assn/"
 ---
