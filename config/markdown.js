@@ -48,4 +48,5 @@ const options = {
 module.exports = MarkdownIt(options).use(
   markdownItAnchor,
   markDownItAnchorOpts
-).use(markdownItEleventyImg, markdownItEleventyImgOpts);
+).use(markdownItEleventyImg, markdownItEleventyImgOpts)
+.use(require('markdown-it-footnote'));
