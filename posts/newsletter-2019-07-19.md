@@ -2,7 +2,7 @@
 layout: post
 title: "July 19 Newsletter"
 date: 2019-07-19
-tags: [streets, housing, posts]
+tags: [urbanism, housing, posts]
 social_description: "Cassey's Livable Communities Roundup from July 19, 2019"
 redirectsFrom: "/posts/2019-07-19-newsletter/"
 ---

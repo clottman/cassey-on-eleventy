@@ -30,7 +30,6 @@ module.exports = [
 "france",
 "language-learning",
 "poetry",
-"streets",
 "urbanism",
 "nebraska",
 "racism",
