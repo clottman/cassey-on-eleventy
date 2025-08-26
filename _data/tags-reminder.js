@@ -31,6 +31,8 @@ module.exports = [
 "language-learning",
 "poetry",
 "streets",
+"urbanism",
+"nebraska",
 "racism",
 "current-events",
 "former-tweet",

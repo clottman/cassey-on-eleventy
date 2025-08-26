@@ -142,6 +142,13 @@ a[href].direct-link:focus:visited,
   gap: 6px 2px;
 }
 
+.flex-row-items {
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+  align-items: baseline;
+}
+
 ul#tagsContainer {
   margin-left: 0;
 }
