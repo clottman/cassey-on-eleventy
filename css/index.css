@@ -82,7 +82,7 @@ code {
   padding: 2px 6px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1200px) {
   .tag:not(.token) {
     margin-left: 0;
   }
