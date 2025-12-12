@@ -15,6 +15,7 @@ module.exports = [
 "abundance",
 "definitions",
 "code",
+"canada",
 "tech-resources",
 "accessibility",
 "resources",
