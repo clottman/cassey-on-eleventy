@@ -4,6 +4,8 @@ title: 'Elements with overflow: scroll become focusable'
 date: 2019-11-19
 ---
 
+**Updated 2025-12-17**: Since Glitch as 'the friendly community to build on the web' is shut down now, I removed the direct links to Glitch.com that no longer work or won't work soon enough.
+<br/>
 I was working on re-building a custom select list component to make it more keyboard-friendly when I encountered a strange bug: the `<section>` element wrapping the result elements was in the focus order, even though it didn't have `tabIndex` set on it. Since my custom component handles focus traversal on the result items on its own, this extra tab stop was a bug.
 
 After some digging, I discovered that the culprit was a CSS class setting `overflow: scroll` on the `section`. With `overflow: scroll` set on an element, both Firefox and Chrome<sup>1</sup> put the element in tab order, as an accessibility feature. With the element in tab order, users can use the arrow keys to scroll through the scrollable area. 
@@ -22,14 +24,7 @@ If you're _not_ providing an alternate means for keyboard-only users to scroll t
 
 ## Test it yourself
 
-<div class="glitch-embed-wrap" style="height: 420px; width: 100%;">
-  <iframe
-    src="https://glitch.com/embed/#!/embed/summer-jumpsuit?path=index.html&previewSize=100"
-    title="summer-jumpsuit on Glitch"
-    allow="geolocation; microphone; camera; midi; vr; encrypted-media"
-    style="height: 100%; width: 100%; border: 0;">
-  </iframe>
-</div>
+(2025 note: this section previously contained an embed of the app running on Glitch, which has since been shut down.)
 
 <br> 
 <br>

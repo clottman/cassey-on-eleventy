@@ -4,11 +4,6 @@ tags: ["posts", "eleventy", "code"]
 title: "Just Enough JavaScript for Eleventy"
 description: "Want to try Eleventy, but not very experienced in JavaScript yet? You're in the right place."
 date: 2021-12-25
-social_image: "https://cdn.glitch.com/238f8585-6bd5-40c4-a0ff-2b87d4acea6c%2Fknowledge-256.png?v=1561398158147"
-social_image_height: 256
-social_image_width: 256
-social_image_alt: "a stack of books with an apple on top"
-twitter_card_style: "summary"
 redirectsFrom: "/posts/2021-12-25-just-enough-javascript-11ty/"
 ---
 

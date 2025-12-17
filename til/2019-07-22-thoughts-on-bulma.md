@@ -5,9 +5,11 @@ description: "If you care about accessibility, you might want to look elsewhere.
 date: 2019-07-22
 ---
 
+**Updated 2025-12-17**: Since Glitch as 'the friendly community to build on the web' is shut down now, I removed the direct links to Glitch.com that no longer work or won't work soon enough.
+
 I wanted a simple UI library for making a simple page with a simple form prettier. So I tried out [Bulma](https://bulma.io/)! My take is that in my quick usage/perusal of the docs, it seems awful for accessibility and not great for developer experience, either.
 
-It's also a library that relies on Sass, and my project only used Handlebars and Express/Node. So I had to figure out how to compile Sass and serve it from a Node project. I thought about adding a bundler to my project, but since it was already working just fine with Handlebars and simple templating, that felt like too much overhead. I found a starter app called [Example-Scss](https://glitch.com/~example-scss) on Glitch where I was able to get the gist of what I needed to add to my `server.js` file to make it work. 
+It's also a library that relies on Sass, and my project only used Handlebars and Express/Node. So I had to figure out how to compile Sass and serve it from a Node project. I thought about adding a bundler to my project, but since it was already working just fine with Handlebars and simple templating, that felt like too much overhead. I found a starter app called Example-Scss at `https://glitch.com/~example-scss` on Glitch where I was able to get the gist of what I needed to add to my `server.js` file to make it work. 
 
 ``` javascript
 var sassMiddleware = require("node-sass-middleware");
