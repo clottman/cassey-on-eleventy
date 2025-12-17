@@ -11,7 +11,7 @@ pagination:
 
 This page is a work-in-progress. I'm experimenting with using Sanity CMS to host images that appear here.
 
-It's not as pretty as that other gram site, and it's not as social (DM me on twitter to comment, for now, I guess, and if you want to 'like' a photo, smile at your screen) but it's all mine.
+It's not as pretty as that other gram site, and it's not as social (DM me on mastodon to comment, for now, I guess, and if you want to 'like' a photo, smile at your screen) but it's all mine.
 
 <ul class="casseygram-hub">
 {%- for item in pagination.items %}

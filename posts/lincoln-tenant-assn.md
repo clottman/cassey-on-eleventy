@@ -6,7 +6,7 @@ social_description: "The 1971 LNK City-Wide Tenants Assn lobbied & did direct ac
 redirectsFrom: "/posts/2023-04-29-lincoln-tenant-assn/"
 ---
 
-_This originally appeared as a [series of tweets](https://twitter.com/CasseyLottman/status/1652361235088670730) but I want it to live on my website instead so here it is._
+_This originally appeared as a series of tweets but I want it to live on my website instead so here it is._
 
 The issue of a lack of affordable housing in Midwestern cities like Lincoln isn't new, despite what you may have heard. Feeling shivers reading about the 1971 Lincoln City-Wide Tenants Assn., which lobbied senators and city officials but also mounted a "Tent City" direct action.
 

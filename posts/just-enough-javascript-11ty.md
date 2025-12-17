@@ -116,7 +116,7 @@ module.exports = function(collection) {
 If you're using JavaScript for data files, you'll also need that `module.exports =` bit in each of those files, and either set `module.exports = { /* some object */}` or return the thing you want to export at the end of the function you're exporting. JavaScript data files also support `require`s - you'll need them if you want to do something like fetch data from an external server in a global data file, and make that data available as global data to your template files.
 
 ## Conclusion
-I hope this helped - and I'm curious what else you'd like to know! Drop me an [@ on twitter](https://twitter.com/CasseyLottman) or catch me in the official [Eleventy discord](https://www.11ty.dev/blog/discord/).  
+I hope this helped - and I'm curious what else you'd like to know! Drop me an @ on mastodon or catch me in the official [Eleventy discord](https://www.11ty.dev/blog/discord/).
 
 ### Further Reading
  - My post on [navigating existing Eleventy projects](https://www.cassey.dev/posts/2021-07-26-navigating-11ty-projects/) gives a nice summary of where the important bits of an Eleventy project are, which may be especially useful if you're familiar with how other static site generators work or if you're working with an existing project.

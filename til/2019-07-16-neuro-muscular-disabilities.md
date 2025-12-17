@@ -5,7 +5,7 @@ description: A Nebraska Digital Accessibility Meetup talk
 date: 2019-07-16
 ---
 
-[Originally tweeted](https://twitter.com/CasseyLottman/status/1151280861293293568). Provided here for posterity!
+Originally shared on Twitter. Provided here for posterity!
 
 Time for the Nebraska Digitial Accessibility Meetup! Tonight we're hearing from Neil Matthiessen, on "The Affects of Neuro and Muscular Disabilities." Neil is a doctor of Occupational Therapy.
 

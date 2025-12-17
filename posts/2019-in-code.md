@@ -23,13 +23,18 @@ This year was the first time I used [Eleventy](https://www.11ty.dev/docs/), and 
 
 ### This Site
 
-Speaking of which... this site is now built with Eleventy! It was ported over in August from Jekyll hosted on GitHub Pages, and it now lives in Netlify. I never got around to adding a search feature, but the tagging system is much more flexible and easy to maintain than it was in the Jekyll version. Also, I didn't notice until too late that the generated URLs use a slightly different format than the old blog did, so there's a lot of broken links out there, mostly on my Twitter and Facebook. Other than that, I'm quite happy with how the site turned out.
+Speaking of which... this site is now built with Eleventy! It was ported over in August from Jekyll hosted on GitHub Pages, and it now lives in Netlify. I never got around to adding a search feature, but the tagging system is much more flexible and easy to maintain than it was in the Jekyll version. Also, I didn't notice until too late that the generated URLs use a slightly different format than the old blog did, so there's a lot of broken links out there, mostly on my ~~Twitter~~ and Facebook. Other than that, I'm quite happy with how the site turned out.
 
 ### TIL Blog
 
 Starting in June, I kept track of things I was learning about tech on an Eleventy site I built called `cassey-til`, originally at `https://cassey-til.glitch.me/` (2025 note: it now lives only on this site, at [/til](/til)). The site also contains some learnings I recorded before creating the site, which I had been storing in a GitHub repository. [December 2025 note: Glitch has sadly been shut now, so I removed the link where you'd go see my project on Glitch and create your own version.]  I set it up so it will be easy to add your own author info and blog title, and you'll start with a blank slate in the posts directory. Follow the instructions in the readme for what to do after remixing.
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">I remembered my forgotten TIL repository, inspired by <a href="https://twitter.com/jbrancha?ref_src=twsrc%5Etfw">@jbrancha</a>. Updated it with a few months of learnings I&#39;ve shared in Slack, and stood up a site using <a href="https://twitter.com/eleven_ty?ref_src=twsrc%5Etfw">@eleven_ty</a> on <a href="https://twitter.com/glitch?ref_src=twsrc%5Etfw">@glitch</a> to show them off and keep them organized. <br><br>v productive Tuesday Glitch time!<a href="https://t.co/ymn7nByz3A">https://t.co/ymn7nByz3A</a></p>&mdash; Cassey Lottman (@CasseyLottman) <a href="https://twitter.com/CasseyLottman/status/1135987812258463744?ref_src=twsrc%5Etfw">June 4, 2019</a></blockquote>
+<blockquote>
+I remembered my forgotten TIL repository, inspired by @jbrancha. Updated it with a few months of learnings I&#39;ve shared in Slack, and stood up a site using @eleven_ty on @glitch to show them off and keep them organized.
+
+v productive Tuesday Glitch time!
+a tweet by me, June 4, 2019
+</blockquote>
 
 ### Link Trees with Eleventy
 `https://glitch.com/~link-tree-11ty`

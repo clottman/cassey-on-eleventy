@@ -13,4 +13,4 @@ Last week we saw [a pretty horrific video of a driver in Lincoln hitting a child
 
 The officer who responded to this incredibly dangerous offense has responded to 9 bike-car crashes, and has never once ticketed a driver for failing to respect the right of the way of the person on a bike. Did bias cause a delay in processing and prioritization, meaning this clearly dangerous driver will likely stay on the streets unpunished?
 
-Credit to Chris St. Pierre, in his replies to [this tweet from LPD](https://twitter.com/Lincoln_Police/status/1138891866584363014), for these stats & questions.
+Credit to Chris St. Pierre, in his replies to this tweet from LPD `https://twitter.com/Lincoln_Police/status/1138891866584363014`, for these stats & questions.

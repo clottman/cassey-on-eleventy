@@ -21,11 +21,11 @@ One big thing I learned from this piece (in a helpful section called ["What is r
 ## Rendering behavior and Context
 This is a complicated topic, with a fair bit of nuance that Mark lays out really well. 
 
-One takeaway for me was something that Mark [quoted Sophie Alpert](https://twitter.com/sophiebits/status/1228942768543686656) on:
+One takeaway for me was something that Mark quoted Sophie Alpert `https://twitter.com/sophiebits/status/1228942768543686656` on:
 
 > That React Component Right Under Your Context Provider Should Probably Use `React.memo` (Sophie Alpert)
 
-As [she explains](https://twitter.com/sophiebits/status/1228955237655834624)
+As she explains `https://twitter.com/sophiebits/status/1228955237655834624`
 
 > briefly: it lets you change the context value and rerender only the components consuming it instead of the entire subtree (Alpert)
 

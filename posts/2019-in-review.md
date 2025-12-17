@@ -104,7 +104,7 @@ I found deep insights in [_Pleasure Activism_](https://www.akpress.org/pleasure-
 - ["Men Have No Friends and Women Bear the Burden" by Melanie Hamlett](https://www.harpersbazaar.com/culture/features/a27259689/toxic-masculinity-male-friendships-emotional-labor-men-rely-on-women/)
 - ["The Last Conversation You'll Ever Need to Have on Eating Right" by Mark Bittman and David Katz](http://www.grubstreet.com/2018/03/ultimate-conversation-on-healthy-eating-and-nutrition.html)
 - [The inherent contradition making housing an investment as well as affordable, by Daniel Hertz](https://www.theatlantic.com/business/archive/2015/10/american-housing-policy-contradictions/410332/)
-- [Tweet thread on "The Shirley Exception" by Alexandra Erin](https://twitter.com/AlexandraErin/status/1004400861865488384)
+- Tweet thread on "The Shirley Exception" by Alexandra Erin `https://twitter.com/AlexandraErin/status/1004400861865488384`
 - ["Foster Care: Everybody Likes a Comeback (But Not for These Kids)" by Emma Margraf](https://entropymag.org/foster-care-everybody-likes-a-comeback-but-not-for-these-kids/)
 - ["Everything you Could Possibly Want to Know about Therapy" by Anna Borges](https://www.buzzfeed.com/annaborges/how-to-start-therapy)
 - ["The Challenge of Going off Psychiatric Drugs" by Rachel Aviv](https://www.newyorker.com/magazine/2019/04/08/the-challenge-of-going-off-psychiatric-drugs)
