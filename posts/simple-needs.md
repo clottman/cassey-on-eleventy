@@ -6,6 +6,8 @@ tags:
   - posts
   - current-events
   - reflection
+  - canada
+  - parenting
 layout: post
 ---
 My current immigration status is: saw a really pretty cloudy, still bright sky over a cornfield while riding my bike here in Ottawa, and cried. 

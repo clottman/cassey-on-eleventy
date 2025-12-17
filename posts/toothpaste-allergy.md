@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Toothpaste Should Not Burn, Actually
-tags: ['posts']
+tags: ['posts', 'recommendations', 'reflection']
 description: 'Do you have an SLS allergy? I probably do!'
 date: 2025-08-30T19:51:00-05:00
 ---

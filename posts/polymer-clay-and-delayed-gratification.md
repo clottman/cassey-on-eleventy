@@ -2,7 +2,7 @@
 layout: post
 title: "Polymer Clay and Delayed Gratification"
 date: 2021-01-17
-tags: [posts, art]
+tags: [posts, art, reflection]
 description: "Interval training for feeling pride in a job well done."
 social_image: "https://cassey.dev/img/clay-octopus.jpg"
 social_image_alt: "a shiny purple octopus with painted on spots on the tentacles and big eyes and a smile sits on an outstretched hand"

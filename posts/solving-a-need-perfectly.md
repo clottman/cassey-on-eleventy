@@ -2,7 +2,7 @@
 layout: post
 title: "Desiring the Product that will Solve a Situation Perfectly"
 date: 2024-01-06
-tags: [posts, consuming-less, abundance]
+tags: [posts, consuming-less, abundance, reflection]
 social_description: "do you already have a good-enough thing? maybe it's good enough."
 ---
 

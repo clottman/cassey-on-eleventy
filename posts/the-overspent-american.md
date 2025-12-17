@@ -1,7 +1,7 @@
 ---
 layout: post
 title: '"The Overspent American" by Juliet Schor'
-tags: ['posts', 'consuming-less', 'books']
+tags: ['posts', 'consuming-less', 'books', 'reflection']
 description: 'why do we want, want, want?'
 date: 2024-01-13
 ---

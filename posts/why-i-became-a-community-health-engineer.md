@@ -3,7 +3,7 @@ layout: post
 date: 2019-04-03
 title: "Why I Became a Community Health Engineer"
 social_description: "on transitioning from a pure software engineering role, to one that's more directly community-focused"
-tags: [posts, career, glitch]
+tags: [posts, career, glitch, reflection]
 redirectsFrom: "/posts/2019-04-03-why-i-became-a-community-health-engineer/"
 ---
 

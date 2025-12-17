@@ -5,6 +5,7 @@ tags:
   - posts
   - canada
   - nebraska
+  - reflection
 description: I live in Canada now.
 date: 2024-08-05T09:24:00-05:00
 ---

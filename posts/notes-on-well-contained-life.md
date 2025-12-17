@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Notes on: 'A Well-Contained Life'"
-tags: ['posts', 'consuming-less', 'parenting']
+tags: ['posts', 'consuming-less', 'parenting', 'reflection']
 description: 'an essay in The Paris Review'
 date: 2024-03-26T11:54:12-05:00
 ---

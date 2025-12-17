@@ -6,6 +6,7 @@ tags:
   - posts
   - canada
   - year-in-review
+  - reflection
 layout: post
 ---
 We've now been living in Ottawa for a full year. Annual events that were happening last May when we came to visit before moving have happened again, and ones that happened shortly after we first arrived to live here are happening again, too. Summer flew by somehow; I'm still a bit in denial that it's now August. 

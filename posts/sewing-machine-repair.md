@@ -5,6 +5,7 @@ tags:
   - posts
   - art
   - nebraska
+  - reflection
 description: in which a skilled technician teaches me lots of stuff
 date: 2024-03-08
 ---

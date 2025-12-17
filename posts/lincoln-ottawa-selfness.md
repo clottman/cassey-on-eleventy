@@ -7,6 +7,7 @@ tags:
   - community
   - nebraska
   - urbanism
+  - reflection
 layout: post
 ---
 

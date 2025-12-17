@@ -5,6 +5,7 @@ date: 2025-07-09T13:07:00-05:00
 tags:
   - posts
   - consuming-less
+  - reflection
 layout: post
 ---
 Over the last few years I've been thinking more and more about how consumerism affects my life, and, finding the effects are mostly not great, thinking about what I can do to resist it.

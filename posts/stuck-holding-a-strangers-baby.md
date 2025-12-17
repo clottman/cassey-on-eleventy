@@ -1,6 +1,6 @@
 ---
 layout: post
-tags: ["posts", "community"]
+tags: ["posts", "community", "reflection"]
 title: "That time I got stuck holding a stranger's baby in my own living room"
 description: "There is a thing as being too neighborly"
 date: 2024-01-12

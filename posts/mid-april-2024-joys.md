@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Mid April 2024: Some Joys"
-tags: ['posts', 'recommendations']
+tags: ['posts', 'recommendations', 'reflection']
 description: 'queer music, lots of media, blue mascara'
 date: 2024-04-22T18:00:00-05:00
 ---

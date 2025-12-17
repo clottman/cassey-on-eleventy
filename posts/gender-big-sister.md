@@ -4,6 +4,8 @@ description: A lesson in identity from my 3 year old
 date: 2025-01-14T17:01:00-05:00
 tags:
   - posts
+  - reflection
+  - parenting
 layout: post
 ---
 At a play group we attended recently for queer families with little kids, we were asked to fill out a new form for participant tracking by the host organization. Beyond some basic demographic questions you've probably been asked before, one question asked: how does your child describe their gender? 
