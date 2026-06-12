@@ -43,5 +43,17 @@
 			"$2"
 		],
 		"description": "Add frontmatter for new TIL post"
-	}
+	},
+  "image-with-caption": {
+    "prefix": "image-with-caption",
+    "body": [
+      "<figure>",
+      "  {% img \"raw_img/${1:filename}.jpg\", \"${2:ALT}\", 600, \"center-block margin-bottom\" %}",
+      "  <figcaption>",
+      "    ${3:CAPTION}",
+      "  </figcaption>",
+      "</figure>",
+    ],
+    "description": "figure tag with figcaption and image"
+  }
 }
