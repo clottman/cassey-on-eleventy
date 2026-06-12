@@ -5,6 +5,6 @@ navtitle: About
 navorder: 2
 ---
 
-I'm a web developer mainly working in full stack Ruby on Rails and static sites with Eleventy these days. I'm also a parent to a very cute kid, and a person fighting alongside my community to keep my home (Lincoln, Nebraska) a place I want to raise said kid. A place that's safe for all kinds of people to thrive.
+I'm a parent of two young kids, living in Ottawa, Ontario in Canada. I moved here from Lincoln, Nebraska, USA in 2024. I care about making streets safer for people, like me and my kids when we're out walking or on our bikes, and our neighbours, too. I care about a lot of other stuff, too, that makes the world safer for people and nicer to be in. Community, in many different forms, is at the heart of my life.
 
-A few years back, I [ran for City Council](https://web.archive.org/web/20190809135734/http://casseyforcouncil.com/) in Lincoln. I ran to draw attention to the importance of ensuring adequate and affordable housing for people of all income levels in Lincoln, and to be an advocate for neighborhoods that have been neglected by city officials for too long.
+For work, I'm a web developer mainly working in full stack Ruby on Rails and static sites with Eleventy these days.
