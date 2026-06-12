@@ -8,5 +8,6 @@ layout: layouts/page.njk
 
 {% include "more-tags.njk" %}
 
-<div class="bubbles-vote"></div>
+{% set absoluteUrl %}{{ page.url | url | absoluteUrl(metadata.url) }}{% endset %}
+<div class="bubbles-vote" data-url="{{absoluteUrl}}"></div>
 <script src="https://bubbles.town/vote.js" defer></script>

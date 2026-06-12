@@ -28,6 +28,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Open+Sans&display=swap" rel="stylesheet">
     <!-- <link rel="webmention" href="https://webmention.io/www.cassey.dev/webmention"/> -->
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    {% set absoluteUrl %}{{ page.url | url | absoluteUrl(metadata.url) }}{% endset %}
+    <link rel="canonical" href="{{absoluteUrl}}" />
   </head>
   <body>
     <header class='site-header'>
